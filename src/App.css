@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500;800&family=Press+Start+2P&family=Saira+Condensed:wght@100;500;600&family=Square+Peg&family=Sriracha&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Saira Condensed', sans-serif;
 }
 
 /* .App{
@@ -9,6 +12,19 @@
   flex-direction: column;
   min-height: calc(100vh + 10rem);
 } */
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #444;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #000;
+  border-radius: 8px;
+}
 
 h1, h2, h3, h4, p{
   margin: 0;
