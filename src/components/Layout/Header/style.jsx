@@ -8,6 +8,7 @@ export const Header = styled.header`
     padding: 0 4rem;
     height: 5rem;
     background: #191919;
+    margin: 0 2rem;
     border-bottom: 1px solid #929d8d;
 `
 export const Logo = styled(Link)`

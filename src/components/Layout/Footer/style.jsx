@@ -5,7 +5,9 @@ export const Footer = styled.footer`
     align-items: center;
     justify-content: space-around;
     background: #191919;
+    border-top: 1px solid #929d8d;
     height: 5rem;
+    margin: 0 2rem;
 `
 export const FooterDescription = styled.div`
     display: flex;
@@ -46,13 +48,4 @@ export const FooterLink = styled.a`
     &:hover{
         color: #f9004d;
     }
-`
-const Palet = styled.div`
-    color:#191919; // fundo
-    color:#101010; //fundo 2
-    color:#f61b12; //gradient
-    color:#f9004d; //font dest
-    color:#ef0a5e; //font 
-    color:#ffffff; //font
-    color:#929d8d; //description
 `
