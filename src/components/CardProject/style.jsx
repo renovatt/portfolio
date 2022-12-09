@@ -11,8 +11,17 @@ export const CardContainer = styled.section`
     margin: 2rem;
     border-radius: .4rem;
     background: #101010;
-`
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fade .3s forwards;
 
+    @keyframes fade{
+    to{
+        opacity: 1;
+        transform: initial;
+    }
+}
+`
 export const CardName = styled.h1`
     text-align: center;
     color: #f9004d;

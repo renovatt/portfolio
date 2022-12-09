@@ -5,18 +5,22 @@ import { Thumb } from './components/Thumb';
 import { About } from './components/About';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
+import { Footer } from './components/Layout/Footer';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
+        <main className='AppBody'>
         <Routes>
           <Route path='/' element={<Thumb />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/skills' element={<Skills />} />
         </Routes>
+        </main>
+        <Footer/>
       </Router>
     </div>
   );
