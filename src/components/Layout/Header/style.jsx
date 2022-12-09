@@ -1,16 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-const Palet = styled.div`
-    color:#191919; // fundo
-    color:#101010; //fundo 2
-    color:#f61b12; //gradient
-    color:#f9004d; //font dest
-    color:#ef0a5e; //font 
-    color:#ffffff; //font
-    color:#929d8d; //description
-`
-
 export const Header = styled.header`
     display: flex;
     align-items: center;
