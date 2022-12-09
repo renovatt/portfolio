@@ -4,10 +4,10 @@ export const Footer = styled.footer`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #191919;
-    border-top: 1px solid #929d8d;
     height: 5rem;
     margin: 0 2rem;
+    background: #191919;
+    border-top: 1px solid #929d8d;
 `
 export const FooterDescription = styled.div`
     display: flex;

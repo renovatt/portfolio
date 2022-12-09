@@ -14,10 +14,6 @@
   background: #191919;
 }
 
-.AppBody{
-  flex: 1;
-}
-
 ::-webkit-scrollbar{
   width: 6px;
 }

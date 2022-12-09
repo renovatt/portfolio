@@ -3,7 +3,7 @@ import *  as S from './style'
 import { Image } from '../Helper/Image'
 import logo from '../../assets/logo.png'
 
-export const Thumb = () => {
+export const Home = () => {
   return (
     <S.ThumbContainer>
       <S.Profile>
