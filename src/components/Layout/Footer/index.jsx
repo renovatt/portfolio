@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <S.Footer>
             <S.FooterDescription>
-                <S.FooterCopyright>&copy; willcode 2022 | Powered by</S.FooterCopyright>
+                <S.FooterCopyright>&copy; 2022 willcode | Powered by</S.FooterCopyright>
                 <S.FooterLink href="https://www.linkedin.com/in/renovatt" target="_blank">renovatt</S.FooterLink>
             </S.FooterDescription>
 
