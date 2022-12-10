@@ -7,7 +7,7 @@ export const Footer = styled.footer`
     height: 5rem;
     margin: 0 2rem;
     background: #191919;
-    border-top: 1px solid #929d8d;
+    border-top: 1px solid #f9004d;
 `
 export const FooterDescription = styled.div`
     display: flex;

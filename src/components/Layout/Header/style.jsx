@@ -9,7 +9,7 @@ export const Header = styled.header`
     margin: 0 2rem;
     padding: 0 4rem;
     background: #191919;
-    border-bottom: 1px solid #929d8d;
+    border-bottom: 1px solid #f9004d;
 `
 export const Logo = styled(Link)`
     display: flex;
