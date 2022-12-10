@@ -6,6 +6,7 @@ import YuGiOh from '../../assets/thumbs/yu-gi-oh.jpg'
 import Valorant from '../../assets/thumbs/valorant.png'
 import Pokedex from '../../assets/thumbs/pokedex.png'
 import Clock from '../../assets/thumbs/clock.png'
+import Default from '../../assets/logo.png'
 
 export const Projects = () => {
   return (
@@ -37,21 +38,25 @@ export const Projects = () => {
       <CardProject
         name='Em breve'
         link="#"
+        image={Default}
         description="Estou trabalhando em mais um projeto." />
 
       <CardProject
         name='Name'
         link="#"
+        image={Default}
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore aperiam ratione eos enim dolores assumenda" />
 
       <CardProject
         name='Name'
         link="#"
+        image={Default}
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore aperiam ratione eos enim dolores assumenda" />
 
       <CardProject
         name='Name'
         link="#"
+        image={Default}
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore aperiam ratione eos enim dolores assumenda" />
     </S.ProjectsContainer>
   )

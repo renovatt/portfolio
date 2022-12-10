@@ -29,6 +29,7 @@ export const ShadowContainer = styled.div`
     flex-direction: column;
     background-color: #0000008d;
     height: 100%;
+    border-radius: .4rem;
 `
 
 export const CardName = styled.h1`
