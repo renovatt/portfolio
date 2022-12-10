@@ -29,7 +29,7 @@ export const Profile = styled.div`
 export const Name = styled.h1`
   color: #ffffff;
   font-size: 8rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
 `
 export const SpanNomal = styled.span`
   color: #ffffff;
@@ -38,4 +38,8 @@ export const SpanNomal = styled.span`
 export const SpanEffect = styled.span`
   color: #f9004d;
   font-size: 2.5rem;
+`
+
+export const Dot = styled.span`
+  color: #f9004d;
 `

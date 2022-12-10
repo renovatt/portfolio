@@ -8,10 +8,10 @@ export const Home = () => {
     <S.ThumbContainer>
       <S.Profile>
         <S.SpanNomal>Olá, eu sou</S.SpanNomal>
-        <S.Name>Will.</S.Name>
+        <S.Name>Will<S.Dot>.</S.Dot></S.Name>
         <S.SpanEffect>Front-end Developer</S.SpanEffect>
       </S.Profile>
-      <Image src={logo} alt='logo'/>
+      <Image src={logo} alt='logo' />
     </S.ThumbContainer>
   )
 }

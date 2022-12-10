@@ -45,11 +45,13 @@ export const SkillsDescription = styled.div`
 `
 
 export const Title = styled.h2`
-    color: #fff;
+    color: #f9004d;
+    font-size: 1.5rem;
 `
 
 export const Description = styled.p`
     color: #929d8d;
+    font-size: 1.2rem;
 `
 
 export const Link = styled.a`
@@ -109,5 +111,6 @@ export const SoftList = styled.h4`
     &:hover{
         cursor: default;
         color: #f9004d;
+        background: #ffffff;
     }
 `
