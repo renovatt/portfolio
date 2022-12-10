@@ -17,7 +17,7 @@ export const SkillsContainer = styled.div`
 }
 `
 
-export const SkillsContent = styled.section`
+export const HardSkills = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,7 +75,7 @@ export const Link = styled.a`
     }
 
     &:hover{
-        color: #f9004d;
+        /* color: #f9004d; */
 }
 `
 
@@ -85,13 +85,13 @@ export const SoftSkills = styled.div`
     flex-direction: column;
     justify-content: center;
     margin: 0 4rem;
-    height: 90rem;
+    height: 100%;
     background: #101010;
 `
 
 export const SoftTitle = styled.h2`
     color: #f9004d;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 `
 
 export const SoftListContainer = styled.div`

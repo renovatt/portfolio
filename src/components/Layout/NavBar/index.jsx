@@ -9,7 +9,7 @@ export const NavBar = () => {
                 <S.NavItem><S.NavLink to='/'>Home</S.NavLink></S.NavItem>
                 <S.NavItem><S.NavLink to='/about'>Quem sou eu</S.NavLink></S.NavItem>
                 <S.NavItem><S.NavLink to='/projects'>Projetos</S.NavLink></S.NavItem>
-                <S.NavItem><S.NavLink to='/skills'>Skills & SoftSkills</S.NavLink></S.NavItem>
+                <S.NavItem><S.NavLink to='/skills'>HardSkills & SoftSkills</S.NavLink></S.NavItem>
             </S.NavBarList>
         </S.NavBarContainer>
     )

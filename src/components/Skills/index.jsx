@@ -6,7 +6,7 @@ import * as S from './style'
 export const Skills = () => {
   return (
     <S.SkillsContainer>
-      <S.SkillsContent>
+      <S.HardSkills>
         <S.SkillsIcons>
           <S.Link><FaHtml5 /></S.Link>
           <S.Link><FaCss3Alt /></S.Link>
@@ -20,17 +20,17 @@ export const Skills = () => {
           <S.Title>Name</S.Title>
           <S.Description>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus deleniti quia, nihil ab veniam veritatis aut nobis. nihil ab veniam veritatis aut nobis, nihil ab veniam veritatis aut nobis nihil ab veniam veritatis aut nobis.</S.Description>
         </S.SkillsDescription>
-      </S.SkillsContent>
+      </S.HardSkills>
 
       <S.SoftSkills>
         <S.SoftTitle>SoftSkills</S.SoftTitle>
         <S.SoftListContainer>
-          <S.SoftList>Organizado</S.SoftList>
+          <S.SoftList>Organização</S.SoftList>
           <S.SoftList>Gosto de aprender</S.SoftList>
           <S.SoftList>Trabalho em equipe</S.SoftList>
           <S.SoftList>Esforçado</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>Colaboração</S.SoftList>
+          <S.SoftList>Comunicação</S.SoftList>
           <S.SoftList>SoftSkill</S.SoftList>
           <S.SoftList>SoftSkill</S.SoftList>
           <S.SoftList>SoftSkill</S.SoftList>
