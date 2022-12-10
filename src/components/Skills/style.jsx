@@ -3,16 +3,9 @@ import styled from "styled-components";
 export const SkillsContainer = styled.div`
     display: flex;
     flex-direction: column;
-
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; */
-
-    background: #191919;
     height: 90vh;
     opacity: 0;
+    background: #191919;
     transform: translateX(-20px);
     animation: fade .3s forwards;
 
@@ -87,9 +80,34 @@ export const Link = styled.a`
 export const SoftSkills = styled.div`
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: 15rem;
-    background: #101010;
     margin: 0 4rem;
-    height: 100%;
+    height: 90rem;
+    background: #101010;
+`
+
+export const SoftTitle = styled.h2`
+    color: #f9004d;
+    margin-bottom: 2rem;
+`
+
+export const SoftListContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+`
+
+export const SoftList = styled.h4`
+    color: #fff;
+    text-align: center;
+    margin: .4rem;
+    padding: .4rem;
+    background: #000;
+    font-weight: bold;
+    transition: .2s;
+
+    &:hover{
+        cursor: default;
+        color: #f9004d;
+    }
 `

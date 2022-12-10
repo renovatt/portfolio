@@ -23,7 +23,25 @@ export const Skills = () => {
       </S.SkillsContent>
 
       <S.SoftSkills>
-        <S.Link>Teste</S.Link>
+        <S.SoftTitle>SoftSkills</S.SoftTitle>
+        <S.SoftListContainer>
+          <S.SoftList>Organizado</S.SoftList>
+          <S.SoftList>Gosto de aprender</S.SoftList>
+          <S.SoftList>Trabalho em equipe</S.SoftList>
+          <S.SoftList>Esforçado</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+          <S.SoftList>SoftSkill</S.SoftList>
+        </S.SoftListContainer>
       </S.SoftSkills>
     </S.SkillsContainer>
   )
