@@ -34,26 +34,6 @@ export const SkillsIcons = styled.div`
     width: 30%;
 `
 
-export const SkillsDescription = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: #101010;
-    height: 15rem;
-    width: 50%;
-    padding: 2rem;
-`
-
-export const Title = styled.h2`
-    color: #f9004d;
-    font-size: 1.5rem;
-`
-
-export const Description = styled.p`
-    color: #929d8d;
-    font-size: 1.2rem;
-`
-
 export const Link = styled.a`
     display: flex;
     color: #ffffff;
@@ -77,6 +57,16 @@ export const Link = styled.a`
     &:hover{
         /* color: #f9004d; */
 }
+`
+
+export const SkillsDescription = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #101010;
+    height: 15rem;
+    width: 50%;
+    padding: 2rem;
 `
 
 export const SoftSkills = styled.div`
