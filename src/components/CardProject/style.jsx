@@ -16,11 +16,11 @@ export const CardContainer = styled.section`
     animation: fade .3s forwards;
 
     @keyframes fade{
-    to{
-        opacity: 1;
-        transform: initial;
+        to{
+            opacity: 1;
+            transform: initial;
+        }
     }
-}
 `
 export const ShadowContainer = styled.div`
     display: flex;
@@ -55,11 +55,11 @@ export const CardLink = styled.button`
     color: #f9004d;
     background: #ffffff;
 
-&:hover{
-    cursor: pointer;
-    color: #ffffff;
-    background: #f9004d;
-}
+    &:hover{
+        cursor: pointer;
+        color: #ffffff;
+        background: #f9004d;
+    }
 `
 
 // export const CardDescription = styled.p`

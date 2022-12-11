@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './style'
 import { CardProject } from '../CardProject'
 
-import Default from '../../assets/logo.png'
+import Default from '../../assets/thumbs/default.png'
 import YuGiOh from '../../assets/thumbs/yu-gi-oh.jpg'
 import Valorant from '../../assets/thumbs/valorant.png'
 import Pokedex from '../../assets/thumbs/pokedex.png'
