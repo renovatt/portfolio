@@ -23,7 +23,7 @@ export const HomeContainer = styled.section`
     animation-direction: alternate;
 
     @media(max-width: 50rem) {
-        width: 150px;
+        width: 10rem;
       }
 
   @keyframes fade{
