@@ -5,5 +5,5 @@ export const ProjectsContainer = styled.div`
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #eee;
+    background-color: #191919;
 `

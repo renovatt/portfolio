@@ -14,16 +14,11 @@ export const AboutContainer = styled.section`
     @media(max-width: 70rem) {
         flex-direction: column;
         height: auto;
+        margin-top: 2rem;
       }
 
     img{
-        width: 30rem;
-        margin-right: 2rem;
-
-        @media(max-width: 70rem) {
-        margin-top: 2rem;
-        width: 10rem;
-      }
+        width: 20rem;
     }
 
     @keyframes fade{
@@ -40,10 +35,12 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 40rem;
+    margin-left: 2rem;
 
-    @media(max-width: 50rem) {
+    @media(max-width: 70rem) {
         width: auto;
         height: auto;
+        margin-top: 4rem;
         margin-bottom: 4rem;
       }
 `
@@ -51,6 +48,10 @@ export const Description = styled.div`
 export const title = styled.h1`
     color: #f9004d;
     font-size: 4rem;
+
+    @media(max-width: 50rem) {
+        font-size: 2rem;
+      }
 `
 
 export const text = styled.p`

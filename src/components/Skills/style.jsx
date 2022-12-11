@@ -9,6 +9,11 @@ export const SkillsContainer = styled.div`
     transform: translateX(-20px);
     animation: fade .3s forwards;
 
+    @media(max-width: 60rem) {
+        height: auto;
+        margin-bottom: 4rem;
+      }
+
     @keyframes fade{
     to{
       opacity: 1;
@@ -23,6 +28,11 @@ export const HardSkills = styled.section`
     justify-content: space-between;
     margin: 5rem 4rem;
     height: 100%;
+
+    @media(max-width: 65rem) {
+    flex-direction: column;
+    margin: 2rem;
+    }
 `
 
 export const SkillsIcons = styled.div`
@@ -32,6 +42,15 @@ export const SkillsIcons = styled.div`
     grid-column-gap: 3rem;
     grid-row-gap: 1rem;
     width: 30%;
+
+    @media(max-width: 70rem) {
+        width: auto;
+        margin-bottom: 2rem;
+      }
+
+    @media(max-width: 30rem) {
+    grid-template-columns: repeat(2, 1fr);
+    }
 `
 
 export const Link = styled.a`
@@ -67,6 +86,11 @@ export const SkillsDescription = styled.div`
     height: 15rem;
     width: 50%;
     padding: 2rem;
+
+    @media(max-width: 70rem) {
+        width: auto;
+        height: auto;
+      }
 `
 
 export const SoftSkills = styled.div`
@@ -75,6 +99,7 @@ export const SoftSkills = styled.div`
     flex-direction: column;
     justify-content: center;
     margin: 0 4rem;
+    padding: .4rem .8rem;
     height: 100%;
     background: #101010;
 `
@@ -87,6 +112,22 @@ export const SoftTitle = styled.h2`
 export const SoftListContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+
+    @media(max-width: 70rem) {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+    @media(max-width: 60rem) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+    @media(max-width: 50rem) {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(max-width: 40rem) {
+    grid-template-columns: repeat(2, 1fr);
+    }
 `
 
 export const SoftList = styled.h4`
