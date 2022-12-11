@@ -8,6 +8,11 @@ export const Footer = styled.footer`
     margin: 0 2rem;
     background: #191919;
     border-top: 1px solid #f9004d;
+
+    @media(max-width: 40rem) {
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
 `
 export const FooterDescription = styled.div`
     display: flex;

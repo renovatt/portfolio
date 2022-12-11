@@ -17,6 +17,11 @@ export const AboutContainer = styled.section`
         margin-top: 2rem;
       }
 
+    @media(max-width: 50rem) {
+      justify-content: center;
+      padding: 0 4rem;
+    }
+
     img{
         width: 20rem;
     }
@@ -38,10 +43,11 @@ export const Description = styled.div`
     margin-left: 2rem;
 
     @media(max-width: 70rem) {
-        width: auto;
+        width: 100%;
         height: auto;
         margin-top: 4rem;
         margin-bottom: 4rem;
+        margin-left: 0;
       }
 `
 

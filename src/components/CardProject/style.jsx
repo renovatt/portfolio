@@ -31,8 +31,10 @@ export const ShadowContainer = styled.div`
     transition: .2s;
     padding: 1.5rem 0;
     border-radius: .4rem;
+    transition: .3s;
 
     &:hover{
+        box-shadow: 1px 1px 10px #f9004d;
         background-color: #00000041;
     }
 `
