@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 
 export const CardContainer = styled.section`
-    height: 20rem;
+    height: 25rem;
     width: 15rem;
-    min-width: 15rem;
     margin: 2rem;
+    min-width: 15rem;
     border-radius: .4rem;
     background: #101010;
-    background-image: url(${props => props.image});
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-image: url(${props => props.image});
 
     opacity: 0;
     transform: translateX(-20px);
@@ -25,11 +25,16 @@ export const CardContainer = styled.section`
 export const ShadowContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
-    background-color: #0000008d;
+    justify-content: space-between;
     height: 100%;
+    transition: .2s;
+    padding: 1.5rem 0;
     border-radius: .4rem;
+
+    &:hover{
+        background-color: #00000041;
+    }
 `
 
 export const CardName = styled.h1`
@@ -39,28 +44,38 @@ export const CardName = styled.h1`
     font-weight: bold;
     text-shadow: 2px 3px 5px #000;
 `
-export const CardDescription = styled.p`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 8rem;
+
+export const CardLink = styled.button`
+    border: none;
+    font-size: 1rem;
     font-weight: bold;
-    margin: 0 .4rem;
-    color: #ffffff;
-    text-shadow: 2px 3px 5px #000;
-`
-export const CardLink = styled.a`
-    margin-bottom: 0;
     padding: .4rem 4rem;
     border-radius: .4rem;
-    background: #ffffff;
-    color: #f9004d;
     transition: .2s;
-    font-weight: bold;
+    color: #f9004d;
+    background: #ffffff;
 
 &:hover{
+    cursor: pointer;
     color: #ffffff;
     background: #f9004d;
 }
 `
+
+// export const CardDescription = styled.p`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     height: 8rem;
+//     opacity: 0;
+//     font-weight: bold;
+//     margin: 0 .4rem;
+//     color: #ffffff;
+//     text-shadow: 2px 3px 5px #000;
+//     transition: .2s;
+
+//     &:hover{
+//         opacity: 1;
+// }
+// `
