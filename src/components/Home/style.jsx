@@ -10,14 +10,21 @@ export const HomeContainer = styled.section`
   transform: translateX(-20px);
   animation: fade .3s forwards;
 
+  @media(max-width: 50rem) {
+        flex-direction: column-reverse;
+      }
+
   img{
     width: 20rem;
-
     animation-name: fly;
     animation-duration: 2s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+    @media(max-width: 50rem) {
+        width: 150px;
+      }
 
   @keyframes fade{
     to{
@@ -32,17 +39,21 @@ export const HomeContainer = styled.section`
         top: 0px;
     }
     to{
-        position: relative;
-        top: -20px;
-        bottom: 60px;
+      position: relative;
+      top: -20px;
+      bottom: 60px;
     }
-}
+  }
 }
 `
 export const Profile = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
-  width: 50%;
+
+  @media(max-width: 50rem) {
+        align-items: center;
+      }
   `
 export const Name = styled.h1`
   color: #ffffff;
@@ -57,10 +68,15 @@ export const SpanEffect = styled.span`
   color: #f9004d;
   font-size: 2.5rem;
 
+  @media(max-width: 50rem) {
+      font-size: 1.5rem;
+        text-align: center;
+      }
+
   &::after{
     content: '|';
-    margin-left: 8px;
     opacity: 1;
+    margin-left: 8px;
     animation: blink 1s infinite;
   }
 
