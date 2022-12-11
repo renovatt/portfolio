@@ -5,20 +5,35 @@ export const NavBarContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    @media (max-width: 45rem) {
-        display: none;
-  }
 `
 export const NavBarList = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    svg{
+        display: none;
+        width: 25px;
+        height: 25px;
+        color: #ffffff;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+        @media (max-width: 50.92rem) {
+            display: flex;
+        }
+    }
 `
 
 export const NavItem = styled.li`
     padding: .4rem;
     margin: .4rem;
+
+    @media (max-width: 50.92rem) {
+        display: none;
+  }
 `
 
 export const NavLink = styled(Link)`
@@ -33,6 +48,6 @@ export const NavLink = styled(Link)`
         cursor: pointer;
     }
     &:active{
-        color: #f9004d;
+        color: #777;
     }
 `

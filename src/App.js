@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 // import { GlobalStyled } from './Global';
 import { Header } from './components/Layout/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -8,9 +9,10 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Footer } from './components/Layout/Footer';
 import { Container } from './components/Container';
-
+import { MenuMobile } from './components/Layout/MenuMobile'
 
 function App() {
+
   return (
     <div className="App">
       <Router>
