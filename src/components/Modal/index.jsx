@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './style'
 import { RiCloseFill } from 'react-icons/ri'
 
-export const Modal = ({ name, banner, thumbnail, link }) => {
+export const Modal = ({ name, banner, thumbnail, link, description }) => {
     return (
         <S.ModalContainer>
             <S.ModalContent>
@@ -16,11 +16,8 @@ export const Modal = ({ name, banner, thumbnail, link }) => {
                 </S.BannerContainer>
 
                 <S.PreviewContainer>
-                    <S.Thumbnail thumbnail={thumbnail}></S.Thumbnail>
-                    <S.Description>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quae quasi temporibus consequatur consequuntur enim in voluptas itaque natus libero corrupti eos vel, porro ipsam eligendi obcaecati sed debitis accusamus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quae quasi temporibus consequatur consequuntur enim in voluptas itaque natus libero corrupti eos vel, porro ipsam eligendi obcaecati sed debitis accusamus!
-                    </S.Description>
+                    <S.Thumbnail src={thumbnail}></S.Thumbnail>
+                    <S.Description>{description}</S.Description>
                 </S.PreviewContainer>
             </S.ModalContent>
         </S.ModalContainer>

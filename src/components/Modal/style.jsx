@@ -4,7 +4,7 @@ export const ModalContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 999;
@@ -14,6 +14,7 @@ export const ModalContainer = styled.section`
 
     @media(max-width: 60rem) {
         overflow-y: auto;
+        /* padding: 2rem calc(4rem + 15px) 2rem 4rem; */
     }
 `
 
@@ -158,16 +159,11 @@ export const PreviewContainer = styled.section`
 
 `
 
-export const Thumbnail = styled.div`
+export const Thumbnail = styled.img`
     width: 100%;
     height: 25rem;
     object-fit: cover;   
     border-radius: .4rem;
-
-    background: #101010;
-    background-size: cover;
-    background-position: center center;
-    background-image: url(${props => props.thumbnail});
 
     @media(max-width: 60rem) {
         height: 100%;
