@@ -4,7 +4,7 @@ export const ModalContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;

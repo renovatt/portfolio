@@ -1,24 +1,48 @@
 import React from 'react'
 import * as S from './style'
 import { CardProject } from '../CardProject'
-
-import Default from '../../assets/thumbs/default.png'
-import YuGiOh from '../../assets/thumbs/yu-gi-oh.jpg'
-import Valorant from '../../assets/thumbs/valorant.png'
-import Pokedex from '../../assets/thumbs/pokedex.png'
-import Clock from '../../assets/thumbs/clock.png'
+import { Modal } from '../Modal'
 
 export const Projects = () => {
+
+  const [data, setData] = React.useState([])
+  const [projectID, setProjectID] = React.useState('')
+
+  async function GetBanner() {
+    await fetch('http://localhost:5000/projects')
+      .then(res => res.json())
+      .then(json => setData(json))
+  }
+
+  React.useEffect(() => {
+    GetBanner()
+  }, [])
+
+  React.useEffect(() => {
+    function handleModalClick(e) {
+      setProjectID(e.target.id)
+    }
+
+    window.addEventListener('click', handleModalClick)
+    return () => {
+      window.removeEventListener('click', handleModalClick)
+    }
+  }, [])
+
   return (
-    <S.ProjectsContainer>
-      <CardProject name='Yu-Gi-Oh' image={YuGiOh} />
-      <CardProject name='Valorant' image={Valorant} />
-      <CardProject name='Pokédex-React' image={Pokedex} />
-      <CardProject name='Relógio Dinâmico' image={Clock} />
-      <CardProject name='Em Breve' image={Default} />
-      <CardProject name='Name' image={Default} />
-      <CardProject name='Name' image={Default} />
-      <CardProject name='Name' image={Default} />
-    </S.ProjectsContainer>
+    <>
+      {projectID && <Modal id={projectID} />}
+      <S.ProjectsContainer>
+        {data && data.map(banner => (
+          <CardProject
+            id={banner.id}
+            key={banner.id}
+            name={banner.name}
+            banner={banner.banner} />
+        ))}
+      </S.ProjectsContainer>
+    </>
+
+
   )
 }
