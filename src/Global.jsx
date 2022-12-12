@@ -19,7 +19,6 @@ export const GlobalStyled = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Saira Condensed', sans-serif;
 }
 
 
@@ -27,7 +26,7 @@ export const GlobalStyled = createGlobalStyle`
   display: flex;
   flex-direction: column;
   min-height: calc(100vh + 10rem);
-  background: --text-enphasis-1;
+  background: var(--background-secundary);
 }
 
 ::-webkit-scrollbar{
@@ -35,11 +34,11 @@ export const GlobalStyled = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-track{
-  background-color: --text-description;
+  background-color: var(--text-description);
 }
 
 ::-webkit-scrollbar-thumb{
-  background: --background-secundary;
+  background: var(--background-secundary);
   border-radius: 8px;
 }
 
@@ -60,6 +59,8 @@ a{
 
 html{
 
+  font-family: 'Saira Condensed', sans-serif;
+
     @media(max-width:1080px){
         font-size:93.75%;
     }
@@ -68,10 +69,10 @@ html{
         font-size:87.5%;
     }
 }
-
+/* 
 body{
-      background: --background-secundary;
-}
+      background: var(--background-secundary);
+} */
 
 .fade{
   opacity: 0;

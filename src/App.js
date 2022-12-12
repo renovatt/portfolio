@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react'
 // import { GlobalStyled } from './Global';
 import { Header } from './components/Layout/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -9,26 +8,29 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Footer } from './components/Layout/Footer';
 import { Container } from './components/Container';
-import { MenuMobile } from './components/Layout/MenuMobile'
+import { ModalTest } from './components/ModalTest';
 
 function App() {
 
   return (
-    <div className="App">
-      <Router>
-        {/* <GlobalStyled /> */}
-        <Header />
-        <Container>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='/skills' element={<Skills />} />
-          </Routes>
-        </Container>
-        <Footer />
-      </Router>
-    </div>
+    <>
+      {/* <GlobalStyled /> */}
+      <div className="App">
+        <Router>
+          <Header />
+          <Container>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/modal' element={<ModalTest/>} />
+              <Route path='/about' element={<About />} />
+              <Route path='/projects' element={<Projects />} />
+              <Route path='/skills' element={<Skills />} />
+            </Routes>
+          </Container>
+          <Footer />
+        </Router>
+      </div>
+    </>
   );
 }
 

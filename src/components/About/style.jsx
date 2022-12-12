@@ -7,6 +7,7 @@ export const AboutContainer = styled.section`
     background: #191919;
     padding: 0 8rem;
     height: 90vh;
+    width: 100%;
     opacity: 0;
     transform: translateX(-20px);
     animation: fade .3s forwards;

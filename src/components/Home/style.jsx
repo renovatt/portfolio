@@ -3,14 +3,17 @@ import styled from "styled-components";
 export const HomeContainer = styled.section`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 90vh;
+  width: 100%;
+  padding: 0 6rem;
   background: #191919;
   opacity: 0;
   transform: translateX(-20px);
   animation: fade .3s forwards;
 
   @media(max-width: 50rem) {
+        padding: 0;
         flex-direction: column-reverse;
       }
 

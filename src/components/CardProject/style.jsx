@@ -63,21 +63,3 @@ export const CardLink = styled.button`
         background: #f9004d;
     }
 `
-
-// export const CardDescription = styled.p`
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//     height: 8rem;
-//     opacity: 0;
-//     font-weight: bold;
-//     margin: 0 .4rem;
-//     color: #ffffff;
-//     text-shadow: 2px 3px 5px #000;
-//     transition: .2s;
-
-//     &:hover{
-//         opacity: 1;
-// }
-// `
