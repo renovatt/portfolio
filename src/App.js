@@ -8,7 +8,6 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Footer } from './components/Layout/Footer';
 import { Container } from './components/Container';
-import { ModalTest } from './components/ModalTest';
 
 function App() {
 
@@ -21,7 +20,6 @@ function App() {
           <Container>
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/modal' element={<ModalTest/>} />
               <Route path='/about' element={<About />} />
               <Route path='/projects' element={<Projects />} />
               <Route path='/skills' element={<Skills />} />

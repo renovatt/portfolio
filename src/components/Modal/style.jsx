@@ -29,9 +29,10 @@ export const ModalContent = styled.div`
     background: #191919;
     transform: translateX(-20px);
     animation: fade .3s forwards;
-
+    
     @media(max-width: 70rem) {
         height: auto;
+        padding: .8rem .4rem;
     }
 
     @media(max-width: 60rem) {
@@ -47,12 +48,14 @@ export const ModalContent = styled.div`
         height: 30px;
         border-radius: 50%;
         background: #f9004d;
-        transition: .7s;
+        transition: .2s;
         color: #ffffff;
         position: absolute;
 
         &:hover{
             cursor: pointer;
+            color: #f9004d;
+            background: #ffffff;
         }
     }
 
@@ -156,7 +159,6 @@ export const PreviewContainer = styled.section`
     @media(max-width: 60rem) {
         margin-top: 2rem;
     }
-
 `
 
 export const Thumbnail = styled.img`
@@ -165,7 +167,7 @@ export const Thumbnail = styled.img`
     object-fit: cover;   
     border-radius: .4rem;
 
-    @media(max-width: 60rem) {
+    @media(max-width: 70rem) {
         height: 100%;
     }
 `
