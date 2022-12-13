@@ -4,7 +4,7 @@ export const SkillsDescription = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #101010;
+    background: var(--background-third);
     width: 100%;
     opacity: 0;
     transform: translateX(-20px);
@@ -19,11 +19,11 @@ export const SkillsDescription = styled.div`
 `
 
 export const Title = styled.h2`
-    color: #f9004d;
+    color: var(--text-enphasis-1);
     font-size: 1.5rem;
 `
 
 export const Description = styled.p`
-    color: #929d8d;
+    color: var(--text-description);
     font-size: 1.2rem;
 `

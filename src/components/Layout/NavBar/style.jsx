@@ -15,7 +15,7 @@ export const NavBarList = styled.ul`
         display: none;
         width: 25px;
         height: 25px;
-        color: #ffffff;
+        color: var(--text-white);
 
     &:hover{
         cursor: pointer;
@@ -37,17 +37,17 @@ export const NavItem = styled.li`
 `
 
 export const NavLink = styled(Link)`
-    color: #ffffff;
+    color: var(--text-white);
     font-size: 1.3rem;
     font-weight: bold;
     transition: .2s;
 
     &:hover,
     &focus{
-        color: #f9004d;
+        color: var(--text-enphasis-1);
         cursor: pointer;
     }
     &:active{
-        color: #777;
+        color: var(--text-enphasis-2);
     }
 `

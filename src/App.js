@@ -1,5 +1,4 @@
-import './App.css';
-// import { GlobalStyled } from './Global';
+import { GlobalStyled } from './Global';
 import { Header } from './components/Layout/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './components/Home';
@@ -13,7 +12,7 @@ function App() {
 
   return (
     <>
-      {/* <GlobalStyled /> */}
+      <GlobalStyled />
       <div className="App">
         <Router>
           <Header />

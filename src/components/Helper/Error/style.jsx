@@ -35,7 +35,7 @@ export const Error = styled.div`
 
 export const Message = styled.h1`
     text-align: center;
-    color: #f61b12;
+    color: var(text-enphasis-3);
     font-size: 3rem;
     margin-top: 2rem;
 `

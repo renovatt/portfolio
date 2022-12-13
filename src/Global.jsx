@@ -2,23 +2,23 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyled = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500;800&family=Press+Start+2P&family=Saira+Condensed:wght@100;500;600&family=Square+Peg&family=Sriracha&display=swap');
-
 :root{
     --background-primary:#ffffff; 
     --background-secundary:#191919; 
     --background-third:#101010; 
+    --background-shadow:#00000041; 
     --text-white:#ffffff; 
     --text-description:#929d8d;
     --text-enphasis-1:#f9004d; 
-    --text-enphasis-2:#f61b12; 
-    --text-enphasis-3:#ef0a5e;
+    --text-enphasis-2:#ef0a5e;
+    --text-enphasis-3:#f61b12; 
 }
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 
@@ -27,6 +27,7 @@ export const GlobalStyled = createGlobalStyle`
   flex-direction: column;
   min-height: calc(100vh + 10rem);
   background: var(--background-secundary);
+  font-family: 'Saira Condensed', sans-serif;
 }
 
 ::-webkit-scrollbar{
@@ -39,7 +40,6 @@ export const GlobalStyled = createGlobalStyle`
 
 ::-webkit-scrollbar-thumb{
   background: var(--background-secundary);
-  border-radius: 8px;
 }
 
 h1, h2, h3, h4, p{
@@ -59,8 +59,6 @@ a{
 
 html{
 
-  font-family: 'Saira Condensed', sans-serif;
-
     @media(max-width:1080px){
         font-size:93.75%;
     }
@@ -69,21 +67,8 @@ html{
         font-size:87.5%;
     }
 }
-/* 
+
 body{
-      background: var(--background-secundary);
-} */
-
-.fade{
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: fade .3s forwards;
-}
-
-@keyframes fade{
-  to{
-    opacity: 1;
-    transform: initial;
-  }
+      background: background-secundary;
 }
 `

@@ -4,7 +4,7 @@ export const AboutContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #191919;
+    background: var(--background-secundary);
     padding: 0 8rem;
     height: 90vh;
     width: 100%;
@@ -53,7 +53,7 @@ export const Description = styled.div`
 `
 
 export const title = styled.h1`
-    color: #f9004d;
+    color: var(--text-enphasis-1);
     font-size: 4rem;
 
     @media(max-width: 50rem) {
@@ -62,7 +62,7 @@ export const title = styled.h1`
 `
 
 export const text = styled.p`
-    color: #929d8d;
+    color: var(--text-description);
     font-size: 1.3rem;
     text-align: justify;
 `

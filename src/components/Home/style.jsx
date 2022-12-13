@@ -7,7 +7,7 @@ export const HomeContainer = styled.section`
   height: 90vh;
   width: 100%;
   padding: 0 6rem;
-  background: #191919;
+  background: var(--background-secundary);
   opacity: 0;
   transform: translateX(-20px);
   animation: fade .3s forwards;
@@ -20,10 +20,10 @@ export const HomeContainer = styled.section`
   img{
     width: 20rem;
     animation-name: fly;
-    animation-duration: 2s;
     animation-delay: 1s;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;
     animation-direction: alternate;
+    animation-iteration-count: infinite;
 
     @media(max-width: 50rem) {
         width: 10rem;
@@ -59,16 +59,16 @@ export const Profile = styled.div`
       }
   `
 export const Name = styled.h1`
-  color: #ffffff;
+  color: var(--text-white);
   font-size: 8rem;
   margin-left: 2rem;
 `
 export const SpanNomal = styled.span`
-  color: #ffffff;
+  color: var(--text-white);
   font-size: 3rem;
 `
 export const SpanEffect = styled.span`
-  color: #f9004d;
+  color: var(--text-enphasis-1);
   font-size: 2.5rem;
 
   @media(max-width: 50rem) {
@@ -95,5 +95,5 @@ export const SpanEffect = styled.span`
 `
 
 export const Dot = styled.span`
-  color: #f9004d;
+  color: var(--text-enphasis-1);
 `

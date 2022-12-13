@@ -26,7 +26,7 @@ export const ModalContent = styled.div`
     width: 80%;
     opacity: 0;
     border-radius: .4rem;
-    background: #191919;
+    background: var(--background-secundary);
     transform: translateX(-20px);
     animation: fade .3s forwards;
     
@@ -47,15 +47,15 @@ export const ModalContent = styled.div`
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background: #f9004d;
+        background: var(--text-enphasis-1);
         transition: .2s;
-        color: #ffffff;
+        color: var(--text-white);
         position: absolute;
 
         &:hover{
             cursor: pointer;
-            color: #f9004d;
-            background: #ffffff;
+            color: var(--text-enphasis-1);
+            background: var(--text-white);
         }
     }
 
@@ -81,7 +81,7 @@ export const Banner = styled.div`
     margin: 0 2rem;
     min-width: 15rem;
     border-radius: .4rem;
-    background: #101010;
+    background: var(--background-third);
     background-size: cover;
     background-position: center center;
     background-image: url(${props => props.banner});
@@ -113,14 +113,14 @@ export const Shadow = styled.div`
     transition: .3s;
 
     &:hover{
-        box-shadow: 1px 1px 10px #f9004d;
-        background-color: #00000041;
+        box-shadow: 1px 1px 10px var(--text-enphasis-1);
+        background-color: var(--background-shadow);
     }
 `
 
 export const BannerName = styled.h1`
     text-align: center;
-    color: #f9004d;
+    color: var(--text-enphasis-1);
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 2px 3px 5px #000;
@@ -133,13 +133,13 @@ export const BannerDeploy = styled.a`
     padding: .4rem 4rem;
     border-radius: .4rem;
     transition: .2s;
-    color: #f9004d;
-    background: #ffffff;
+    color: var(--text-enphasis-1);
+    background: var(--background-primary);
 
     &:hover{
         cursor: pointer;
-        color: #ffffff;
-        background: #f9004d;
+        color: var(--text-white);
+        background: var(--text-enphasis-1);
     }
 `
 
@@ -181,7 +181,7 @@ export const Description = styled.p`
     padding: .4rem;
     font-weight: bold;
     margin: 0 .4rem;
-    color: #ffffff;
+    color: var(--text-white);
     text-shadow: 2px 3px 5px #000;
     transition: .2s;
     width: 100%;

@@ -5,7 +5,7 @@ export const SkillsContainer = styled.div`
     flex-direction: column;
     height: 90vh;
     opacity: 0;
-    background: #191919;
+    background: var(--background-secundary);
     transform: translateX(-20px);
     animation: fade .3s forwards;
 
@@ -55,7 +55,7 @@ export const SkillsIcons = styled.div`
 
 export const Link = styled.a`
     display: flex;
-    color: #ffffff;
+    color: var(--text-white);
     align-items: center;
     transition: .2s;
 
@@ -63,26 +63,22 @@ export const Link = styled.a`
         height: 100px;
         width: 100px;
         padding: .4rem;
-        color: #ffffff;
+        color: var(--text-white);
         transition: .2s;
     }
 
     svg:hover{
         cursor: pointer;
-        color: #f9004d;
+        color: var(--text-enphasis-1);
         transform: scale(1.1);
     }
-
-    &:hover{
-        /* color: #f9004d; */
-}
 `
 
 export const SkillsDescription = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #101010;
+    background: var(--background-third);
     height: 15rem;
     width: 50%;
     padding: 2rem;
@@ -101,11 +97,11 @@ export const SoftSkills = styled.div`
     margin: 0 4rem;
     padding: .4rem .8rem;
     height: 100%;
-    background: #101010;
+    background: var(--background-third);
 `
 
 export const SoftTitle = styled.h2`
-    color: #f9004d;
+    color: var(--text-enphasis-1);
     margin-bottom: 1.5rem;
 `
 
@@ -131,7 +127,7 @@ export const SoftListContainer = styled.div`
 `
 
 export const SoftList = styled.h4`
-    color: #fff;
+    color: var(--text-white);
     text-align: center;
     margin: .4rem;
     padding: .4rem;
@@ -141,7 +137,7 @@ export const SoftList = styled.h4`
 
     &:hover{
         cursor: default;
-        color: #f9004d;
-        background: #ffffff;
+        color: var(--text-enphasis-1);
+        background: var(--text-white);
     }
 `

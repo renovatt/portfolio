@@ -22,7 +22,7 @@ export const LoadingContainer = styled.section`
 `
 
 export const Loading = styled.h2`
-    color: #fff;
+    color: var(--text-white);
     text-align: center;
 `
 
@@ -34,7 +34,7 @@ export const ProgressBar = styled.div`
 export const Bar = styled.div`
     height: 3px;
     width: 0;
-    background: #f9004d;
+    background: var(--text-enphasis-1);
     animation: load .3s forwards;
 
     @keyframes load {

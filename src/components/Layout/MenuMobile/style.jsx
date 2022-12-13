@@ -18,7 +18,6 @@ export const MobileContainer = styled.nav`
     transform: translateY(50px);
     background: rgba(17, 18, 17, 0.95);
     background: linear-gradient(34deg, #2b161cef 0%, rgba(17,18,17,0.95) 95%);
-    /* opacity: ${({isVisible}) => isVisible ? 1 : 0 }; */
 
     svg {
         top: 2rem;
@@ -26,7 +25,7 @@ export const MobileContainer = styled.nav`
         width: 25px;
         height: 25px;
         transition: .7s;
-        color: #ffffff;
+        color: var(--text-white);
         position: absolute;
         transform: rotate(45deg);
 
@@ -61,17 +60,17 @@ export const MobItem = styled.li`
 `
 
 export const MobLink = styled(Link)`
-    color: #ffffff;
+    color: var(--text-white);
     font-size: 2.3rem;
     font-weight: bold;
     transition: .2s;
 
     &:hover,
     &focus{
-        color: #f9004d;
+        color: var(--text-enphasis-1);
         cursor: pointer;
     }
     &:active{
-        color: #777;
+        color: var(--text-enphasis-2);
     }
 `

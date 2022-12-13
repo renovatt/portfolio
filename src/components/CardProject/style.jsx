@@ -6,7 +6,7 @@ export const CardContainer = styled.section`
     margin: 2rem;
     min-width: 15rem;
     border-radius: .4rem;
-    background: #101010;
+    background: var(--background-third);
     background-size: cover;
     background-position: center center;
     background-image: url(${props => props.banner});
@@ -34,17 +34,17 @@ export const ShadowContainer = styled.div`
     transition: .3s;
 
     &:hover{
-        box-shadow: 1px 1px 10px #f9004d;
-        background-color: #00000041;
+        box-shadow: 1px 1px 10px var(--text-enphasis-1);
+        background-color: var(--background-shadow);
     }
 `
 
 export const CardName = styled.h1`
     text-align: center;
-    color: #f9004d;
+    color: var(--text-enphasis-1);
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 2px 3px 5px #000;
+    text-shadow: 2px 3px 5px var(--background-third);
 `
 
 export const CardLink = styled.button`
@@ -54,12 +54,12 @@ export const CardLink = styled.button`
     padding: .4rem 4rem;
     border-radius: .4rem;
     transition: .2s;
-    color: #f9004d;
-    background: #ffffff;
+    color: var(--text-enphasis-1);
+    background: var(--background-primary);
 
     &:hover{
         cursor: pointer;
-        color: #ffffff;
-        background: #f9004d;
+        color: var(--text-white);
+        background: var(--text-enphasis-1);
     }
 `

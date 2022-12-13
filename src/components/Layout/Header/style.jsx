@@ -8,8 +8,8 @@ export const Header = styled.header`
     height: 5rem;
     margin: 0 2rem;
     padding: 0 4rem;
-    background: #191919;
-    border-bottom: 1px solid #f9004d;
+    background: var(--background-secundary);
+    border-bottom: 1px solid var(--text-enphasis-1);
 `
 export const Logo = styled(Link)`
     display: flex;
@@ -18,9 +18,9 @@ export const Logo = styled(Link)`
 `
 export const NormalSpan = styled.span`
     display: block;
-    color: #ffffff;
+    color: var(--text-white);
 `
 export const ColorSpan = styled.span`
     display: block;
-    color: #f9004d;
+    color: var(--text-enphasis-1);
 `
