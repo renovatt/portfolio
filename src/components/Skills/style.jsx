@@ -108,7 +108,8 @@ export const SoftTitle = styled.h2`
 export const SoftListContainer = styled.div`
 
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
       flex-wrap: wrap;
 
     /* display: grid;
@@ -151,6 +152,8 @@ export const Loading = styled.p`
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+    margin: .4rem;
+    padding: .4rem;
     color: var(--text-white);
 `
 
@@ -158,4 +161,6 @@ export const Error = styled.h2`
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    margin: .4rem;
+    padding: .4rem;
     color: var(--text-enphasis-3);`
