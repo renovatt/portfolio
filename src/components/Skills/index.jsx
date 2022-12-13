@@ -11,6 +11,8 @@ import { GitHubDescription } from './SkillsDescriptions/GitHubDescription'
 import * as S from './style'
 
 export const Skills = () => {
+
+  const url = 'https://my-json-server.typicode.com/renovatt/portfolio/softskills'
   const [isdefault, setDefault] = React.useState(true);
   const [htmlHovered, setHtmlHovered] = React.useState(false);
   const [cssHovered, setCssHovered] = React.useState(false);
@@ -18,6 +20,26 @@ export const Skills = () => {
   const [reactHovered, setReactHovered] = React.useState(false);
   const [gitHovered, setGitHovered] = React.useState(false);
   const [githubHovered, setGitHubHovered] = React.useState(false);
+  const [data, setData] = React.useState([])
+  const [loading, setLoading] = React.useState(false)
+  const [error, setError] = React.useState(false)
+
+  const getSoftSkills = async () => {
+    setLoading(true)
+    try {
+      await fetch(url)
+        .then(res => res.json())
+        .then(json => setData(json))
+    } catch {
+      setError(true)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  React.useEffect(() => {
+    getSoftSkills()
+  }, [])
 
   return (
     <S.SkillsContainer>
@@ -99,22 +121,9 @@ export const Skills = () => {
       <S.SoftSkills>
         <S.SoftTitle>SoftSkills</S.SoftTitle>
         <S.SoftListContainer>
-          <S.SoftList>Organização</S.SoftList>
-          <S.SoftList>Gosto de aprender</S.SoftList>
-          <S.SoftList>Trabalho em equipe</S.SoftList>
-          <S.SoftList>Esforçado</S.SoftList>
-          <S.SoftList>Colaboração</S.SoftList>
-          <S.SoftList>Comunicação</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
-          <S.SoftList>SoftSkill</S.SoftList>
+          {data && data.map(softskill => (
+            <S.SoftList key={softskill.id}>{softskill.name}</S.SoftList>
+          ))}
         </S.SoftListContainer>
       </S.SoftSkills>
     </S.SkillsContainer >

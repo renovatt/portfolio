@@ -12,7 +12,7 @@ export const Projects = () => {
   const [loading, setLoading] = React.useState(false)
   const [error, setError] = React.useState(false)
 
-  const GetBanner = async () => {
+  const getBanner = async () => {
     setLoading(true)
     try {
       await fetch(url)
@@ -26,7 +26,7 @@ export const Projects = () => {
   }
 
   React.useEffect(() => {
-    GetBanner()
+    getBanner()
   }, [])
 
   React.useEffect(() => {
