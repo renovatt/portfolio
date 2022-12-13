@@ -1,15 +1,27 @@
 import React from 'react'
 import * as S from './style'
 import { RiCloseFill } from 'react-icons/ri'
+import { Loading } from '../Helper/Loading'
+import { Error } from '../Helper/Error'
 
 export const Modal = ({ id }) => {
 
+    const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
     const [modalData, setModalData] = React.useState([])
-    
-    async function openModal() {
-        await fetch(`https://my-json-server.typicode.com/renovatt/portfolio/projects?id=${id}`)
-            .then(res => res.json())
-            .then(json => setModalData(json))
+    const [loading, setLoading] = React.useState(false)
+    const [error, setError] = React.useState(false)
+
+    const openModal = async () => {
+        setLoading(true)
+        try {
+            await fetch(`${url}?id=${id}`)
+                .then(res => res.json())
+                .then(json => setModalData(json))
+        } catch {
+            setError(true)
+        } finally {
+            setLoading(false)
+        }
     }
 
     React.useEffect(() => {
@@ -18,7 +30,9 @@ export const Modal = ({ id }) => {
 
     return (
         <S.ModalContainer>
-            {id && modalData.map(project => (
+            {error && <Error />}
+            {loading && <Loading />}
+            {id && !loading && modalData.map(project => (
                 <S.ModalContent key={project.id}>
                     <RiCloseFill />
                     <S.BannerContainer>
