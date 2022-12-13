@@ -76,7 +76,11 @@
         },
         {
             "id": 7,
-            "name": ""
+            "name": "Dedicação"
+        },
+        {
+            "id": 8,
+            "name": "Compromisso"
         }
     ]
 }

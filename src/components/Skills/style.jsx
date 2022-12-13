@@ -106,7 +106,12 @@ export const SoftTitle = styled.h2`
 `
 
 export const SoftListContainer = styled.div`
-    display: grid;
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+    /* display: grid;
     grid-template-columns: repeat(8, 1fr);
 
     @media(max-width: 70rem) {
@@ -123,7 +128,7 @@ export const SoftListContainer = styled.div`
 
     @media(max-width: 40rem) {
     grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 `
 
 export const SoftList = styled.h4`
@@ -141,3 +146,16 @@ export const SoftList = styled.h4`
         background: var(--text-white);
     }
 `
+
+export const Loading = styled.p`
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-white);
+`
+
+export const Error = styled.h2`
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-enphasis-3);`

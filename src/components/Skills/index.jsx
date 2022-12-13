@@ -121,7 +121,9 @@ export const Skills = () => {
       <S.SoftSkills>
         <S.SoftTitle>SoftSkills</S.SoftTitle>
         <S.SoftListContainer>
-          {data && data.map(softskill => (
+          {loading && <S.Loading>Carregando..</S.Loading>}
+          {error && <S.Error>Algo deu errado, por favor atualize a página.</S.Error>}
+          {data && !loading && data.map(softskill => (
             <S.SoftList key={softskill.id}>{softskill.name}</S.SoftList>
           ))}
         </S.SoftListContainer>
