@@ -29,6 +29,7 @@ export const Loading = styled.h2`
 export const ProgressBar = styled.div`
     height: 8px;
     width: 30rem;
+    max-width: 100%;
 `
 
 export const Bar = styled.div`

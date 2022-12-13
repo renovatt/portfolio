@@ -14,6 +14,7 @@ export const HomeContainer = styled.section`
 
   @media(max-width: 50rem) {
         padding: 0;
+        justify-content: center;
         flex-direction: column-reverse;
       }
 
