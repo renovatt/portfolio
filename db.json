@@ -81,38 +81,6 @@
         {
             "id": 8,
             "name": "Compromisso"
-        },
-        {
-            "id": 1,
-            "name": "Organização"
-        },
-        {
-            "id": 2,
-            "name": "Colaboração"
-        },
-        {
-            "id": 3,
-            "name": "Esforçado"
-        },
-        {
-            "id": 4,
-            "name": "Comunicação"
-        },
-        {
-            "id": 5,
-            "name": "Gosto de Aprender"
-        },
-        {
-            "id": 6,
-            "name": "Trabalho em Equipe"
-        },
-        {
-            "id": 7,
-            "name": "Dedicação"
-        },
-        {
-            "id": 8,
-            "name": "Compromisso"
         }
     ]
 }

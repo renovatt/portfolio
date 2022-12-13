@@ -107,12 +107,7 @@ export const SoftTitle = styled.h2`
 
 export const SoftListContainer = styled.div`
 
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(8, 1fr);
 
     @media(max-width: 70rem) {
@@ -129,7 +124,7 @@ export const SoftListContainer = styled.div`
 
     @media(max-width: 40rem) {
     grid-template-columns: repeat(2, 1fr);
-    } */
+    }
 `
 
 export const SoftList = styled.h4`
