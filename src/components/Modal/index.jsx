@@ -5,9 +5,9 @@ import { RiCloseFill } from 'react-icons/ri'
 export const Modal = ({ id }) => {
 
     const [modalData, setModalData] = React.useState([])
-
+    
     async function openModal() {
-        await fetch(`http://localhost:5000/projects?id=${id}`)
+        await fetch(`https://my-json-server.typicode.com/renovatt/portfolio/projects?id=${id}`)
             .then(res => res.json())
             .then(json => setModalData(json))
     }

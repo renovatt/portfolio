@@ -9,7 +9,7 @@ export const Projects = () => {
   const [projectID, setProjectID] = React.useState('')
 
   async function GetBanner() {
-    await fetch('http://localhost:5000/projects')
+    await fetch('https://my-json-server.typicode.com/renovatt/portfolio/projects')
       .then(res => res.json())
       .then(json => setData(json))
   }

@@ -4,48 +4,48 @@
             "id": 1,
             "name": "Yu-Gi-Oh",
             "link": "https://yu-gi-oh-card-info.vercel.app",
-            "banner": "http://localhost:5000/banners/yu-gi-oh.jpg",
-            "thumbnail": "http://localhost:5000/thumbnails/yu-gi-oh.png",
+            "banner": "../banners/yu-gi-oh.jpg",
+            "thumbnail": "../thumbnails/yu-gi-oh.png",
             "description": "Para quem é fã acredito que possa gostar, ainda estou aprendendo sobre consumo de APIs, mas por acaso acabei encontrando essa aqui e me desafiei a tentar criar algo bem simples, já que não encontrei nenhum video usando ela, e depois de quebrar tanto a cabeça foi isso que consegui até esse momento. Busquei alguns dados sobre as Cartas como: nome e as imagens, e organizei de maneira que você possa pesquisar a sua carta pelo nome correto ou usando buscando na lista. Apanhei bastante para fazer esse projeto, que para mim, é a minha primeira grande conquista."
         },
         {
             "id": 2,
             "name": "Valorant",
             "link": "https://valorant-self.vercel.app",
-            "banner": "http://localhost:5000/banners/valorant.png",
-            "thumbnail": "http://localhost:5000/thumbnails/valorant.png",
+            "banner": "../banners/valorant.png",
+            "thumbnail": "../thumbnails/valorant.png",
             "description": "Será que alguém aqui seria fã do jogo? Assumo que infelizmente não joguei muitas vezes por conta de não ter um PC bom, mas resolvi tentar criar mais um mini site, consumindo uma API estou renderizando algumas informações sobre o game, personagens com suas descrições, vozes e habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo."
         },
         {
             "id": 3,
             "name": "Pokédex-React",
             "link": "https://pokedex-snowy-seven.vercel.app",
-            "banner": "http://localhost:5000/banners/pokedex.png",
-            "thumbnail": "http://localhost:5000/thumbnails/pokedex.png",
+            "banner": "../banners/pokedex.png",
+            "thumbnail": "../thumbnails/pokedex.png",
             "description": "Criação da famosa Pokédex, colocando em prática meus conhecimentos iniciais com React, antes tinha criado esse projeto usando JavaScript puro e agora resolvi adaptar ao React."
         },
         {
             "id": 4,
             "name": "Relógio Dinâmico",
             "link": "https://renovatt.github.io/relogio-dinamico",
-            "banner": "http://localhost:5000/banners/clock.png",
-            "thumbnail": "http://localhost:5000/thumbnails/clock.png",
+            "banner": "../banners/clock.png",
+            "thumbnail": "../thumbnails/clock.png",
             "description": "Esse é o meu relógio dinâmico, onde busquei fazer de modo que lembrasse mais o dia a dia normal de uma pessoa, desde o início até o final, claro que ainda dá para melhorar, mas no momento esse foi o meu resultado. Para maior interação busquei por animações que se encaixassem nessa ideia."
         },
         {
             "id": 5,
             "name": "Dogs",
             "link": "https://dogs-weld.vercel.app",
-            "banner": "http://localhost:5000/banners/dogs.png",
-            "thumbnail": "http://localhost:5000/thumbnails/dogs.png",
+            "banner": "../banners/dogs.png",
+            "thumbnail": "../thumbnails/dogs.png",
             "description": "Criação da aplicação Dogs, uma rede social para cachorros criada no curso de React da Origamid. Não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa."
         },
         {
             "id": 0,
             "name": "Em breve",
             "link": "#",
-            "banner": "http://localhost:5000/banners/default.png",
-            "thumbnail": "http://localhost:5000/thumbnails/thumbnail.png",
+            "banner": "../banners/default.png",
+            "thumbnail": "../thumbnails/thumbnail.png",
             "description": "Em breve, estou construindo algo."
         }
     ]
