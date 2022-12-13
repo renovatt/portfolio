@@ -40,7 +40,7 @@ export const Modal = ({ id }) => {
                             <S.Shadow></S.Shadow>
                         </S.Banner>
                         <S.BannerName>{project.name}</S.BannerName>
-                        <S.BannerDeploy href={project.link}>Deploy</S.BannerDeploy>
+                        <S.BannerDeploy href={project.link} target='_blank'>Deploy</S.BannerDeploy>
                     </S.BannerContainer>
 
                     <S.PreviewContainer>
