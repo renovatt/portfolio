@@ -28,6 +28,10 @@ export const Modal = ({ id }) => {
         openModal()
     }, [id])
 
+    function handleLoad({ target }) {
+        target.style.opacity = 1
+    }
+
     return (
         <S.ModalContainer>
             {error && <Error />}
@@ -44,7 +48,7 @@ export const Modal = ({ id }) => {
                     </S.BannerContainer>
 
                     <S.PreviewContainer>
-                        <S.Thumbnail src={project.thumbnail}></S.Thumbnail>
+                        <S.Thumbnail src={project.thumbnail} onLoad={handleLoad}></S.Thumbnail>
                         <S.Description>{project.description}</S.Description>
                     </S.PreviewContainer>
                 </S.ModalContent>

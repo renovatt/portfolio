@@ -164,8 +164,10 @@ export const PreviewContainer = styled.section`
 export const Thumbnail = styled.img`
     width: 100%;
     height: 25rem;
+    opacity: 0;
     object-fit: cover;   
     border-radius: .4rem;
+    transition: .2s;
 
     @media(max-width: 70rem) {
         height: 100%;

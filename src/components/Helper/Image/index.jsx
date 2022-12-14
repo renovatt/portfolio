@@ -13,7 +13,7 @@ export const Image = ({src, alt }) => {
   return (
     <S.ImageContainer>
         {sketelon && <S.Skeleton></S.Skeleton> }
-        <img onLoad={handleLoad} src={src} alt={alt} />
+        <S.Image onLoad={handleLoad} src={src} alt={alt} />
     </S.ImageContainer>
   )
 }
