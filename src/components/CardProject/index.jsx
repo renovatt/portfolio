@@ -6,7 +6,7 @@ export const CardProject = ({ id, name, banner }) => {
   const [projectID, setProjectID] = React.useState('')
   const [modal, setModal] = React.useState(null)
 
-  function getId(e){
+  function handleGetID(e){
     setModal(true)
     setProjectID(e.target.id)
   }
@@ -17,7 +17,7 @@ export const CardProject = ({ id, name, banner }) => {
       <S.CardContainer banner={banner}>
         <S.ShadowContainer>
           <S.CardName>{name}</S.CardName>
-          <S.CardLink id={id} onClick={getId}>Ver Detalhes</S.CardLink>
+          <S.CardLink id={id} onClick={handleGetID}>Ver Detalhes</S.CardLink>
         </S.ShadowContainer>
       </S.CardContainer>
     </>
