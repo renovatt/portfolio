@@ -4,7 +4,7 @@ import { RiCloseFill } from 'react-icons/ri'
 import { Loading } from '../Helper/Loading'
 import { Error } from '../Helper/Error'
 
-export const Modal = ({ id }) => {
+export const Modal = ({ id, setModal }) => {
 
     const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
     const [modalData, setModalData] = React.useState([])
@@ -32,13 +32,19 @@ export const Modal = ({ id }) => {
         target.style.opacity = 1
     }
 
+    function handleCloseModal(e){
+        if(e.target === e.currentTarget){
+            setModal(null)
+        }
+    }
+
     return (
-        <S.ModalContainer>
+        <S.ModalContainer onClick={handleCloseModal}>
             {error && <Error />}
             {loading && <Loading />}
             {id && !loading && modalData.map(project => (
                 <S.ModalContent key={project.id}>
-                    <RiCloseFill />
+                    <RiCloseFill onClick={() => setModal(null)}/>
                     <S.BannerContainer>
                         <S.Banner banner={project.banner}>
                             <S.Shadow></S.Shadow>
