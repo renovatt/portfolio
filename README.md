@@ -17,7 +17,7 @@
 
 [Ver Projeto](https://portfolio-renovatt.vercel.app/)
 
-#### Dei uma repaginada no meu portfolio depois que conheci o React, para mim, é uma grande realização. Consegui deixar de mais dinâmico e atraente, estou usando `Json-Server` (Uma API Fake) para reduzir a quantidade de código, agora posso apenas acrescentar meus projetos no `db.json` e os cards vão ser criados automaticamente. 
+#### Dei uma repaginada no meu portfolio depois que conheci o React, para mim, é uma grande realização. Consegui deixar mais dinâmico e atraente, estou usando `Json-Server` (Uma API Fake) para reduzir a quantidade de códigos, agora posso apenas acrescentar meus projetos no `db.json` e os cards vão ser criados automaticamente. 
 
 #
 
