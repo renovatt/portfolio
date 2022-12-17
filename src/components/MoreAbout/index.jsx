@@ -3,10 +3,15 @@ import * as S from './style'
 import profile from '../../assets/profile-1.jpg'
 
 export const MoreAbout = () => {
+
+    function handleLoad({ target }) {
+        target.style.opacity = 1
+      }
+
     return (
         <S.MoreAboutContainer>
             <S.ProfileContainer>
-                <S.ProfileImage src={profile} alt="" />
+                <S.ProfileImage src={profile} alt="Will-Anime" onLoad={handleLoad} />
             </S.ProfileContainer>
             
             <S.DescriptionContainer>
