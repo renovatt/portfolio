@@ -20,7 +20,7 @@ export const About = () => {
     setMoreAboutButton(false)
 
     isMobile && setTimeout(() => {
-      window.scrollTo(0, 1060)
+      window.scrollTo(0, 1120)
     }, 10)
 
     !isMobile && setTimeout(() => {
