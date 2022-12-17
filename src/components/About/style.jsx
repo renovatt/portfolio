@@ -3,28 +3,23 @@ import styled from "styled-components";
 export const AboutContainer = styled.section`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     background: var(--background-secundary);
     padding: 0 8rem;
-    height: 90vh;
+    /* height: 100vh; */
     width: 100%;
     opacity: 0;
     transform: translateX(-20px);
     animation: fade .3s forwards;
 
     @media(max-width: 70rem) {
-        flex-direction: column;
         height: auto;
-        margin-top: 2rem;
       }
 
     @media(max-width: 50rem) {
       justify-content: center;
-      padding: 0 4rem;
-    }
-
-    img{
-        width: 20rem;
+      padding: 0 2rem;
     }
 
     @keyframes fade{
@@ -33,6 +28,25 @@ export const AboutContainer = styled.section`
       transform: initial;
     }
   }
+`
+
+export const AboutContent = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+
+    @media(max-width: 70rem) {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        margin-top: 2rem;
+      }
+
+    img{
+        width: 20rem;
+    }
 `
 
 export const Description = styled.div`
@@ -65,4 +79,25 @@ export const text = styled.p`
     color: var(--text-description);
     font-size: 1.3rem;
     text-align: justify;
+`
+
+export const MoreAboutButton = styled.button`
+  height: 2.5rem;
+  width: 10rem;
+  padding: .2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text-white);
+  background: var(--text-enphasis-1);
+  transition: .2s;
+  border-radius: .4rem;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+
+  &:hover{
+    cursor: pointer;
+    color: var(--text-enphasis-1);
+    background: var(--background-primary);
+  }
 `
