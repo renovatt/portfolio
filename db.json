@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "name": "Tree",
+            "name": "Tree App",
             "link": "https://tree-app-renovatt.vercel.app/login",
             "banner": "../banners/tree.png",
             "thumbnail": "../thumbnails/tree.png",
@@ -25,7 +25,7 @@
             "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros."
         },
         {
-            "id": 5,
+            "id": 4,
             "name": "Valorant",
             "link": "https://valorant-self.vercel.app",
             "banner": "../banners/valorant.png",
