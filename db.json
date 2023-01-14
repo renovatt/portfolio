@@ -10,11 +10,11 @@
         },
         {
             "id": 2,
-            "name": "Valorant",
-            "link": "https://valorant-self.vercel.app",
-            "banner": "../banners/valorant.png",
-            "thumbnail": "../thumbnails/valorant.png",
-            "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo."
+            "name": "Tree",
+            "link": "https://tree-app-renovatt.vercel.app/login",
+            "banner": "../banners/tree.png",
+            "thumbnail": "../thumbnails/tree.png",
+            "description": "Desenvolvi um aplicativo de finanças para atender minhas necessidades pessoais. Ele permite registrar despesas de forma segura e acessí-las de qualquer lugar, além de oferecer filtragem por mês e ano, visualização de faturamentos dos últimos 6 meses, campos para anotações e lista de prioridades."
         },
         {
             "id": 3,
@@ -25,7 +25,15 @@
             "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros."
         },
         {
-            "id": 4,
+            "id": 5,
+            "name": "Valorant",
+            "link": "https://valorant-self.vercel.app",
+            "banner": "../banners/valorant.png",
+            "thumbnail": "../thumbnails/valorant.png",
+            "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo."
+        },
+        {
+            "id": 5,
             "name": "Relógio Dinâmico",
             "link": "https://renovatt.github.io/relogio-dinamico",
             "banner": "../banners/clock.png",
@@ -33,7 +41,7 @@
             "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo."
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Dogs",
             "link": "https://dogs-weld.vercel.app",
             "banner": "../banners/dogs.png",
