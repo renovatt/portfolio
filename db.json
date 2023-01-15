@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "name": "Tree App",
+            "name": "Tree",
             "link": "https://tree-app-renovatt.vercel.app/login",
             "banner": "../banners/tree.png",
             "thumbnail": "../thumbnails/tree.png",
