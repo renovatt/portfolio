@@ -2,11 +2,11 @@
     "projects": [
         {
             "id": 1,
-            "name": "Yu-Gi-Oh",
-            "link": "https://yu-gi-oh-card-info.vercel.app",
-            "banner": "../banners/yu-gi-oh.jpg",
-            "thumbnail": "../thumbnails/yu-gi-oh.png",
-            "description": "Este foi o meu primeiro projeto para valer! Assumo que não nada fácil, aprendi muita coisa com ele, e sinceramente fiquei muito feliz com o resultado. Ele foi construindo em JavaScript PURO, por isso tive tanto trabalho, principalmente porque foi bem no início, onde eu decidi começar a colocar em prática meus estudos, como consumo de APIs e sem saber acabei encontrando essa API que é muito grande. Foi uma grande realização."
+            "name": "Cute Pet",
+            "link": "schedule-petshop-system.vercel.app",
+            "banner": "../banners/cutepet.png",
+            "thumbnail": "../thumbnails/cutepet.png",
+            "description": "O Cute Pet é um sistema completo de agendamento de petshop, desenvolvido com a tecnologia Next.js e TypeScript. Com ele, é possível cadastrar clientes e seus pets, bem como agendar atendimentos e atualizar as informações cadastradas a qualquer momento. Com uma interface amigável e intuitiva, o Cute Pet oferece uma experiência de uso agradável e eficiente para seus usuários. Além disso, o sistema conta com um banco de dados robusto, desenvolvido com Node.js, Prisma e MongoDB, o que garante alta performance e escalabilidade."
         },
         {
             "id": 2,
@@ -18,6 +18,14 @@
         },
         {
             "id": 3,
+            "name": "Yu-Gi-Oh",
+            "link": "https://yu-gi-oh-card-info.vercel.app",
+            "banner": "../banners/yu-gi-oh.jpg",
+            "thumbnail": "../thumbnails/yu-gi-oh.png",
+            "description": "Este foi o meu primeiro projeto para valer! Assumo que não nada fácil, aprendi muita coisa com ele, e sinceramente fiquei muito feliz com o resultado. Ele foi construindo em JavaScript PURO, por isso tive tanto trabalho, principalmente porque foi bem no início, onde eu decidi começar a colocar em prática meus estudos, como consumo de APIs e sem saber acabei encontrando essa API que é muito grande. Foi uma grande realização."
+        },
+        {
+            "id": 4,
             "name": "Pokédex-React",
             "link": "https://pokedex-snowy-seven.vercel.app",
             "banner": "../banners/pokedex.png",
@@ -25,7 +33,7 @@
             "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros."
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Valorant",
             "link": "https://valorant-self.vercel.app",
             "banner": "../banners/valorant.png",
@@ -33,7 +41,7 @@
             "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo."
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Relógio Dinâmico",
             "link": "https://renovatt.github.io/relogio-dinamico",
             "banner": "../banners/clock.png",
@@ -41,7 +49,7 @@
             "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo."
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Dogs",
             "link": "https://dogs-weld.vercel.app",
             "banner": "../banners/dogs.png",
