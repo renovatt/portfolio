@@ -44,7 +44,7 @@ export const CardName = styled.h1`
     color: var(--text-enphasis-1);
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 2px 3px 5px var(--background-third);
+    /* text-shadow: 5px 5px 35px var(--background-third); */
 `
 
 export const CardLink = styled.button`

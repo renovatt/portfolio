@@ -181,10 +181,10 @@ export const Description = styled.p`
     text-align: justify;
     height: 10rem;
     padding: .4rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 0 .4rem;
     color: var(--text-white);
-    text-shadow: 2px 3px 5px #000;
+    /* text-shadow: 2px 3px 5px #000; */
     transition: .2s;
     width: 100%;
 

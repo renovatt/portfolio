@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaHtml5, FaCss3Alt, FaGithub, FaGitAlt, FaReact } from 'react-icons/fa'
-import { SiJavascript } from 'react-icons/si'
+import { SiJavascript, SiNextdotjs, SiStyledcomponents, SiTypescript } from 'react-icons/si'
 import { DefaultDescription } from './SkillsDescriptions/DefaultDescription'
 import { HtmlDescription } from './SkillsDescriptions/HtmlDescription'
 import { CssDescription } from './SkillsDescriptions/CssDescription'
@@ -9,9 +9,11 @@ import { ReactDescription } from './SkillsDescriptions/ReactDescription'
 import { GitDescription } from './SkillsDescriptions/GitDescription'
 import { GitHubDescription } from './SkillsDescriptions/GitHubDescription'
 import * as S from './style'
+import { NextDescription } from './SkillsDescriptions/NextDescription'
+import { TypeScriptDescription } from './SkillsDescriptions/TypeScripDescription'
+import { StyledComponentsDescription } from './SkillsDescriptions/StyledComponentsDescription'
 
 export const Skills = () => {
-
   const url = 'https://my-json-server.typicode.com/renovatt/portfolio/softskills'
   const [isdefault, setDefault] = React.useState(true);
   const [htmlHovered, setHtmlHovered] = React.useState(false);
@@ -20,6 +22,10 @@ export const Skills = () => {
   const [reactHovered, setReactHovered] = React.useState(false);
   const [gitHovered, setGitHovered] = React.useState(false);
   const [githubHovered, setGitHubHovered] = React.useState(false);
+  const [nextHovered, setNextHovered] = React.useState(false);
+  const [typeScriptHovered, setTypeScriptHovered] = React.useState(false);
+  const [styledComponentsHovered, setStyledComponentsHovered] = React.useState(false);
+  
   const [data, setData] = React.useState([])
   const [loading, setLoading] = React.useState(false)
   const [error, setError] = React.useState(false)
@@ -95,7 +101,6 @@ export const Skills = () => {
               setDefault(true)
             }}><FaGitAlt /></S.Link>
 
-
           <S.Link
             onMouseOver={() => {
               setGitHubHovered(true)
@@ -105,6 +110,36 @@ export const Skills = () => {
               setGitHubHovered(false)
               setDefault(true)
             }}><FaGithub /></S.Link>
+
+          <S.Link
+            onMouseOver={() => {
+              setNextHovered(true)
+              setDefault(false)
+            }}
+            onMouseOut={() => {
+              setNextHovered(false)
+              setDefault(true)
+            }}><SiNextdotjs /></S.Link>
+
+          <S.Link
+            onMouseOver={() => {
+              setTypeScriptHovered(true)
+              setDefault(false)
+            }}
+            onMouseOut={() => {
+              setTypeScriptHovered(false)
+              setDefault(true)
+            }}><SiTypescript /></S.Link>
+
+          <S.Link
+            onMouseOver={() => {
+              setStyledComponentsHovered(true)
+              setDefault(false)
+            }}
+            onMouseOut={() => {
+              setStyledComponentsHovered(false)
+              setDefault(true)
+            }}><SiStyledcomponents /></S.Link>
         </S.SkillsIcons>
 
         <S.SkillsDescription>
@@ -115,6 +150,9 @@ export const Skills = () => {
           {reactHovered && <ReactDescription />}
           {gitHovered && <GitDescription />}
           {githubHovered && <GitHubDescription />}
+          {nextHovered && <NextDescription />}
+          {typeScriptHovered && <TypeScriptDescription />}
+          {styledComponentsHovered && <StyledComponentsDescription />}
         </S.SkillsDescription>
       </S.HardSkills>
 
