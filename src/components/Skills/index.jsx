@@ -1,171 +1,123 @@
 import React from 'react'
+import * as S from './style'
 import { FaHtml5, FaCss3Alt, FaGithub, FaGitAlt, FaReact } from 'react-icons/fa'
 import { SiJavascript, SiNextdotjs, SiStyledcomponents, SiTypescript } from 'react-icons/si'
-import { DefaultDescription } from './SkillsDescriptions/DefaultDescription'
-import { HtmlDescription } from './SkillsDescriptions/HtmlDescription'
-import { CssDescription } from './SkillsDescriptions/CssDescription'
-import { JavaScriptDescription } from './SkillsDescriptions/JavaScriptDescription'
-import { ReactDescription } from './SkillsDescriptions/ReactDescription'
-import { GitDescription } from './SkillsDescriptions/GitDescription'
-import { GitHubDescription } from './SkillsDescriptions/GitHubDescription'
-import * as S from './style'
-import { NextDescription } from './SkillsDescriptions/NextDescription'
-import { TypeScriptDescription } from './SkillsDescriptions/TypeScripDescription'
-import { StyledComponentsDescription } from './SkillsDescriptions/StyledComponentsDescription'
+import { DefaultDescription } from './DefaultDescription'
+import { SkillDescripton } from './SkillDescripton'
 
 export const Skills = () => {
-  const url = 'https://my-json-server.typicode.com/renovatt/portfolio/softskills'
-  const [isdefault, setDefault] = React.useState(true);
-  const [htmlHovered, setHtmlHovered] = React.useState(false);
-  const [cssHovered, setCssHovered] = React.useState(false);
-  const [jsHovered, setJSHovered] = React.useState(false);
-  const [reactHovered, setReactHovered] = React.useState(false);
-  const [gitHovered, setGitHovered] = React.useState(false);
-  const [githubHovered, setGitHubHovered] = React.useState(false);
-  const [nextHovered, setNextHovered] = React.useState(false);
-  const [typeScriptHovered, setTypeScriptHovered] = React.useState(false);
-  const [styledComponentsHovered, setStyledComponentsHovered] = React.useState(false);
-  
-  const [data, setData] = React.useState([])
-  const [loading, setLoading] = React.useState(false)
-  const [error, setError] = React.useState(false)
+  const softskills_url = 'https://my-json-server.typicode.com/renovatt/portfolio/softskills'
+  const skills_url = 'https://my-json-server.typicode.com/renovatt/portfolio/skills'
 
-  const getSoftSkills = async () => {
-    setLoading(true)
+  const [error, setError] = React.useState(false)
+  const [loading, setLoading] = React.useState(false)
+  const [skillsResponse, setSkillsResponse] = React.useState([])
+  const [softSkillsResponse, setSoftSkillsResponse] = React.useState([])
+
+  const [status, setStatus] = React.useState({
+    isDefault: true,
+    isHovered: false,
+    skillId: '',
+  });
+
+  const ICONS = {
+    FaHtml5: <FaHtml5 />,
+    FaCss3Alt: <FaCss3Alt />,
+    SiJavascript: <SiJavascript />,
+    SiTypescript: <SiTypescript />,
+    FaReact: <FaReact />,
+    SiNextdotjs: <SiNextdotjs />,
+    SiStyledcomponents: <SiStyledcomponents />,
+    FaGithub: <FaGithub />,
+    FaGitAlt: <FaGitAlt />,
+  };
+
+  const svgRender = (skillSvg) => {
+    return ICONS[skillSvg] || null;
+  };
+
+  const fetchData = async () => {
+    setLoading(true);
+    setError(false);
     try {
-      await fetch(url)
-        .then(res => res.json())
-        .then(json => setData(json))
-    } catch {
-      setError(true)
+      const softSkillResponse = await fetch(softskills_url);
+      const softSkillJsonResponse = await softSkillResponse.json();
+      setSoftSkillsResponse(softSkillJsonResponse);
+
+      const skillsResponse = await fetch(skills_url);
+      const skillsJsonResponse = await skillsResponse.json();
+      setSkillsResponse(skillsJsonResponse);
+
+    } catch (error) {
+      setError(true);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   React.useEffect(() => {
-    getSoftSkills()
+    fetchData()
   }, [])
+
+  const renderSkillIcon = (skill) => {
+    const { id, link, svg } = skill;
+
+    return (
+      <S.Link
+        key={id}
+        href={link}
+        target="_blank"
+        onMouseOver={() => setStatus({ ...status, isHovered: true, skillId: id, isDefault: false })}
+        onMouseOut={() => setStatus({ ...status, isHovered: false, skillId: '', isDefault: true })}
+      >
+        {svgRender(svg)}
+      </S.Link >
+    );
+  };
+
+  const renderSkillDescription = () => {
+    if (loading) return <S.Loading>Carregando..</S.Loading>;
+    if (error) return <S.Error>Algo deu errado, por favor atualize a página.</S.Error>;
+    if (!status.isHovered && status.isDefault) return <DefaultDescription />;
+
+    const skill = skillsResponse.find((skill) => skill.id === status.skillId);
+
+    if (status.isHovered && skill) {
+      return (
+        <SkillDescripton
+          key={skill.id}
+          skillName={skill.skill_name}
+          skillDescription={skill.description}
+        />
+      );
+    }
+
+    return null;
+  };
+
+  const renderSoftSkillList = () => {
+    if (loading) return <S.Loading>Carregando..</S.Loading>;
+    if (error) return <S.Error>Algo deu errado, por favor atualize a página.</S.Error>;
+
+    return softSkillsResponse.map((softskill) => (
+      <S.SoftList key={softskill.id}>{softskill.name}</S.SoftList>
+    ));
+  };
 
   return (
     <S.SkillsContainer>
       <S.HardSkills>
         <S.SkillsIcons>
-          <S.Link
-            onMouseOver={() => {
-              setHtmlHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setHtmlHovered(false)
-              setDefault(true)
-            }}><FaHtml5 /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setCssHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setCssHovered(false)
-              setDefault(true)
-            }}><FaCss3Alt /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setJSHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setJSHovered(false)
-              setDefault(true)
-            }}><SiJavascript /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setReactHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setReactHovered(false)
-              setDefault(true)
-            }}><FaReact /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setGitHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setGitHovered(false)
-              setDefault(true)
-            }}><FaGitAlt /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setGitHubHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setGitHubHovered(false)
-              setDefault(true)
-            }}><FaGithub /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setNextHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setNextHovered(false)
-              setDefault(true)
-            }}><SiNextdotjs /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setTypeScriptHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setTypeScriptHovered(false)
-              setDefault(true)
-            }}><SiTypescript /></S.Link>
-
-          <S.Link
-            onMouseOver={() => {
-              setStyledComponentsHovered(true)
-              setDefault(false)
-            }}
-            onMouseOut={() => {
-              setStyledComponentsHovered(false)
-              setDefault(true)
-            }}><SiStyledcomponents /></S.Link>
+          {skillsResponse.map((skill) => renderSkillIcon(skill))}
         </S.SkillsIcons>
 
-        <S.SkillsDescription>
-          {isdefault && <DefaultDescription />}
-          {htmlHovered && <HtmlDescription />}
-          {cssHovered && <CssDescription />}
-          {jsHovered && <JavaScriptDescription />}
-          {reactHovered && <ReactDescription />}
-          {gitHovered && <GitDescription />}
-          {githubHovered && <GitHubDescription />}
-          {nextHovered && <NextDescription />}
-          {typeScriptHovered && <TypeScriptDescription />}
-          {styledComponentsHovered && <StyledComponentsDescription />}
-        </S.SkillsDescription>
+        <S.SkillsDescription>{renderSkillDescription()}</S.SkillsDescription>
       </S.HardSkills>
 
       <S.SoftSkills>
         <S.SoftTitle>SoftSkills</S.SoftTitle>
-        <S.SoftListContainer>
-          {loading && <S.Loading>Carregando..</S.Loading>}
-          {error && <S.Error>Algo deu errado, por favor atualize a página.</S.Error>}
-          {data && !loading && data.map(softskill => (
-            <S.SoftList key={softskill.id}>{softskill.name}</S.SoftList>
-          ))}
-        </S.SoftListContainer>
+        <S.SoftListContainer>{renderSoftSkillList()}</S.SoftListContainer>
       </S.SoftSkills>
-    </S.SkillsContainer >
-  )
+    </S.SkillsContainer>
+  );
 }

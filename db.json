@@ -65,6 +65,71 @@
             "description": "Em breve, estou construindo algo."
         }
     ],
+    "skills": [
+        {
+            "id": 1,
+            "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+            "svg": "FaHtml5",
+            "skill_name": "HTML",
+            "description": "(Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web."
+        },
+        {
+            "id": 2,
+            "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+            "svg": "FaCss3Alt",
+            "skill_name": "CSS",
+            "description": "É uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML incluindo várias linguagens em XML como SVG, MathML ou XHTML. O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias."
+        },
+        {
+            "id": 3,
+            "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+            "svg": "SiJavascript",
+            "skill_name": "JavaScript",
+            "description": " É uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe Acrobat."
+        },
+        {
+            "id": 4,
+            "link": "https://react.dev/",
+            "svg": "FaReact",
+            "skill_name": "React",
+            "description": "É uma biblioteca para construção de interfaces de usuário. React não é um framework – nem mesmo é exclusivo para web. É utilizado com outras bibliotecas para renderização em certos ambientes."
+        },
+        {
+            "id": 5,
+            "link": "https://www.typescriptlang.org/",
+            "svg": "SiTypescript",
+            "skill_name": "TypeScript",
+            "description": "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem."
+        },
+        {
+            "id": 6,
+            "link": "https://nextjs.org/blog/next-13-1",
+            "svg": "SiNextdotjs",
+            "skill_name": "Next.js",
+            "description": "Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto criada por Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React."
+        },
+        {
+            "id": 7,
+            "link": "https://git-scm.com/",
+            "svg": "FaGitAlt",
+            "skill_name": "Git",
+            "description": "Git é o sistema de controle de versão open source mais usado no mundo atualmente! Ele é usado para controlar o histórico de alterações de arquivos e principalmente de projetos de desenvolvimento de software."
+        },
+        {
+            "id": 8,
+            "link": "https://github.com/",
+            "svg": "FaGithub",
+            "skill_name": "Github",
+            "description": "GitHub é uma plataforma de hospedagem de código para controle de versão e colaboração . Ele permite que você e outras pessoas trabalhem juntos em projetos de qualquer lugar."
+        },
+        {
+            "id": 9,
+            "link": "https://styled-components.com/",
+            "svg": "SiStyledcomponents",
+            "skill_name": "Styled Components",
+            "description": "Styled Components é uma biblioteca para estilizar componentes de uma aplicação web usando CSS-in-JS, ou seja, escrevendo estilos diretamente em JavaScript."
+        }
+    ],
     "softskills": [
         {
             "id": 1,

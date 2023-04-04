@@ -58,6 +58,9 @@ export const Link = styled.a`
     color: var(--text-white);
     align-items: center;
     transition: .2s;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fade .3s forwards;
 
     svg{
         height: 100px;
@@ -71,6 +74,13 @@ export const Link = styled.a`
         cursor: pointer;
         color: var(--text-enphasis-1);
         transform: scale(1.1);
+    }
+
+    @keyframes fade{
+        to{
+        opacity: 1;
+        transform: initial;
+        }
     }
 `
 
