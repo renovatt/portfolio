@@ -60,7 +60,7 @@ export const Skills = () => {
   }, [])
 
   const renderSkillIcon = (skill) => {
-    const { id, link, svg } = skill;
+    const { id, svg } = skill;
 
     return (
       <S.Link
