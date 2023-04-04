@@ -65,7 +65,6 @@ export const Skills = () => {
     return (
       <S.Link
         key={id}
-        href={link}
         target="_blank"
         onMouseOver={() => setStatus({ ...status, isHovered: true, skillId: id, isDefault: false })}
         onMouseOut={() => setStatus({ ...status, isHovered: false, skillId: '', isDefault: true })}
