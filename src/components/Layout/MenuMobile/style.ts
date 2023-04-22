@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
+import { MenuMobileStyleProps } from '../../../@types'
 
-export const MobileContainer = styled.nav`
+export const MobileContainer = styled.nav<MenuMobileStyleProps>`
     top: 0;
     left: 0;
     opacity: 0;

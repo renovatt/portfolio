@@ -4,6 +4,7 @@ import { FaHtml5, FaCss3Alt, FaGithub, FaGitAlt, FaReact } from 'react-icons/fa'
 import { SiJavascript, SiNextdotjs, SiStyledcomponents, SiTypescript } from 'react-icons/si'
 import { DefaultDescription } from './DefaultDescription'
 import { SkillDescripton } from './SkillDescripton'
+import { SkillsTypeProps, SoftskillsTypeProps, IconMapPros } from '../../@types'
 
 export const Skills = () => {
   const softskills_url = 'https://my-json-server.typicode.com/renovatt/portfolio/softskills'
@@ -11,8 +12,8 @@ export const Skills = () => {
 
   const [error, setError] = React.useState(false)
   const [loading, setLoading] = React.useState(false)
-  const [skillsResponse, setSkillsResponse] = React.useState([])
-  const [softSkillsResponse, setSoftSkillsResponse] = React.useState([])
+  const [skillsResponse, setSkillsResponse] = React.useState<SkillsTypeProps[]>([])
+  const [softSkillsResponse, setSoftSkillsResponse] = React.useState<SoftskillsTypeProps[]>([])
 
   const [status, setStatus] = React.useState({
     isDefault: true,
@@ -20,7 +21,7 @@ export const Skills = () => {
     skillId: '',
   });
 
-  const ICONS = {
+  const ICONS: IconMapPros = {
     FaHtml5: <FaHtml5 />,
     FaCss3Alt: <FaCss3Alt />,
     SiJavascript: <SiJavascript />,
@@ -32,7 +33,7 @@ export const Skills = () => {
     FaGitAlt: <FaGitAlt />,
   };
 
-  const svgRender = (skillSvg) => {
+  const svgRender = (skillSvg: string) => {
     return ICONS[skillSvg] || null;
   };
 
@@ -59,7 +60,7 @@ export const Skills = () => {
     fetchData()
   }, [])
 
-  const renderSkillIcon = (skill) => {
+  const renderSkillIcon = (skill: SkillsTypeProps) => {
     const { id, svg } = skill;
 
     return (

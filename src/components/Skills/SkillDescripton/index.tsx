@@ -1,7 +1,7 @@
-import React from 'react'
+import { SkillDescriptonTypeProps } from '../../../@types'
 import * as S from './style'
 
-export const SkillDescripton = ({ skillName, skillDescription }) => {
+export const SkillDescripton = ({ skillName, skillDescription }: SkillDescriptonTypeProps) => {
     return (
         <S.SkillsDescription>
             <S.Title>{skillName}</S.Title>

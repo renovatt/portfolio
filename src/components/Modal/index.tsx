@@ -3,11 +3,12 @@ import * as S from './style'
 import { RiCloseFill } from 'react-icons/ri'
 import { Loading } from '../Helper/Loading'
 import { Error } from '../Helper/Error'
+import { ModalTypeProps, ProjectsTypeProps } from '../../@types'
 
-export const Modal = ({ id, setModal }) => {
+export const Modal = ({ id, setModal }: ModalTypeProps) => {
 
     const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
-    const [modalData, setModalData] = React.useState([])
+    const [modalData, setModalData] = React.useState<ProjectsTypeProps[]>([])
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState(false)
 
@@ -28,23 +29,26 @@ export const Modal = ({ id, setModal }) => {
         openModal()
     }, [id])
 
-    function handleLoad({ target }) {
-        target.style.opacity = 1
+    const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {
+        event.currentTarget.style.opacity = "1";
     }
 
-    function handleCloseModal(e){
-        if(e.target === e.currentTarget){
-            setModal(null)
+    function handleCloseModal(event: React.MouseEvent<HTMLElement> | React.TouchEvent<HTMLElement>) {
+        if (event.target === event.currentTarget) {
+            setModal(false);
         }
     }
 
     return (
-        <S.ModalContainer onClick={handleCloseModal}>
+        <S.ModalContainer
+            onClick={(
+                event: React.MouseEvent<HTMLElement> |
+                    React.TouchEvent<HTMLElement>) => handleCloseModal(event)}>
             {error && <Error />}
             {loading && <Loading />}
             {id && !loading && modalData.map(project => (
                 <S.ModalContent key={project.id}>
-                    <RiCloseFill onClick={() => setModal(null)}/>
+                    <RiCloseFill onClick={() => setModal(false)} />
                     <S.BannerContainer>
                         <S.Banner banner={project.banner}>
                             <S.Shadow></S.Shadow>

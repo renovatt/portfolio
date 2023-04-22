@@ -11,7 +11,7 @@ export const Header = () => {
                 <S.NormalSpan>Will</S.NormalSpan>
                 <S.ColorSpan>Code</S.ColorSpan>
             </S.Logo>
-            <NavBar setMobileIsVisible={setMobileIsVisible} />
+            <NavBar mobileIsVisible={mobileIsVisible} setMobileIsVisible={setMobileIsVisible} />
             <MenuMobile
                 mobileIsVisible={mobileIsVisible}
                 setMobileIsVisible={setMobileIsVisible} />

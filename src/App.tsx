@@ -9,7 +9,6 @@ import { Footer } from './components/Layout/Footer';
 import { Container } from './components/Container';
 
 function App() {
-
   return (
     <>
       <GlobalStyled />

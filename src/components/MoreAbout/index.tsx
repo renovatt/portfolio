@@ -4,16 +4,16 @@ import profile from '../../assets/profile-1.jpg'
 
 export const MoreAbout = () => {
 
-    function handleLoad({ target }) {
-        target.style.opacity = 1
-      }
+    const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {
+        event.currentTarget.style.opacity = "1";
+    }
 
     return (
         <S.MoreAboutContainer>
             <S.ProfileContainer>
-                <S.ProfileImage src={profile} alt="Will-Anime" onLoad={handleLoad} />
+                <S.ProfileImage src={profile} alt={"Will-Anime"} onLoad={handleLoad} />
             </S.ProfileContainer>
-            
+
             <S.DescriptionContainer>
                 <S.Description>
                     Louco por música! Sempre estou ouvido algo para relaxar ou me concentrar, toco guitarra há alguns anos e isso é o meu maior lazer e paixão, minha banda favorita é Oficina G3. Curto games, não por opção, mas os mobiles é a minha diversão, foi nos jogos onde conheci pessoas de vários lugares do Brasil e do mundo, fiz boas amizades, e algumas delas tenho comigo até hoje. Também foi em jogos que aprendi e aprimorei meu inglês, não tenho fluência ainda, mas consigo me comunicar bem. Sempre fui um cara bem reservado, sempre fui de ajudar pessoas naquilo que podia. Estou mergulhado no mundo da tecnologia ultimamente focando no desenvolvimento front-end, estou me dedicando ao máximo a cada dia.

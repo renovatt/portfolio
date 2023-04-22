@@ -3,10 +3,11 @@ import * as S from './style'
 import { CardProject } from '../CardProject'
 import { Loading } from '../Helper/Loading'
 import { Error } from '../Helper/Error'
+import { ProjectsTypeProps } from '../../@types'
 
 export const Projects = () => {
   const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
-  const [data, setData] = React.useState([])
+  const [projects, setProjects] = React.useState<ProjectsTypeProps[]>([])
   const [loading, setLoading] = React.useState(false)
   const [error, setError] = React.useState(false)
 
@@ -15,7 +16,7 @@ export const Projects = () => {
     try {
       await fetch(url)
         .then(res => res.json())
-        .then(json => setData(json))
+        .then(json => setProjects(json))
     } catch {
       setError(true)
     } finally {
@@ -32,12 +33,16 @@ export const Projects = () => {
       {error && <Error />}
       {loading && <Loading />}
       <S.ProjectsContainer>
-        {data && data.map(banner => (
+        {projects && projects.map(banner => (
           <CardProject
             id={banner.id}
             key={banner.id}
             name={banner.name}
-            banner={banner.banner}/>
+            link={banner.link}
+            banner={banner.banner}
+            thumbnail={banner.banner}
+            description={banner.description}
+          />
         ))}
       </S.ProjectsContainer>
     </>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CardContainerStyleProps } from "../../@types";
 
 export const ModalContainer = styled.section`
     display: flex;
@@ -75,7 +76,7 @@ export const BannerContainer = styled.section`
     height: 100%;
 `
 
-export const Banner = styled.div`
+export const Banner = styled.div<CardContainerStyleProps>`
     height: 25rem;
     width: 15rem;
     margin: 0 2rem;

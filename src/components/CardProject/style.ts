@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { CardContainerStyleProps } from '../../@types'
 
-export const CardContainer = styled.section`
+export const CardContainer = styled.section<CardContainerStyleProps>`
     height: 25rem;
     width: 15rem;
     margin: 2rem;

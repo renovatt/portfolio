@@ -1,8 +1,9 @@
 import React from 'react'
 import * as S from './style'
 import { RiCloseFill } from 'react-icons/ri'
+import { MenuMobileTypeProps } from '../../../@types'
 
-export const MenuMobile = ({ mobileIsVisible, setMobileIsVisible }) => {
+export const MenuMobile = ({ mobileIsVisible, setMobileIsVisible }: MenuMobileTypeProps) => {
 
     React.useEffect(() => {
         document.body.style.overflowY = mobileIsVisible ? 'hidden' : 'auto'
