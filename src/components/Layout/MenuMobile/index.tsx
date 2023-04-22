@@ -13,7 +13,7 @@ export const MenuMobile = ({ mobileIsVisible, setMobileIsVisible }: MenuMobileTy
         <S.MobileContainer isVisible={mobileIsVisible}>
             <S.MobileList>
                 <S.MobItem onClick={() => setMobileIsVisible(false)}>
-                    <S.MobLink to='/'>Home</S.MobLink>
+                    <S.MobLink to='/'>Página Inicial</S.MobLink>
                 </S.MobItem>
                 <S.MobItem onClick={() => setMobileIsVisible(false)}>
                     <S.MobLink to='/about'>Quem sou eu</S.MobLink>
