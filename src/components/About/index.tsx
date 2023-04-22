@@ -35,10 +35,10 @@ export const About = () => {
         <S.Description>
           <S.title>Quem sou eu?</S.title>
           <S.text>
-            Sou um jovem que procura por oportunidades, busco aprimorar meus conhecimentos em tecnologia diariamente, e atualmente estou bastante focado no Frond-end.
+            Eu sou um jovem em busca de oportunidades, buscando aprimorar meus conhecimentos em tecnologia diariamente. Atualmente, estou bastante focado no desenvolvimento Front-end.
           </S.text>
           <S.text>
-            Meu primeiro contato com linguagem de programação foi em 2015, durante o curso de Técnico em Eletroeletrônica, com C++, onde ainda brinquei um pouco com Arduino, mas infelizmente não acabei seguindo nesse caminho, em novembro de 2021, decidi recomeçar nesse mundo incrível da tecnologia, me encontrei com o JavaScript e aqui estou com foco e consistência, buscando por aprendizado para alcançar meus objetivos.
+            Meu primeiro contato com linguagem de programação foi em 2015, durante o curso de Técnico em Eletroeletrônica, com C++. Lembro que ainda brinquei um pouco com Arduino, mas infelizmente não continuei seguindo nesse caminho. Em novembro de 2021, decidi recomeçar nesse mundo incrível da tecnologia, e me encontrei com o JavaScript. Desde então, estou me dedicando com foco e consistência, buscando por aprendizado para alcançar meus objetivos. Estou animado em poder expandir meu conhecimento em Front-end e, quem sabe, em outras áreas da programação também.
           </S.text>
         </S.Description>
       </S.AboutContent>
