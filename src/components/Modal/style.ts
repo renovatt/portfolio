@@ -25,6 +25,8 @@ export const ModalContent = styled.div`
     justify-content: space-between;
     height: 80vh;
     width: 80%;
+    max-width: 1200px;
+    max-height: 800px;
     opacity: 0;
     border-radius: .4rem;
     background: var(--background-secundary);
@@ -33,6 +35,7 @@ export const ModalContent = styled.div`
     
     @media(max-width: 70rem) {
         height: auto;
+        max-height: initial;
         padding: .8rem .4rem;
     }
 
@@ -151,7 +154,8 @@ export const PreviewContainer = styled.section`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: .4rem;
+    padding: 2rem;
+    max-width: 900px;
 
     @media(max-width: 70rem) {
         height: auto;

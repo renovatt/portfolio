@@ -7,8 +7,9 @@ export const AboutContainer = styled.section`
     flex-direction: column;
     background: var(--background-secundary);
     padding: 0 8rem;
-    /* height: 100vh; */
+    /* height: 90vh; */
     width: 100%;
+    max-width: var(--max-width);
     opacity: 0;
     transform: translateX(-20px);
     animation: fade .3s forwards;
@@ -77,7 +78,7 @@ export const title = styled.h1`
 
 export const text = styled.p`
     color: var(--text-description);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: justify;
 `
 

@@ -6,6 +6,7 @@ export const HomeContainer = styled.section`
   justify-content: space-around;
   height: 90vh;
   width: 100%;
+  max-width: var(--max-width);
   padding: 0 6rem;
   background: var(--background-secundary);
   opacity: 0;
@@ -63,6 +64,10 @@ export const Name = styled.h1`
   color: var(--text-white);
   font-size: 8rem;
   margin-left: 2rem;
+
+  @media(max-width: 50rem) {
+      font-size: 6rem;
+      }
 `
 export const SpanNomal = styled.span`
   color: var(--text-white);

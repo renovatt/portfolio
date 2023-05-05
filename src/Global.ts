@@ -11,13 +11,14 @@ export const GlobalStyled = createGlobalStyle`
     --text-description:#929d8d;
     --text-enphasis-1:#f9004d; 
     --text-enphasis-2:#ef0a5e;
-    --text-enphasis-3:#f61b12; 
+    --text-enphasis-3:#f61b12;
+    --max-width: 1100px
 }
 
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: 'Saira Condensed', sans-serif;
 }
 

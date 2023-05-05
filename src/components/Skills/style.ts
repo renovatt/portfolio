@@ -3,7 +3,10 @@ import styled from "styled-components";
 export const SkillsContainer = styled.div`
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    width: 100%;
+    max-width: 1400px;
+    /* height: 90vh; */
+    margin-bottom: 2rem;
     opacity: 0;
     background: var(--background-secundary);
     transform: translateX(-20px);
@@ -15,10 +18,10 @@ export const SkillsContainer = styled.div`
       }
 
     @keyframes fade{
-    to{
-      opacity: 1;
-      transform: initial;
-    }
+        to{
+            opacity: 1;
+            transform: initial;
+        }
 }
 `
 
@@ -30,8 +33,8 @@ export const HardSkills = styled.section`
     height: 100%;
 
     @media(max-width: 65rem) {
-    flex-direction: column;
-    margin: 2rem;
+        flex-direction: column;
+        margin: 2rem;
     }
 `
 
@@ -49,7 +52,7 @@ export const SkillsIcons = styled.div`
       }
 
     @media(max-width: 30rem) {
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 `
 
@@ -78,8 +81,8 @@ export const Link = styled.a`
 
     @keyframes fade{
         to{
-        opacity: 1;
-        transform: initial;
+            opacity: 1;
+            transform: initial;
         }
     }
 `
@@ -102,8 +105,8 @@ export const SkillsDescription = styled.div`
 export const SoftSkills = styled.div`
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     margin: 0 4rem;
     padding: .4rem .8rem;
     height: 100%;
@@ -116,6 +119,10 @@ export const SoftTitle = styled.h2`
 `
 
 export const SoftListContainer = styled.div`
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; */
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -129,11 +136,15 @@ export const SoftListContainer = styled.div`
       }
 
     @media(max-width: 50rem) {
-    grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @media(max-width: 40rem) {
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: 23.875rem) {
+        grid-template-columns: repeat(1, 1fr);
     }
 `
 
@@ -164,8 +175,10 @@ export const Loading = styled.p`
 
 export const Error = styled.h2`
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: .4rem;
     padding: .4rem;
-    color: var(--text-enphasis-3);`
+    /* color: var(--text-enphasis-3); */
+    color: var(--text-white);
+`

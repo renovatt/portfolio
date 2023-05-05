@@ -62,7 +62,7 @@ export const DescriptionContainer = styled.div`
     margin: .2rem;
     height: 35rem;
     width: 40%;
-    padding: 0 .8rem;
+    padding: 0 .4rem;
 
     @media(max-width: 70rem) {
         height: auto;
@@ -74,5 +74,5 @@ export const Description = styled.p`
     text-align: justify;
     color: var(--text-description);
     padding: 0 .2rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 `
