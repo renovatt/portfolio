@@ -7,9 +7,9 @@ export const CardProject = ({ id, name, banner }: ProjectsTypeProps) => {
   const [projectID, setProjectID] = React.useState('')
   const [modal, setModal] = React.useState(false)
 
-  function handleGetProjectID(e: string) {
+  function handleGetProjectID(id: string) {
     setModal(true)
-    setProjectID(e)
+    setProjectID(id)
   }
 
   const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {
