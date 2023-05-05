@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "name": "Tree",
+            "name": "Tree Finance",
             "link": "https://tree-app-renovatt.vercel.app/login",
             "banner": "../banners/tree.png",
             "thumbnail": "../thumbnails/tree.png",
@@ -19,14 +19,14 @@
         {
             "id": 3,
             "name": "Yu-Gi-Oh",
-            "link": "https://yu-gi-oh-card-info.vercel.app",
-            "banner": "../banners/yu-gi-oh.jpg",
+            "link": "https://yu-gi-oh-cards-renovatt.vercel.app",
+            "banner": "../banners/yu-gi-oh.png",
             "thumbnail": "../thumbnails/yu-gi-oh.png",
-            "description": "Este foi o meu primeiro projeto para valer! Assumo que não nada fácil, aprendi muita coisa com ele, e sinceramente fiquei muito feliz com o resultado. Ele foi construindo em JavaScript PURO, por isso tive tanto trabalho, principalmente porque foi bem no início, onde eu decidi começar a colocar em prática meus estudos, como consumo de APIs e sem saber acabei encontrando essa API que é muito grande. Foi uma grande realização."
+            "description": "Eu recriei este projeto como uma homenagem ao meu primeiro trabalho, que me ajudou a alavancar na programação. Construí uma interface ainda básica, porém mais funcional, fluída e dinâmica. Com uma versão aprimorada do meu primeiro projeto, ele é dedicado aos fãs do anime e do jogo YuGiOh, fornecendo informações detalhadas sobre todas as cartas. Dessa vez, o projeto foi construído usando Next.js e TypeScript, o que permitiu a criação de rotas dinâmicas para cada carta selecionada, campo de busca eficiente e opções para continuar buscando cartas na lista de nomes ou nas imagens."
         },
         {
             "id": 4,
-            "name": "Pokédex-React",
+            "name": "Pokédex",
             "link": "https://pokedex-snowy-seven.vercel.app",
             "banner": "../banners/pokedex.png",
             "thumbnail": "../thumbnails/pokedex.png",
@@ -57,9 +57,9 @@
             "description": "Este projeto não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa. Ele se trata de uma rede social para cachorros criada no curso de React da Origamid."
         },
         {
-            "id": 0,
+            "id": 100,
             "name": "Em breve",
-            "link": "#",
+            "link": "/",
             "banner": "../banners/default.png",
             "thumbnail": "../thumbnails/thumbnail.png",
             "description": "Em breve, estou construindo algo."
