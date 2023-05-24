@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Cute Pet",
-            "link": "schedule-petshop-system.vercel.app",
+            "link": "https://schedule-petshop-system.vercel.app",
             "banner": "../banners/cutepet.png",
             "thumbnail": "../thumbnails/cutepet.png",
             "description": "O Cute Pet é um sistema completo de agendamento de petshop, desenvolvido com a tecnologia Next.js e TypeScript. Com ele, é possível cadastrar clientes e seus pets, bem como agendar atendimentos e atualizar as informações cadastradas a qualquer momento. Com uma interface amigável e intuitiva, o Cute Pet oferece uma experiência de uso agradável e eficiente para seus usuários. Além disso, o sistema conta com um banco de dados robusto, desenvolvido com Node.js, Prisma e MongoDB, o que garante alta performance e escalabilidade."
