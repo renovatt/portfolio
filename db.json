@@ -34,6 +34,14 @@
         },
         {
             "id": 5,
+            "name": "Cute Pet API",
+            "link": "https://github.com/renovatt/petshop-system-api.git",
+            "banner": "../banners/cutepet-api.png",
+            "thumbnail": "../thumbnails/cutepet.png",
+            "description": "Essa API foi criada para permitir que os donos de petshops agendem serviços para os pets de seus clientes. Com esta API, os usuários Donos de PetShops podem realizar as seguintes ações: criar, ler, atualizar e excluir usuários, clientes, agendamentos e agendamentos cancelados."
+        },
+        {
+            "id": 6,
             "name": "Valorant",
             "link": "https://valorant-self.vercel.app",
             "banner": "../banners/valorant.png",
@@ -41,7 +49,7 @@
             "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo."
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Relógio Dinâmico",
             "link": "https://renovatt.github.io/relogio-dinamico",
             "banner": "../banners/clock.png",
@@ -49,7 +57,7 @@
             "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo."
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Dogs",
             "link": "https://dogs-weld.vercel.app",
             "banner": "../banners/dogs.png",
