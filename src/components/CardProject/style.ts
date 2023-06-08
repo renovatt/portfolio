@@ -37,6 +37,7 @@ export const ShadowContainer = styled.div`
     &:hover{
         box-shadow: 1px 1px 10px var(--text-enphasis-1);
         background-color: var(--background-shadow);
+        cursor: pointer;
     }
 `
 

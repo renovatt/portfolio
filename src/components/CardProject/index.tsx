@@ -20,7 +20,7 @@ export const CardProject = ({ id, name, banner }: ProjectsTypeProps) => {
     <>
       {modal && <Modal id={projectID} setModal={setModal} />}
       <S.CardContainer banner={banner} onLoad={handleLoad}>
-        <S.ShadowContainer>
+        <S.ShadowContainer onClick={() => handleGetProjectID(id)}>
           <S.CardName>{name}</S.CardName>
           <S.CardLink id={id} onClick={() => handleGetProjectID(id)}>Ver Detalhes</S.CardLink>
         </S.ShadowContainer>
