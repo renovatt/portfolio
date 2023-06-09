@@ -18,22 +18,6 @@
         },
         {
             "id": 3,
-            "name": "Yu-Gi-Oh",
-            "link": "https://yu-gi-oh-cards-renovatt.vercel.app",
-            "banner": "../banners/yu-gi-oh.png",
-            "thumbnail": "../thumbnails/yu-gi-oh.png",
-            "description": "Eu recriei este projeto como uma homenagem ao meu primeiro trabalho, que me ajudou a alavancar na programação. Construí uma interface ainda básica, porém mais funcional, fluída e dinâmica. Com uma versão aprimorada do meu primeiro projeto, ele é dedicado aos fãs do anime e do jogo YuGiOh, fornecendo informações detalhadas sobre todas as cartas. Dessa vez, o projeto foi construído usando Next.js e TypeScript, o que permitiu a criação de rotas dinâmicas para cada carta selecionada, campo de busca eficiente e opções para continuar buscando cartas na lista de nomes ou nas imagens."
-        },
-        {
-            "id": 4,
-            "name": "Pokédex",
-            "link": "https://pokedex-snowy-seven.vercel.app",
-            "banner": "../banners/pokedex.png",
-            "thumbnail": "../thumbnails/pokedex.png",
-            "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros."
-        },
-        {
-            "id": 5,
             "name": "Cute Pet API",
             "link": "https://github.com/renovatt/petshop-system-api.git",
             "banner": "../banners/cutepet-api.png",
@@ -41,7 +25,31 @@
             "description": "Essa API foi criada para permitir que os donos de petshops agendem serviços para os pets de seus clientes. Com esta API, os usuários Donos de PetShops podem realizar as seguintes ações: criar, ler, atualizar e excluir usuários, clientes, agendamentos e agendamentos cancelados."
         },
         {
+            "id": 4,
+            "name": "Yu-Gi-Oh",
+            "link": "https://yu-gi-oh-cards-renovatt.vercel.app",
+            "banner": "../banners/yu-gi-oh.png",
+            "thumbnail": "../thumbnails/yu-gi-oh.png",
+            "description": "Eu recriei este projeto como uma homenagem ao meu primeiro trabalho, que me ajudou a alavancar na programação. Construí uma interface ainda básica, porém mais funcional, fluída e dinâmica. Com uma versão aprimorada do meu primeiro projeto, ele é dedicado aos fãs do anime e do jogo YuGiOh, fornecendo informações detalhadas sobre todas as cartas. Dessa vez, o projeto foi construído usando Next.js e TypeScript, o que permitiu a criação de rotas dinâmicas para cada carta selecionada, campo de busca eficiente e opções para continuar buscando cartas na lista de nomes ou nas imagens."
+        },
+        {
+            "id": 5,
+            "name": "Pokédex",
+            "link": "https://pokedex-snowy-seven.vercel.app",
+            "banner": "../banners/pokedex.png",
+            "thumbnail": "../thumbnails/pokedex.png",
+            "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros."
+        },
+        {
             "id": 6,
+            "name": "Dogs",
+            "link": "https://dogs-weld.vercel.app",
+            "banner": "../banners/dogs.png",
+            "thumbnail": "../thumbnails/dogs.png",
+            "description": "Este projeto não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa. Ele se trata de uma rede social para cachorros criada no curso de React da Origamid."
+        },
+        {
+            "id": 7,
             "name": "Valorant",
             "link": "https://valorant-self.vercel.app",
             "banner": "../banners/valorant.png",
@@ -49,20 +57,12 @@
             "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo."
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Relógio Dinâmico",
             "link": "https://renovatt.github.io/relogio-dinamico",
             "banner": "../banners/clock.png",
             "thumbnail": "../thumbnails/clock.png",
             "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo."
-        },
-        {
-            "id": 8,
-            "name": "Dogs",
-            "link": "https://dogs-weld.vercel.app",
-            "banner": "../banners/dogs.png",
-            "thumbnail": "../thumbnails/dogs.png",
-            "description": "Este projeto não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa. Ele se trata de uma rede social para cachorros criada no curso de React da Origamid."
         },
         {
             "id": 100,
