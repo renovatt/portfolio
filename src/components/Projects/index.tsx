@@ -6,6 +6,8 @@ import { Error } from '../Helper/Error'
 import { ProjectsTypeProps } from '../../@types'
 
 export const Projects = () => {
+
+  // const local_url = "http://localhost:5000/projects"
   const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
   const [projects, setProjects] = React.useState<ProjectsTypeProps[]>([])
   const [loading, setLoading] = React.useState(false)
@@ -42,6 +44,7 @@ export const Projects = () => {
             banner={banner.banner}
             thumbnail={banner.banner}
             description={banner.description}
+            techs={banner.techs}
           />
         ))}
       </S.ProjectsContainer>

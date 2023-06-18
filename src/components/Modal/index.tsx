@@ -7,6 +7,7 @@ import { ModalTypeProps, ProjectsTypeProps } from '../../@types'
 
 export const Modal = ({ id, setModal }: ModalTypeProps) => {
 
+    // const local_url = "http://localhost:5000/projects"
     const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
     const [modalData, setModalData] = React.useState<ProjectsTypeProps[]>([])
     const [loading, setLoading] = React.useState(false)
@@ -60,6 +61,15 @@ export const Modal = ({ id, setModal }: ModalTypeProps) => {
                     <S.PreviewContainer>
                         <S.Thumbnail src={project.thumbnail} onLoad={handleLoad}></S.Thumbnail>
                         <S.Description>{project.description}</S.Description>
+                        <S.TechsContainer>
+                            {project.techs.links.map(tech => (
+                                <S.TechsNav key={tech.id}>
+                                    <S.TechLink href={tech.link}>
+                                        <S.TechImage onLoad={handleLoad} src={tech.svg_link} alt={tech.svg_name} />
+                                    </S.TechLink>
+                                </S.TechsNav>
+                            ))}
+                        </S.TechsContainer>
                     </S.PreviewContainer>
                 </S.ModalContent>
             ))}

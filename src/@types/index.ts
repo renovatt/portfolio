@@ -5,6 +5,18 @@ export type ProjectsTypeProps = {
     banner: string;
     thumbnail: string;
     description: string;
+    techs: LinksTypeProps;
+}
+
+export type LinksTypeProps = {
+    links: TechsTypeProps[]
+}
+
+export type TechsTypeProps = {
+    id: string;
+    svg_name: string;
+    link: string;
+    svg_link: string;
 }
 
 export type SkillsTypeProps = {

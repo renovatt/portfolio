@@ -197,3 +197,27 @@ export const Description = styled.p`
         height: 100%;
     }
 `
+export const TechsContainer = styled.section`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+`
+
+export const TechsNav = styled.nav`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const TechLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const TechImage = styled.img`
+    width: 20px;
+    height: 20px;
+    margin: .2rem;
+`
