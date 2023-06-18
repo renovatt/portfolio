@@ -6,53 +6,7 @@
             "link": "https://schedule-petshop-system.vercel.app",
             "banner": "../banners/cutepet.png",
             "thumbnail": "../thumbnails/cutepet.png",
-            "description": "O Cute Pet é um sistema completo de agendamento de petshop, desenvolvido com a tecnologia Next.js e TypeScript. Com ele, é possível cadastrar clientes e seus pets, bem como agendar atendimentos e atualizar as informações cadastradas a qualquer momento. Com uma interface amigável e intuitiva, o Cute Pet oferece uma experiência de uso agradável e eficiente para seus usuários. Além disso, o sistema conta com um banco de dados robusto, desenvolvido com Node.js, Prisma e MongoDB, o que garante alta performance e escalabilidade.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "React.js",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "Next.js",
-                        "link": "https://nextjs.org/docs",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "Typescript",
-                        "link": "https://www.typescriptlang.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-                    },
-                    {
-                        "id": 4,
-                        "svg_name": "Node.js",
-                        "link": "https://nodejs.org/en/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
-                    },
-                    {
-                        "id": 5,
-                        "svg_name": "MongoDB",
-                        "link": "https://www.mongodb.com/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
-                    },
-                    {
-                        "id": 6,
-                        "svg_name": "Prisma",
-                        "link": "https://www.prisma.io/",
-                        "svg_link": "../techs_icons/prisma.svg"
-                    },
-                    {
-                        "id": 7,
-                        "svg_name": "Styled-components",
-                        "link": "https://styled-components.com/",
-                        "svg_link": "../techs_icons/styled-components.png"
-                    }
-                ]
-            }
+            "description": "O Cute Pet é um sistema completo de agendamento de petshop, desenvolvido com a tecnologia Next.js e TypeScript. Com ele, é possível cadastrar clientes e seus pets, bem como agendar atendimentos e atualizar as informações cadastradas a qualquer momento. Com uma interface amigável e intuitiva, o Cute Pet oferece uma experiência de uso agradável e eficiente para seus usuários. Além disso, o sistema conta com um banco de dados robusto, desenvolvido com Node.js, Prisma e MongoDB, o que garante alta performance e escalabilidade."
         },
         {
             "id": 2,
@@ -60,35 +14,7 @@
             "link": "https://tree-app-renovatt.vercel.app/login",
             "banner": "../banners/tree.png",
             "thumbnail": "../thumbnails/tree.png",
-            "description": "Desenvolvi um aplicativo de finanças para atender minhas necessidades pessoais. Ele permite registrar despesas de forma segura e acessí-las de qualquer lugar, além de oferecer filtragem por mês e ano, visualização de faturamentos dos últimos 6 meses, campos para anotações e lista de prioridades.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "React.js",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "Typescript",
-                        "link": "https://www.typescriptlang.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "Firebase",
-                        "link": "https://firebase.google.com/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg"
-                    },
-                    {
-                        "id": 4,
-                        "svg_name": "Styled-components",
-                        "link": "https://styled-components.com/",
-                        "svg_link": "../techs_icons/styled-components.png"
-                    }
-                ]
-            }
+            "description": "Desenvolvi um aplicativo de finanças para atender minhas necessidades pessoais. Ele permite registrar despesas de forma segura e acessí-las de qualquer lugar, além de oferecer filtragem por mês e ano, visualização de faturamentos dos últimos 6 meses, campos para anotações e lista de prioridades."
         },
         {
             "id": 3,
@@ -96,41 +22,7 @@
             "link": "https://github.com/renovatt/petshop-system-api.git",
             "banner": "../banners/cutepet-api.png",
             "thumbnail": "../thumbnails/cutepet.png",
-            "description": "Essa API foi criada para permitir que os donos de petshops agendem serviços para os pets de seus clientes. Com esta API, os usuários Donos de PetShops podem realizar as seguintes ações: criar, ler, atualizar e excluir usuários, clientes, agendamentos e agendamentos cancelados.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "Typescript",
-                        "link": "https://www.typescriptlang.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "Node.js",
-                        "link": "https://nodejs.org/en/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "MongoDB",
-                        "link": "https://www.mongodb.com/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
-                    },
-                    {
-                        "id": 4,
-                        "svg_name": "Prisma",
-                        "link": "https://www.prisma.io/",
-                        "svg_link": "../techs_icons/prisma.svg"
-                    },
-                    {
-                        "id": 5,
-                        "svg_name": "Express.js",
-                        "link": "https://expressjs.com/pt-br/",
-                        "svg_link": "../techs_icons/express.svg"
-                    }
-                ]
-            }
+            "description": "Essa API foi criada para permitir que os donos de petshops agendem serviços para os pets de seus clientes. Com esta API, os usuários Donos de PetShops podem realizar as seguintes ações: criar, ler, atualizar e excluir usuários, clientes, agendamentos e agendamentos cancelados."
         },
         {
             "id": 4,
@@ -138,35 +30,7 @@
             "link": "https://yu-gi-oh-cards-renovatt.vercel.app",
             "banner": "../banners/yu-gi-oh.png",
             "thumbnail": "../thumbnails/yu-gi-oh.png",
-            "description": "Eu recriei este projeto como uma homenagem ao meu primeiro trabalho, que me ajudou a alavancar na programação. Construí uma interface ainda básica, porém mais funcional, fluída e dinâmica. Com uma versão aprimorada do meu primeiro projeto, ele é dedicado aos fãs do anime e do jogo YuGiOh, fornecendo informações detalhadas sobre todas as cartas. Dessa vez, o projeto foi construído usando Next.js e TypeScript, o que permitiu a criação de rotas dinâmicas para cada carta selecionada, campo de busca eficiente e opções para continuar buscando cartas na lista de nomes ou nas imagens.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "React.js",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "Next.js",
-                        "link": "https://nextjs.org/docs",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "Typescript",
-                        "link": "https://www.typescriptlang.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-                    },
-                    {
-                        "id": 4,
-                        "svg_name": "Styled-components",
-                        "link": "https://styled-components.com/",
-                        "svg_link": "../techs_icons/styled-components.png"
-                    }
-                ]
-            }
+            "description": "Eu recriei este projeto como uma homenagem ao meu primeiro trabalho, que me ajudou a alavancar na programação. Construí uma interface ainda básica, porém mais funcional, fluída e dinâmica. Com uma versão aprimorada do meu primeiro projeto, ele é dedicado aos fãs do anime e do jogo YuGiOh, fornecendo informações detalhadas sobre todas as cartas. Dessa vez, o projeto foi construído usando Next.js e TypeScript, o que permitiu a criação de rotas dinâmicas para cada carta selecionada, campo de busca eficiente e opções para continuar buscando cartas na lista de nomes ou nas imagens."
         },
         {
             "id": 5,
@@ -174,29 +38,7 @@
             "link": "https://pokedex-snowy-seven.vercel.app",
             "banner": "../banners/pokedex.png",
             "thumbnail": "../thumbnails/pokedex.png",
-            "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "React.js",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "JavaScript",
-                        "link": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "Styled-components",
-                        "link": "https://styled-components.com/",
-                        "svg_link": "../techs_icons/styled-components.png"
-                    }
-                ]
-            }
+            "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros."
         },
         {
             "id": 6,
@@ -204,29 +46,7 @@
             "link": "https://dogs-weld.vercel.app",
             "banner": "../banners/dogs.png",
             "thumbnail": "../thumbnails/dogs.png",
-            "description": "Este projeto não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa. Ele se trata de uma rede social para cachorros criada no curso de React da Origamid.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "React.js",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "JavaScript",
-                        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "CSS-modules",
-                        "link": "https://github.com/css-modules/css-modules",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                    }
-                ]
-            }
+            "description": "Este projeto não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa. Ele se trata de uma rede social para cachorros criada no curso de React da Origamid."
         },
         {
             "id": 7,
@@ -234,29 +54,7 @@
             "link": "https://valorant-self.vercel.app",
             "banner": "../banners/valorant.png",
             "thumbnail": "../thumbnails/valorant.png",
-            "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "HTML",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "CSS",
-                        "link": "https://www.w3.org/TR/CSS/#css",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "JavaScript",
-                        "link": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                    }
-                ]
-            }
+            "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo."
         },
         {
             "id": 8,
@@ -264,29 +62,7 @@
             "link": "https://renovatt.github.io/relogio-dinamico",
             "banner": "../banners/clock.png",
             "thumbnail": "../thumbnails/clock.png",
-            "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "HTML",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "CSS",
-                        "link": "https://www.w3.org/TR/CSS/#css",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "JavaScript",
-                        "link": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                    }
-                ]
-            }
+            "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo."
         },
         {
             "id": 100,
@@ -294,29 +70,7 @@
             "link": "/",
             "banner": "../banners/default.png",
             "thumbnail": "../thumbnails/thumbnail.png",
-            "description": "Em breve, estou construindo algo.",
-            "techs": {
-                "links": [
-                    {
-                        "id": 1,
-                        "svg_name": "HTML",
-                        "link": "https://reactjs.org/",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-                    },
-                    {
-                        "id": 2,
-                        "svg_name": "CSS",
-                        "link": "https://www.w3.org/TR/CSS/#css",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                    },
-                    {
-                        "id": 3,
-                        "svg_name": "JavaScript",
-                        "link": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
-                        "svg_link": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                    }
-                ]
-            }
+            "description": "Em breve, estou construindo algo."
         }
     ],
     "skills": [

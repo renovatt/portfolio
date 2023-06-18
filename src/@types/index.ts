@@ -5,7 +5,7 @@ export type ProjectsTypeProps = {
     banner: string;
     thumbnail: string;
     description: string;
-    techs: LinksTypeProps;
+    techs?: LinksTypeProps;
 }
 
 export type LinksTypeProps = {

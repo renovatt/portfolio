@@ -62,7 +62,7 @@ export const Modal = ({ id, setModal }: ModalTypeProps) => {
                         <S.Thumbnail src={project.thumbnail} onLoad={handleLoad}></S.Thumbnail>
                         <S.Description>{project.description}</S.Description>
                         <S.TechsContainer>
-                            {project.techs.links.map(tech => (
+                            {project?.techs?.links.map(tech => (
                                 <S.TechsNav key={tech.id}>
                                     <S.TechLink href={tech.link}>
                                         <S.TechImage onLoad={handleLoad} src={tech.svg_link} alt={tech.svg_name} />
