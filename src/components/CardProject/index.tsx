@@ -3,7 +3,7 @@ import { Modal } from '../Modal'
 import * as S from './style'
 import { ProjectsTypeProps } from '../../@types'
 
-export const CardProject = ({ id, name, banner }: ProjectsTypeProps) => {
+export const CardProject = ({ id, project_name, banner_url }: ProjectsTypeProps) => {
   const [projectID, setProjectID] = React.useState('')
   const [modal, setModal] = React.useState(false)
 
@@ -19,9 +19,9 @@ export const CardProject = ({ id, name, banner }: ProjectsTypeProps) => {
   return (
     <>
       {modal && <Modal id={projectID} setModal={setModal} />}
-      <S.CardContainer banner={banner} onLoad={handleLoad}>
+      <S.CardContainer banner_url={banner_url} onLoad={handleLoad}>
         <S.ShadowContainer onClick={() => handleGetProjectID(id)}>
-          <S.CardName>{name}</S.CardName>
+          <S.CardName>{project_name}</S.CardName>
           <S.CardLink id={id} onClick={() => handleGetProjectID(id)}>Ver Detalhes</S.CardLink>
         </S.ShadowContainer>
       </S.CardContainer>

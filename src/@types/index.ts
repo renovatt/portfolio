@@ -1,11 +1,12 @@
 export type ProjectsTypeProps = {
     id: string;
-    name: string;
-    link: string;
-    banner: string;
-    thumbnail: string;
+    order: number;
+    project_name: string;
+    deploy_url: string;
+    banner_url: string;
+    thumbnail_url: string;
     description: string;
-    techs?: LinksTypeProps;
+    techs: LinksTypeProps;
 }
 
 export type LinksTypeProps = {
@@ -19,6 +20,11 @@ export type TechsTypeProps = {
     svg_link: string;
 }
 
+export type SoftskillsTypeProps = {
+    id: string;
+    softskill_name: string;
+}
+
 export type SkillsTypeProps = {
     id: string;
     svg: string;
@@ -27,13 +33,8 @@ export type SkillsTypeProps = {
     description: string;
 }
 
-export type SoftskillsTypeProps = {
-    id: string;
-    name: string;
-}
-
 export type CardContainerStyleProps = {
-    banner: string;
+    banner_url: string;
 }
 
 export type ContainerTypeProps = {

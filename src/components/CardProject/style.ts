@@ -10,7 +10,7 @@ export const CardContainer = styled.section<CardContainerStyleProps>`
     background: var(--background-third);
     background-size: cover;
     background-position: center center;
-    background-image: url(${props => props.banner});
+    background-image: url(${props => props.banner_url});
 
     opacity: 0;
     transform: translateX(-20px);

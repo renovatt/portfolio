@@ -4,11 +4,12 @@ import { CardProject } from '../CardProject'
 import { Loading } from '../Helper/Loading'
 import { Error } from '../Helper/Error'
 import { ProjectsTypeProps } from '../../@types'
+import { BASE_URL } from '../../services'
 
 export const Projects = () => {
-
   // const local_url = "http://localhost:5000/projects"
-  const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
+  // const url = 'https://my-json-server.typicode.com/renovatt/portfolio/projects'
+
   const [projects, setProjects] = React.useState<ProjectsTypeProps[]>([])
   const [loading, setLoading] = React.useState(false)
   const [error, setError] = React.useState(false)
@@ -16,9 +17,9 @@ export const Projects = () => {
   const getBanner = async () => {
     setLoading(true)
     try {
-      await fetch(url)
+      await fetch(`${BASE_URL}/projects`)
         .then(res => res.json())
-        .then(json => setProjects(json))
+        .then(json => setProjects(json.projects))
     } catch {
       setError(true)
     } finally {
@@ -35,18 +36,11 @@ export const Projects = () => {
       {error && <Error />}
       {loading && <Loading />}
       <S.ProjectsContainer>
-        {projects && projects.map(banner => (
-          <CardProject
-            id={banner.id}
-            key={banner.id}
-            name={banner.name}
-            link={banner.link}
-            banner={banner.banner}
-            thumbnail={banner.banner}
-            description={banner.description}
-            techs={banner.techs}
-          />
-        ))}
+        {projects && projects
+          .sort((a, b) => a.order - b.order)
+          .map(project => (
+            <CardProject key={project.id} {...project} />
+          ))}
       </S.ProjectsContainer>
     </>
 

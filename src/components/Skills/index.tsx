@@ -5,10 +5,11 @@ import { SiJavascript, SiNextdotjs, SiStyledcomponents, SiTypescript } from 'rea
 import { DefaultDescription } from './DefaultDescription'
 import { SkillDescripton } from './SkillDescripton'
 import { SkillsTypeProps, SoftskillsTypeProps, IconMapPros } from '../../@types'
+import { BASE_URL } from '../../services'
 
 export const Skills = () => {
-  const softskills_url = 'https://my-json-server.typicode.com/renovatt/portfolio/softskills'
-  const skills_url = 'https://my-json-server.typicode.com/renovatt/portfolio/skills'
+  // const skills_url = 'https://my-json-server.typicode.com/renovatt/portfolio/skills'
+  // const softskills_url = 'https://my-json-server.typicode.com/renovatt/portfolio/softskills'
 
   const [error, setError] = React.useState(false)
   const [loading, setLoading] = React.useState(false)
@@ -41,13 +42,13 @@ export const Skills = () => {
     setLoading(true);
     setError(false);
     try {
-      const softSkillResponse = await fetch(softskills_url);
+      const softSkillResponse = await fetch(`${BASE_URL}/softskills`);
       const softSkillJsonResponse = await softSkillResponse.json();
-      setSoftSkillsResponse(softSkillJsonResponse);
+      setSoftSkillsResponse(softSkillJsonResponse.softskills);
 
-      const skillsResponse = await fetch(skills_url);
+      const skillsResponse = await fetch(`${BASE_URL}/skills`);
       const skillsJsonResponse = await skillsResponse.json();
-      setSkillsResponse(skillsJsonResponse);
+      setSkillsResponse(skillsJsonResponse.skills);
 
     } catch (error) {
       setError(true);
@@ -99,7 +100,7 @@ export const Skills = () => {
     if (error) return <S.Error>Algo deu errado, por favor atualize a página.</S.Error>;
 
     return softSkillsResponse.map((softskill) => (
-      <S.SoftList key={softskill.id}>{softskill.name}</S.SoftList>
+      <S.SoftList key={softskill.id}>{softskill.softskill_name}</S.SoftList>
     ));
   };
 
