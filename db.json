@@ -1,76 +1,355 @@
 {
     "projects": [
         {
-            "id": 1,
-            "name": "Cute Pet",
-            "link": "https://schedule-petshop-system.vercel.app",
-            "banner": "../banners/cutepet.png",
-            "thumbnail": "../thumbnails/cutepet.png",
-            "description": "O Cute Pet é um sistema completo de agendamento de petshop, desenvolvido com a tecnologia Next.js e TypeScript. Com ele, é possível cadastrar clientes e seus pets, bem como agendar atendimentos e atualizar as informações cadastradas a qualquer momento. Com uma interface amigável e intuitiva, o Cute Pet oferece uma experiência de uso agradável e eficiente para seus usuários. Além disso, o sistema conta com um banco de dados robusto, desenvolvido com Node.js, Prisma e MongoDB, o que garante alta performance e escalabilidade."
+            "id": "6497a57728551eedd65ec263",
+            "project_name": "CutePet",
+            "deploy_url": "https://schedule-petshop-system.vercel.app",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/cutepet.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/cutepet.png",
+            "description": "O Cute Pet é um sistema completo de agendamento de petshop, desenvolvido com a tecnologia Next.js e TypeScript. Com ele, é possível cadastrar clientes e seus pets, bem como agendar atendimentos e atualizar as informações cadastradas a qualquer momento. Com uma interface amigável e intuitiva, o Cute Pet oferece uma experiência de uso agradável e eficiente para seus usuários. Além disso, o sistema conta com um banco de dados robusto, desenvolvido com Node.js, Prisma e MongoDB, o que garante alta performance e escalabilidade.",
+            "order": 1,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "React.js",
+                        "link": "https://reactjs.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=react"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "Next.js",
+                        "link": "https://nextjs.org/docs",
+                        "svg_link": "https://skillicons.dev/icons?i=next"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "Typescript",
+                        "link": "https://www.typescriptlang.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=ts"
+                    },
+                    {
+                        "id": "4",
+                        "svg_name": "Node.js",
+                        "link": "https://nodejs.org/en/",
+                        "svg_link": "https://skillicons.dev/icons?i=nodejs"
+                    },
+                    {
+                        "id": "5",
+                        "svg_name": "MongoDB",
+                        "link": "https://www.mongodb.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=mongodb"
+                    },
+                    {
+                        "id": "6",
+                        "svg_name": "Prisma",
+                        "link": "https://www.prisma.io/",
+                        "svg_link": "https://skillicons.dev/icons?i=prisma"
+                    },
+                    {
+                        "id": "7",
+                        "svg_name": "Styled-components",
+                        "link": "https://styled-components.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=styledcomponents"
+                    }
+                ]
+            }
         },
         {
-            "id": 2,
-            "name": "Tree Finance",
-            "link": "https://tree-app-renovatt.vercel.app/login",
-            "banner": "../banners/tree.png",
-            "thumbnail": "../thumbnails/tree.png",
-            "description": "Desenvolvi um aplicativo de finanças para atender minhas necessidades pessoais. Ele permite registrar despesas de forma segura e acessí-las de qualquer lugar, além de oferecer filtragem por mês e ano, visualização de faturamentos dos últimos 6 meses, campos para anotações e lista de prioridades."
+            "id": "6497a9cd28551eedd65ec275",
+            "project_name": "Tree Finance",
+            "deploy_url": "https://tree-app-renovatt.vercel.app",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/tree.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/tree.png",
+            "description": "Desenvolvi um aplicativo de finanças para atender minhas necessidades pessoais. Ele permite registrar despesas de forma segura e acessí-las de qualquer lugar, além de oferecer filtragem por mês e ano, visualização de faturamentos dos últimos 6 meses, campos para anotações e lista de prioridades.",
+            "order": 2,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "React.js",
+                        "link": "https://reactjs.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=react"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "Typescript",
+                        "link": "https://www.typescriptlang.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=ts"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "Firebase",
+                        "link": "https://firebase.google.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=firebase"
+                    },
+                    {
+                        "id": "4",
+                        "svg_name": "Styled-components",
+                        "link": "https://styled-components.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=styledcomponents"
+                    }
+                ]
+            }
         },
         {
-            "id": 3,
-            "name": "Cute Pet API",
-            "link": "https://github.com/renovatt/petshop-system-api.git",
-            "banner": "../banners/cutepet-api.png",
-            "thumbnail": "../thumbnails/cutepet.png",
-            "description": "Essa API foi criada para permitir que os donos de petshops agendem serviços para os pets de seus clientes. Com esta API, os usuários Donos de PetShops podem realizar as seguintes ações: criar, ler, atualizar e excluir usuários, clientes, agendamentos e agendamentos cancelados."
+            "id": "6497abae28551eedd65ec278",
+            "project_name": "API - CutePet",
+            "deploy_url": "https://github.com/renovatt/petshop-system-api.git",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/cutepet-api.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/cutepet.png",
+            "description": "Essa API foi criada para permitir que os donos de petshops agendem serviços para os pets de seus clientes. Com esta API, os usuários Donos de PetShops podem realizar as seguintes ações: criar, ler, atualizar e excluir usuários, clientes, agendamentos e agendamentos cancelados.",
+            "order": 3,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "Node.js",
+                        "link": "https://nodejs.org/en/",
+                        "svg_link": "https://skillicons.dev/icons?i=nodejs"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "Typescript",
+                        "link": "https://www.typescriptlang.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=ts"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "MongoDB",
+                        "link": "https://firebase.mongodb.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=mongodb"
+                    },
+                    {
+                        "id": "4",
+                        "svg_name": "Prisma",
+                        "link": "https://www.prisma.io/",
+                        "svg_link": "https://skillicons.dev/icons?i=prisma"
+                    },
+                    {
+                        "id": "5",
+                        "svg_name": "Express.js",
+                        "link": "https://expressjs.com/pt-br/",
+                        "svg_link": "https://skillicons.dev/icons?i=express"
+                    }
+                ]
+            }
         },
         {
-            "id": 4,
-            "name": "Yu-Gi-Oh",
-            "link": "https://yu-gi-oh-cards-renovatt.vercel.app",
-            "banner": "../banners/yu-gi-oh.png",
-            "thumbnail": "../thumbnails/yu-gi-oh.png",
-            "description": "Eu recriei este projeto como uma homenagem ao meu primeiro trabalho, que me ajudou a alavancar na programação. Construí uma interface ainda básica, porém mais funcional, fluída e dinâmica. Com uma versão aprimorada do meu primeiro projeto, ele é dedicado aos fãs do anime e do jogo YuGiOh, fornecendo informações detalhadas sobre todas as cartas. Dessa vez, o projeto foi construído usando Next.js e TypeScript, o que permitiu a criação de rotas dinâmicas para cada carta selecionada, campo de busca eficiente e opções para continuar buscando cartas na lista de nomes ou nas imagens."
+            "id": "64981ac1f4b2458850d52cec",
+            "project_name": "Valorant",
+            "deploy_url": "https://valorant-renovatt.vercel.app",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/valorant.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/valorant.png",
+            "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo.",
+            "order": 7,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "HTML",
+                        "link": "https://reactjs.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=html"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "CSS",
+                        "link": "https://www.w3.org/TR/CSS/#css/",
+                        "svg_link": "https://skillicons.dev/icons?i=css"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "Javascript",
+                        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/",
+                        "svg_link": "https://skillicons.dev/icons?i=js"
+                    }
+                ]
+            }
         },
         {
-            "id": 5,
-            "name": "Pokédex",
-            "link": "https://pokedex-snowy-seven.vercel.app",
-            "banner": "../banners/pokedex.png",
-            "thumbnail": "../thumbnails/pokedex.png",
-            "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros."
+            "id": "64981bbbf4b2458850d52ced",
+            "project_name": "Relógio Dinâmico",
+            "deploy_url": "https://renovatt.github.io/relogio-dinamico",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/clock.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/clock.png",
+            "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo.",
+            "order": 8,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "HTML",
+                        "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/",
+                        "svg_link": "https://skillicons.dev/icons?i=html"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "CSS",
+                        "link": "https://www.w3.org/TR/CSS/#css/",
+                        "svg_link": "https://skillicons.dev/icons?i=css"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "Javascript",
+                        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/",
+                        "svg_link": "https://skillicons.dev/icons?i=js"
+                    }
+                ]
+            }
         },
         {
-            "id": 6,
-            "name": "Dogs",
-            "link": "https://dogs-weld.vercel.app",
-            "banner": "../banners/dogs.png",
-            "thumbnail": "../thumbnails/dogs.png",
-            "description": "Este projeto não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa. Ele se trata de uma rede social para cachorros criada no curso de React da Origamid."
+            "id": "64981cbff4b2458850d52cee",
+            "project_name": "Em breve",
+            "deploy_url": "https://portfolio-renovatt.vercel.app",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/default.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/thumbnail.png",
+            "description": "Em breve, estou construindo algo.",
+            "order": 100,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "React.js",
+                        "link": "https://reactjs.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=react"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "Next.js",
+                        "link": "https://nextjs.org/docs",
+                        "svg_link": "https://skillicons.dev/icons?i=next"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "Typescript",
+                        "link": "https://www.typescriptlang.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=ts"
+                    },
+                    {
+                        "id": "4",
+                        "svg_name": "Node.js",
+                        "link": "https://nodejs.org/en/",
+                        "svg_link": "https://skillicons.dev/icons?i=nodejs"
+                    },
+                    {
+                        "id": "5",
+                        "svg_name": "MongoDB",
+                        "link": "https://www.mongodb.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=mongodb"
+                    },
+                    {
+                        "id": "6",
+                        "svg_name": "Prisma",
+                        "link": "https://www.prisma.io/",
+                        "svg_link": "https://skillicons.dev/icons?i=prisma"
+                    },
+                    {
+                        "id": "7",
+                        "svg_name": "Styled-components",
+                        "link": "https://styled-components.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=styledcomponents"
+                    }
+                ]
+            }
         },
         {
-            "id": 7,
-            "name": "Valorant",
-            "link": "https://valorant-self.vercel.app",
-            "banner": "../banners/valorant.png",
-            "thumbnail": "../thumbnails/valorant.png",
-            "description": "Tive a ideia de consumir a API de um dos jogos mais famosos, estou renderizando algumas informações sobre o game, personagens com suas descrições, incluindo vozes e vídeos das habilidades, apresentações de todas as armas, suas especificações e os mapas presentes no jogo. Um quase completo guia do jogo."
+            "id": "6498393b0562490bcc1597fc",
+            "project_name": "Yu-Gi-Oh",
+            "deploy_url": "https://yu-gi-oh-cards-renovatt.vercel.app",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/yu-gi-oh.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/yu-gi-oh.png",
+            "description": "Eu recriei este projeto como uma homenagem ao meu primeiro trabalho, que me ajudou a alavancar na programação. Construí uma interface ainda básica, porém mais funcional, fluída e dinâmica. Com uma versão aprimorada do meu primeiro projeto, ele é dedicado aos fãs do anime e do jogo YuGiOh, fornecendo informações detalhadas sobre todas as cartas. Dessa vez, o projeto foi construído usando Next.js e TypeScript, o que permitiu a criação de rotas dinâmicas para cada carta selecionada, campo de busca eficiente e opções para continuar buscando cartas na lista de nomes ou nas imagens.",
+            "order": 4,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "React.js",
+                        "link": "https://reactjs.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=react"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "Next.js",
+                        "link": "https://nextjs.org/docs",
+                        "svg_link": "https://skillicons.dev/icons?i=next"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "Typescript",
+                        "link": "https://www.typescriptlang.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=ts"
+                    },
+                    {
+                        "id": "4",
+                        "svg_name": "Styled-components",
+                        "link": "https://styled-components.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=styledcomponents"
+                    }
+                ]
+            }
         },
         {
-            "id": 8,
-            "name": "Relógio Dinâmico",
-            "link": "https://renovatt.github.io/relogio-dinamico",
-            "banner": "../banners/clock.png",
-            "thumbnail": "../thumbnails/clock.png",
-            "description": "No início fiquei fazendo vários pequenos projetos, e este foi um deles, poderia ser mais atraente, mas como foi bem no começo, foi o que consegui criar naquele momento. A ideia era replicar um relógio que segue o dia a dia de uma pessoa, acordando, indo ao trabalho, horário de almoço, voltando para casa, lazer e dormindo."
+            "id": "64985174d2c85f02386a1f63",
+            "project_name": "Pokédex",
+            "deploy_url": "https://pokedex-renovatt.vercel.app",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/pokedex.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/pokedex.png",
+            "description": "Finalmente cheguei ao React! E claro como todo e bom programador iniciante, criei a minha própria Pokedex. Já tinha criado antes com JavaScript puro, mas ficou bem simples, neste aqui tentei deixar bem mais atraente, com mecanismo de buscas e tratamentos de erros.",
+            "order": 5,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "React.js",
+                        "link": "https://reactjs.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=react"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "Typescript",
+                        "link": "https://www.typescriptlang.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=ts"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "Styled-components",
+                        "link": "https://styled-components.com/",
+                        "svg_link": "https://skillicons.dev/icons?i=styledcomponents"
+                    }
+                ]
+            }
         },
         {
-            "id": 100,
-            "name": "Em breve",
-            "link": "/",
-            "banner": "../banners/default.png",
-            "thumbnail": "../thumbnails/thumbnail.png",
-            "description": "Em breve, estou construindo algo."
+            "id": "649851e1d2c85f02386a1f64",
+            "project_name": "Dogs",
+            "deploy_url": "https://dogs-renovatt.vercel.app",
+            "banner_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/banners/dogs.png",
+            "thumbnail_url": "https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/dogs.png",
+            "description": "Este projeto não foi algo criado por mim do zero como meus outros projetos, mas criei por estudo, aprendi bastante coisa. Ele se trata de uma rede social para cachorros criada no curso de React da Origamid.",
+            "order": 6,
+            "techs": {
+                "links": [
+                    {
+                        "id": "1",
+                        "svg_name": "React.js",
+                        "link": "https://reactjs.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=react"
+                    },
+                    {
+                        "id": "2",
+                        "svg_name": "Typescript",
+                        "link": "https://www.typescriptlang.org/",
+                        "svg_link": "https://skillicons.dev/icons?i=ts"
+                    },
+                    {
+                        "id": "3",
+                        "svg_name": "CSS-modules",
+                        "link": "https://github.com/css-modules/css-modules/",
+                        "svg_link": "https://skillicons.dev/icons?i=css"
+                    }
+                ]
+            }
         }
     ],
     "skills": [
