@@ -35,10 +35,12 @@ export const About = () => {
         <S.Description>
           <S.title>Quem sou eu?</S.title>
           <S.text>
-            Eu sou um jovem em busca de oportunidades, buscando aprimorar meus conhecimentos em tecnologia diariamente. Atualmente, estou bastante focado no desenvolvimento Front-end.
+            Sou um desenvolvedor Front-end com habilidades para criar aplicações web modernas e responsivas. Tenho uma mentalidade de aprendizado constante, sempre atualizando minhas habilidades para acompanhar as tendências tecnológicas. Além disso, sou uma pessoa colaborativa e estou sempre disposto a trabalhar em equipe para alcançar metas comuns. Busco constantemente novas oportunidades para crescer profissionalmente e contribuir para o sucesso de projetos e equipes.
           </S.text>
           <S.text>
-            Meu primeiro contato com linguagem de programação foi em 2015, durante o curso de Técnico em Eletroeletrônica, com C++. Lembro que ainda brinquei um pouco com Arduino, mas infelizmente não continuei seguindo nesse caminho. Em novembro de 2021, decidi recomeçar nesse mundo incrível da tecnologia, e me encontrei com o JavaScript. Desde então, estou me dedicando com foco e consistência, buscando por aprendizado para alcançar meus objetivos. Estou animado em poder expandir meu conhecimento em Front-end e, quem sabe, em outras áreas da programação também.
+            Estou disponível e ansioso para resolver problemas e oferecer assistência sempre que necessário.
+            Atualmente, estou procurando ativamente uma posição em que possa utilizar minhas habilidades para impactar positivamente o mundo.
+            Estou comprometido em aprimorar constantemente minhas habilidades e conhecimentos para me manter atualizado no campo da tecnologia. Estou confiante de que posso contribuir de forma significativa para o sucesso de projetos e equipes, e estou entusiasmado em explorar novas oportunidades que possam surgir.
           </S.text>
         </S.Description>
       </S.AboutContent>
