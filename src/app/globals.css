@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-mobile-one: #2b161cef;
+  --background-mobile-two: #111211F2;
+
+  --background-white:#ffffff; 
+  --background-primary:#f9004d; 
+  --background-secundary:#191919; 
+  --background-third:#101010; 
+  --background-shadow:#00000041; 
+  --background-black:#000000; 
+  --background-modal-shadow:#000000CC; 
+
+  --text-white:#ffffff; 
+  --text-description:#929d8d;
+  --text-primary:#f9004d; 
+  --text-secondary:#ef0a5e;
+  --text-third:#f61b12;
+
+  --border-primary:#f9004d; 
+
+  --max-width: 1100px
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 3px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--background-primary);
+}
+
+h1, h2, h3, h4, p{
+  margin: 0;
+  padding: 0;
+}
+
+ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+html{
+  @media(max-width:1080px){
+      font-size:93.75%;
+  }
+
+  @media(max-width:720px){
+      font-size:87.5%;
+  }
+
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+  background: var(--background-secundary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
