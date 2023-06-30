@@ -23,8 +23,8 @@ const SkillsIcons = (props: SkillsIconsComponentProps) => {
                     <figure className='w-24 h-24'>
                         <img
                             className='w-full h-full object-cover'
-                            src={props.skill.link}
-                            alt={props.skill.link}
+                            src={props.skill.svg_link}
+                            alt={props.skill.skill_name}
                         />
                     </figure>
                 </span>

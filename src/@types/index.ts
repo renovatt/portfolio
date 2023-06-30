@@ -59,9 +59,8 @@ export type SoftskillsTypeProps = {
 
 export type SkillsTypeProps = {
     id: string;
-    svg: string;
-    link: string;
     skill_name: string;
+    svg_link: string;
     description: string;
 }
 
