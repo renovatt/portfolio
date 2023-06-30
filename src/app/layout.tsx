@@ -17,9 +17,35 @@ const chakra_Petch = Chakra_Petch({
   display: 'swap'
 })
 
+const APP_NAME = "WillCode";
+const APP_DESCRIPTION = "Wildemberg Renovato portfolio";
+
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Wildemberg Renovato portfolio',
+  title: APP_NAME,
+  applicationName: APP_NAME,
+  description: APP_DESCRIPTION,
+  generator: 'Next.js',
+  manifest: "/manifest.json",
+  keywords: ["renovatt", "wildemberg", "WillCode"],
+  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
+  authors: [{ name: 'renovatt' }, { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt/' }],
+  viewport: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
+
+  openGraph: {
+    type: "website",
+    url: "https://portfolio-renovatt.vercel.app/",
+    title: APP_NAME,
+    description: APP_DESCRIPTION,
+    siteName: APP_NAME,
+    images: [{
+      url: "https://portfolio-renovatt.vercel.app/web-1.png",
+    }],
+  },
+
+  icons: [
+    { rel: "apple-touch-icon", url: "/icon-192x192.png" },
+    { rel: "icon", url: "/favicon.ico" },
+  ],
 }
 
 export default function RootLayout({
