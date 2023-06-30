@@ -3,7 +3,8 @@ import {
     APIProjectResponse,
     APIProjectsResponse,
     APISkillsResponse,
-    APISoftskillsResponse
+    APISoftskillsResponse,
+    ContactProps
 } from "@/@types";
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
@@ -80,5 +81,27 @@ export const getProfile = async (): Promise<APIProfileResponse> => {
         }
     } catch (error) {
         return { error: 'An error occurred' };
+    }
+}
+
+export const sendMessageContact = async (data: ContactProps) => {
+    try {
+        const res = await fetch('/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+
+        const json = await res.json()
+
+        if (res.ok) {
+            return { response: json }
+        } else {
+            throw new Error(json.status)
+        }
+    } catch (error) {
+        return { error: 'Aconteceu algum erro!' };
     }
 }

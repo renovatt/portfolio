@@ -1,3 +1,5 @@
+import { z } from "zod";
+import { contactSchema } from "@/zod";
 import { StaticImageData } from "next/image";
 
 type SkillsResponse = {
@@ -34,6 +36,8 @@ type TechsTypeProps = {
 type LinksTypeProps = {
     links: TechsTypeProps[]
 }
+
+export type ContactProps = z.infer<typeof contactSchema>
 
 export type APISkillsResponse = SkillsResponse | ErrorResponseProps;
 export type APISoftskillsResponse = SoftskillsResponse | ErrorResponseProps;

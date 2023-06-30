@@ -4,6 +4,7 @@ import { Saira_Condensed, Chakra_Petch } from 'next/font/google'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Container } from '@/components/Container'
+import { ToastifyProvider } from '@/components/ToastifyProvider'
 
 const saira_Condensed = Saira_Condensed({
   subsets: ['latin'],
@@ -56,11 +57,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={chakra_Petch.className}>
-        <Header />
-        <Container>
-          {children}
-        </Container>
-        <Footer />
+        <ToastifyProvider>
+          <Header />
+          <Container>
+            {children}
+          </Container>
+          <Footer />
+        </ToastifyProvider>
       </body>
     </html>
   )
