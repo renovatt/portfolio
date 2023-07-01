@@ -1,5 +1,5 @@
-import Form from "@/components/Form"
 import { Metadata } from "next"
+import Form from "@/components/Form"
 
 export const metadata: Metadata = {
     title: 'WillCode | Contato',

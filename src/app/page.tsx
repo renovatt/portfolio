@@ -3,7 +3,7 @@ import { Home } from '@/components/Home';
 
 export const metadata: Metadata = {
   title: 'WillCode',
-  description: 'Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills. Conheça como suas habilidades técnicas e competências interpessoais podem contribuir para o seu sucesso.',
+  description: 'Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills.',
 };
 
 export default function Page() {

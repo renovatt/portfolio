@@ -19,7 +19,7 @@ const chakra_Petch = Chakra_Petch({
 })
 
 const APP_NAME = "WillCode";
-const APP_DESCRIPTION = "Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills. Conheça como suas habilidades técnicas e competências interpessoais podem contribuir para o seu sucesso.";
+const APP_DESCRIPTION = "Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills.";
 
 export const metadata: Metadata = {
   title: APP_NAME,
