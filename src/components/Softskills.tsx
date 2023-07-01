@@ -13,7 +13,7 @@ const Softskills = (props: SoftskillComponentProps) => {
 
     return (
         <h4
-            className='text-center text-white bg-black hover:text-textPrimary hover:bg-white font-bold transition-all m-2 p-2'
+            className='text-center text-textDescription m-1 font-bold transition-all md:p-2 p-1 py-2'
             key={props.softskill.id}
         >
             {props.softskill.softskill_name}
