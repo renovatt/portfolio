@@ -19,7 +19,7 @@ const chakra_Petch = Chakra_Petch({
 })
 
 const APP_NAME = "WillCode";
-const APP_DESCRIPTION = "Wildemberg Renovato portfolio";
+const APP_DESCRIPTION = "Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills. Conheça como suas habilidades técnicas e competências interpessoais podem contribuir para o seu sucesso.";
 
 export const metadata: Metadata = {
   title: APP_NAME,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: APP_DESCRIPTION,
   generator: 'Next.js',
   manifest: "/manifest.json",
-  keywords: ["renovatt", "wildemberg", "WillCode"],
+  keywords: ["renovatt", "Wildemberg", "Wildemberg Renovato", "WillCode"],
   themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
   authors: [{ name: 'renovatt' }, { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt/' }],
   viewport: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",

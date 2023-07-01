@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { SkillsWithSoftskills } from "@/components/SkillsWithSoftskills";
 
 export const metadata: Metadata = {
-    title: 'Portfolio | Skills & Softskills',
-    description: 'Wildemberg Renovato portfolio',
+    title: 'WillCode | Skills & Softskills',
+    description: 'Conheça as habilidades técnicas e competências interpessoais de Wildemberg Renovato de Lima no WillCode. De programação e desenvolvimento web a comunicação e trabalho em equipe, prepare-se para descobrir como essas habilidades podem agregar valor aos projetos.',
 }
 
 export default function SkillsAndSoftskills() {
