@@ -1,68 +1,77 @@
 <div align='center'>
-<div>
-    <img src="https://img.shields.io/github/repo-size/renovatt/portfolio">
-    <img src="https://img.shields.io/github/languages/top/renovatt/portfolio">
-    <img src="https://img.shields.io/github/last-commit/renovatt/portfolio">
-</div>
-</div>
-
-#
-
-<div align='center'>
-<h1>Meu Portfolio <br> <br>
-<img src="./public/logo.png" width="50px"></h1>
+<img src="./public/icon-512x512.png" width="50px"></h1>
+<br/> <br/>
+<h1>WillCode</h1> 
 </div>
 
 ## Descrição
 
-[Ver Projeto](https://portfolio-renovatt.vercel.app/)
 
-#### Dei uma repaginada no meu portfolio depois que conheci o React, para mim, é uma grande realização. Consegui deixar mais dinâmico e atraente, estou usando `Json-Server` (Uma API Fake) para reduzir a quantidade de códigos, agora posso apenas acrescentar meus projetos no `db.json` e os cards vão ser criados automaticamente. 
+### Refatorei o meu portfolio utilizando Next.js 13. Agora, todos os dados presentes no portfolio são buscados de uma [API](https://github.com/renovatt/portfolio-api.git) externa que desenvolvi exclusivamente para este projeto. Essa abordagem torna o portfolio mais dinâmico, eliminando a necessidade de atualizações manuais dos projetos e habilidades diretamente no portfolio. Além da refatoração, realizei melhorias na estrutura dos componentes e implementei novas features, incluindo uma rota de contatos. Agora, qualquer pessoa pode me enviar uma mensagem ou entrar em contato por meio de diferentes opções disponíveis. Essas mudanças visam proporcionar uma experiência mais interativa e eficiente para os visitantes do portfolio.
+
+[Ver Projeto](https://portfolio-renovatt.vercel.app/)
 
 #
 
 ## Layout mobile
 ![Mobile 1](./public/mobile-1.png)
+![Mobile 2](./public/mobile-2.png)
 
 ## Layout web
-![Web 1](./public/web-1.png) ![Web 2](./public/web-2.png) ![Web 3](./public/web-3.png) ![Web 4](./public/web-4.png)
+![Web 1](./public/web-1.png) 
+![Web 2](./public/web-2.png)
+![Web 3](./public/web-3.png)
+![Web 4](./public/web-4.png)
+![Web 5](./public/web-5.png)
+![Web 6](./public/web-6.png)
 
 <br>
 
-# Tecnologias
+## 🛠️ Tecnologias
 
-<ul>
-    <li style="list-style: none;">
-    <a href="https://create-react-app.dev/" target="_blank">ReactJS</a></li>
-    <li style="list-style: none;">
-    <a href="https://reactrouter.com/" target="_blank">React Router</a></li>
-    <li style="list-style: none;">
-    <a href="https://www.npmjs.com/package/json-server" target="_blank">Json-Server</a></li>
-    <li style="list-style: none;">
-    <a href="https://styled-components.com/" target="_blank">Styled-Components</a></li>
-</ul>
+💻 **Front-end**
+- [Next.js 13.4](https://nextjs.org)
+- [Typescript](https://www.typescriptlang.org)
+
+📚 **Bibliotecas**
+- [zod](https://zod.dev/)
+- [next-pwa](https://www.npmjs.com/package/next-pwa)
+- [react-hook-form](https://react-hook-form.com/)
+- [react-toastify](https://www.npmjs.com/package/react-toastify)
+- [react-icons](https://react-icons.github.io/react-icons/)
+
+🎨 **Estilização**
+- [tailwindcss](https://tailwindcss.com/docs/installation)
+
+🔋 **Versionamento e Deploy**
+- [Git](https://git-scm.com)
+- [Vercel](https://vercel.com/)
 
 <br>
 
-# ℹ️ Como usar
+⚙️ **Configuranções e Instalações**
 
-    Clone esse repositório
+Clone do Projeto
+
     $ git clone https://github.com/renovatt/portfolio.git
 
-    Instalar dependências
+Instalando as dependências
+
     $ npm install
 
-    Inicie o projeto
-    $ npm start
+Iniciando o projeto
+
+    $ npm run dev
 
 <br>
 
-# Como contribuir?
+**Como contribuir?**
 
-#### Você pode dar suporte me seguindo aqui no GitHub, dando uma estrela no projeto ou criar uma conexão comigo no Linkedin, fazendo parte da minha Networking e curtir o meu projeto.
+- Você pode dar suporte me seguindo aqui no GitHub
+- Dando uma estrela no projeto
+- Criar uma conexão comigo no linkedin fazendo parte da minha networking e curtir o meu projeto.
 
 <br>
 
-# Autor
-
-### Criado por <a href="https://www.linkedin.com/in/renovatt/" target="_blank">*Wildemberg Renovato de Lima*</a>
+**Autor**
+[Wildemberg Renovato de Lima](https://www.linkedin.com/in/renovatt/)
