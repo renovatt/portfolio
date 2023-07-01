@@ -126,3 +126,9 @@ export type ButtonComponentProps = {
     href?: string;
     onClick?: (id: string) => void;
 }
+
+export type RouteLinksProps = {
+    text: string;
+    href: string;
+    onClick?: () => void;
+}

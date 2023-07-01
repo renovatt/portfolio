@@ -1,54 +1,44 @@
-import Link from 'next/link'
 import { RiMenu3Line } from 'react-icons/ri'
 import { MenuMobileTypeProps } from '@/@types'
+import { RouteLinks } from './RouteLinks'
 
 export const Navbar = ({ openModal }: MenuMobileTypeProps) => {
     return (
         <nav className='flex items-center justify-between'>
             <ul className='md:flex md:items-center md:justify-between hidden'>
                 <li className='p-2 m-2'>
-                    <Link
-                        className='text-white font-bold text-xl transition-all ease-in hover:text-textPrimary'
+                    <RouteLinks
                         href='/'
-                    >
-                        Página Inicial
-                    </Link>
+                        text='Página inicial'
+                    />
                 </li>
 
                 <li className='p-2 m-2'>
-                    <Link
-                        className='text-white font-bold text-xl transition-all ease-in hover:text-textPrimary'
+                    <RouteLinks
                         href='/views/profile'
-                    >
-                        Quem sou eu
-                    </Link>
+                        text='Quem sou eu'
+                    />
                 </li>
 
                 <li className='p-2 m-2'>
-                    <Link
-                        className='text-white font-bold text-xl transition-all ease-in hover:text-textPrimary'
+                    <RouteLinks
                         href='/views/projects'
-                    >
-                        Projetos
-                    </Link>
+                        text='Projetos'
+                    />
                 </li>
 
                 <li className='p-2 m-2'>
-                    <Link
-                        className='text-white font-bold text-xl transition-all ease-in hover:text-textPrimary'
+                    <RouteLinks
                         href='/views/skills_softskills'
-                    >
-                        HardSkills & SoftSkills
-                    </Link>
+                        text='HardSkills & SoftSkills'
+                    />
                 </li>
 
                 <li className='p-2 m-2'>
-                    <Link
-                        className='text-white font-bold text-xl transition-all ease-in hover:text-textPrimary'
+                    <RouteLinks
                         href='/views/contact'
-                    >
-                        Contato
-                    </Link>
+                        text='Contato'
+                    />
                 </li>
             </ul>
 
