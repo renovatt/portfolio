@@ -85,7 +85,17 @@ module.exports = {
             right: '0',
             left: 'unset'
           }
-        }
+        },
+        zoom: {
+          'from': {
+            opacity: '0',
+            transform: 'scale(0.9)',
+          },
+          'to': {
+            opacity: '1',
+            transform: 'scale(1)',
+          },
+        },
       },
       animation: {
         mobileActive: 'mobileActive .5s ease-in',
@@ -94,6 +104,7 @@ module.exports = {
         fly: 'fly 2s alternate infinite',
         load: 'load .5s ease-in-out infinite',
         fade: 'fade 1s forwards',
+        zoom: 'zoom 1s forwards',
       }
     },
   },
