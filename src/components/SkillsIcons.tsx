@@ -3,6 +3,11 @@ import SpinerLoader from './Helper/SpinerLoader';
 import IconsError from './Helper/IconsError';
 
 const SkillsIcons = (props: SkillsIconsComponentProps) => {
+    const handleLoadSvg = (event: React.SyntheticEvent<HTMLObjectElement>): void => {
+        const objectElement = event.currentTarget as HTMLObjectElement;
+        objectElement.style.opacity = "1";
+    };
+
     if (props.loading) {
         return <SpinerLoader />
     }
@@ -21,11 +26,12 @@ const SkillsIcons = (props: SkillsIconsComponentProps) => {
             <aside className='flex items-center justify-center'>
                 <span className='cursor-pointer p-2 text-white hover:text-textPrimary transition-all ease-in-out hover:scale-110'>
                     <figure className='w-24 h-24'>
-                        <img
-                            className='w-full h-full object-cover'
-                            src={props.skill.svg_link}
-                            alt={props.skill.skill_name}
-                        />
+                        <object
+                            className="w-full h-full object-cover"
+                            type="image/svg+xml"
+                            data={props.skill.svg_link}
+                            onLoad={handleLoadSvg}>
+                        </object>
                     </figure>
                 </span>
             </aside>

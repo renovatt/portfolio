@@ -44,6 +44,11 @@ export const Modal = ({ id, closeModal, toggleModal }: ModalTypeProps) => {
         event.currentTarget.style.opacity = "1";
     }
 
+    const handleLoadSvg = (event: React.SyntheticEvent<HTMLObjectElement>): void => {
+        const objectElement = event.currentTarget as HTMLObjectElement;
+        objectElement.style.opacity = "1";
+    };
+
     function handleCloseModal(
         event: React.MouseEvent<HTMLElement> |
             React.TouchEvent<HTMLElement>
@@ -124,11 +129,12 @@ export const Modal = ({ id, closeModal, toggleModal }: ModalTypeProps) => {
                                         target='_blank'
                                     >
                                         <figure className='w-6 h-6 m-1'>
-                                            <img className='opacity-0 w-full h-full object-cover'
-                                                onLoad={handleLoad}
-                                                src={tech.svg_link}
-                                                alt={tech.svg_name}
-                                            />
+                                            <object
+                                                className="opacity-0 w-full h-full object-cover"
+                                                type="image/svg+xml"
+                                                data={tech.svg_link}
+                                                onLoad={handleLoadSvg}>
+                                            </object>
                                         </figure>
                                     </Link>
                                 </nav>
