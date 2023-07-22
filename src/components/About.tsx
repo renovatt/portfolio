@@ -30,10 +30,10 @@ export const About = () => {
 
           {profile && profile.map(profile => (
             <article key={profile.id}>
-              <p className='text-textDescription text-xl text-justify'>
+              <p className='text-textDescription text-xl text-justify animate-fade'>
                 {profile.description_1}
               </p>
-              <p className='text-textDescription text-xl text-justify'>
+              <p className='text-textDescription text-xl text-justify animate-fade'>
                 {profile.description_2}
               </p>
             </article>

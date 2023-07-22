@@ -37,7 +37,7 @@ export const CardProject = (props: ProjectsTypeProps) => {
       )}
 
       <section
-        className='h-96 w-56 min-w-[15rem] rounded-lg bg-backgroundThird bg-cover bg-center m-4 cursor-pointer'
+        className='h-96 w-56 min-w-[15rem] rounded-lg bg-backgroundThird bg-cover bg-center m-4 cursor-pointer animate-fade'
         style={{ backgroundImage: `url(${props.banner_url})` }}
         onLoad={handleLoad}
       >

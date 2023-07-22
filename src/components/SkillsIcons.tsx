@@ -24,10 +24,10 @@ const SkillsIcons = (props: SkillsIconsComponentProps) => {
             onMouseOut={props.onMouseOut}
         >
             <aside className='flex items-center justify-center'>
-                <span className='cursor-pointer p-2 text-white hover:text-textPrimary transition-all ease-in-out hover:scale-110'>
-                    <figure className='w-24 h-24'>
+                <span className='p-2 text-white hover:text-textPrimary transition-all ease-in-out hover:scale-110'>
+                    <figure className='w-24 h-24 cursor-pointer'>
                         <object
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover animate-fade"
                             type="image/svg+xml"
                             data={props.skill.svg_link}
                             onLoad={handleLoadSvg}>
