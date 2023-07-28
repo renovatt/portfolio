@@ -9,11 +9,14 @@ import { contactSchema } from '@/zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { ErrorFormMessage } from './ErrorFormMessage'
 import { sendMessageContact } from '@/services'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaSpinner } from 'react-icons/fa'
 import { BiLogoGmail } from 'react-icons/bi'
 import TextArea from './TextArea'
+import { useState } from 'react'
 
 const ContactForm = () => {
+    const [loading, setLoading] = useState(false)
+
     const methods = useForm<ContactProps>({
         mode: 'all',
         reValidateMode: 'onChange',
@@ -21,13 +24,22 @@ const ContactForm = () => {
     })
 
     const handleMessage = async (data: ContactProps) => {
-        const { response, error } = await sendMessageContact(data)
+        setLoading(true)
 
-        if (!response) {
-            toast.error(error)
+        try {
+            const { response, error } = await sendMessageContact(data);
+
+            if (!response) {
+                toast.error(error);
+            }
+
+            toast.success(response.message);
+            methods.reset();
+            setLoading(false)
+
+        } catch (error) {
+            toast.error('Algum erro desconhecido aconteceu.');
         }
-        toast.success(response.message)
-        methods.reset()
     }
 
     return (
@@ -89,12 +101,19 @@ const ContactForm = () => {
                     <TextArea />
                     <ErrorFormMessage field='message' />
 
-                    <input
-                        className='flex-1 rounded shadow-sm px-3 py-2 outline-none transition-all ease-in cursor-pointer bg-backgroundPrimary text-white hover:font-bold hover:bg-white hover:text-textPrimary h-20 mt-4 max-h-10'
-                        placeholder='Seu nome'
-                        type="submit"
-                        value='Enviar mensagem'
-                    />
+                    {loading ? (
+                        <button type="button" className="flex justify-center items-center rounded shadow-sm px-3 py-2 outline-none transition-all ease-in bg-backgroundPrimary cursor-progress text-white h-20 mt-4 max-h-10" disabled>
+                            <FaSpinner className='animate-spin h-5 w-5 mr-3' />
+                            Enviando...
+                        </button>
+                    ) : (
+                        <input
+                            className='flex-1 rounded shadow-sm px-3 py-2 outline-none transition-all ease-in cursor-pointer bg-backgroundPrimary text-white hover:font-bold hover:bg-white hover:text-textPrimary h-20 mt-4 max-h-10'
+                            placeholder='Seu nome'
+                            type="submit"
+                            value='Enviar mensagem'
+                        />
+                    )}
                 </form>
             </section>
         </FormProvider>
