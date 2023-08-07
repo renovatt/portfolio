@@ -1,7 +1,6 @@
 import { SkillsTypeProps } from '@/@types'
 
-export const SkillDescription = (props: SkillsTypeProps) => {
-
+const SkillDescription = (props: SkillsTypeProps) => {
     return (
         <section className='flex items-start flex-col justify-center bg-backgroundThird w-full min-h-[10rem] p-8 animate-fade transition-all'>
             <h2 className='text-textPrimary font-bold text-xl'>{props.skill_name}</h2>
@@ -9,3 +8,5 @@ export const SkillDescription = (props: SkillsTypeProps) => {
         </section>
     )
 }
+
+export default SkillDescription;

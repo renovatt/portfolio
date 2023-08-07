@@ -1,7 +1,7 @@
 'use client'
 
-import SmallError from './Helper/SmallError'
-import SmallLoader from './Helper/SmallLoader'
+import SmallError from './helpers/SmallError'
+import SmallLoader from './helpers/SmallLoader'
 import { SoftskillsResponse } from '@/@types'
 import { useSoftskillsQuery } from '@/hooks/useSoftskillsQuery'
 

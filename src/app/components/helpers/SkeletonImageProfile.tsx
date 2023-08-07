@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import { ImageProps } from '@/@types'
 
-export const SkeletonImageProfile = ({ src, alt, className }: ImageProps) => {
+const SkeletonImageProfile = ({ src, alt, className }: ImageProps) => {
   const [sketelon, setSkeleton] = React.useState(true)
 
   const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {
@@ -27,3 +27,5 @@ export const SkeletonImageProfile = ({ src, alt, className }: ImageProps) => {
     </figure>
   )
 }
+
+export default SkeletonImageProfile;

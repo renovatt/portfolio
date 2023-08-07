@@ -1,4 +1,4 @@
-export default function SkeletonModal() {
+const SkeletonModal = () => {
     return (
         <div className='bg-backgroundSecundary shadow rounded-lg p-4 max-w-6xl max-h-[initial] md:max-h-[800px] w-[80%] mx-auto md:mt-0 mt-[35rem] md:mb-0 mb-10 relaive'>
             <div className='animate-pulse flex space-x-4'>
@@ -27,3 +27,5 @@ export default function SkeletonModal() {
         </div>
     )
 }
+
+export default SkeletonModal;

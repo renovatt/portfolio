@@ -1,12 +1,12 @@
 'use client'
 
 import React from "react"
-import { Modal } from './Modal'
-import { ProjectsTypeProps } from "@/@types"
+import Modal from './Modal'
 import Button from "./Button"
+import { ProjectsTypeProps } from "@/@types"
 import { useToggle } from "@/hooks/useToggle"
 
-export const CardProject = (props: ProjectsTypeProps) => {
+const CardProject = (props: ProjectsTypeProps) => {
   const [IdProject, setIdProject] = React.useState('')
 
   const {
@@ -57,3 +57,5 @@ export const CardProject = (props: ProjectsTypeProps) => {
     </>
   )
 }
+
+export default CardProject;

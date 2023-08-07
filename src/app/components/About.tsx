@@ -1,13 +1,13 @@
 'use client'
 
+import profileImage from '@/assets/about.png'
+import SmallError from './helpers/SmallError'
+import SmallLoader from './helpers/SmallLoader'
+import SkeletonImageProfile from './helpers/SkeletonImageProfile'
 import { ProfileResponse } from '@/@types'
-import SmallError from './Helper/SmallError'
-import SmallLoader from './Helper/SmallLoader'
-import profileImage from '../assets/about.png'
 import { useProfileQuery } from '@/hooks/useProfileQuery'
-import { SkeletonImageProfile } from './Helper/SkeletonImageProfile'
 
-export const About = () => {
+const About = () => {
 
   const {
     data,
@@ -47,3 +47,5 @@ export const About = () => {
     </section>
   )
 }
+
+export default About;

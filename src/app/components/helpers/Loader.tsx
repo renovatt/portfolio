@@ -1,4 +1,4 @@
-export const Loader = () => {
+const Loader = () => {
     return (
         <section className='flex items-center justify-center flex-col h-[90vh] w-full py-0 px-24 bg-transparent'>
             <h2 className='text-xl text-white mb-4 font-bold text-center'>Carregando..</h2>
@@ -8,3 +8,5 @@ export const Loader = () => {
         </section>
     )
 }
+
+export default Loader;

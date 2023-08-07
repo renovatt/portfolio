@@ -2,17 +2,17 @@
 
 import Input from './Input'
 import Link from 'next/link'
-import { FormProvider, useForm } from 'react-hook-form'
-import { toast } from 'react-toastify'
-import { ContactProps } from '@/@types'
-import { contactSchema } from '@/zod'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { ErrorFormMessage } from './ErrorFormMessage'
-import { sendMessageContact } from '@/services'
-import { FaGithub, FaLinkedin, FaSpinner } from 'react-icons/fa'
-import { BiLogoGmail } from 'react-icons/bi'
 import TextArea from './TextArea'
+import ErrorFormMessage from './ErrorFormMessage'
 import { useState } from 'react'
+import { BiLogoGmail } from 'react-icons/bi'
+import { toast } from 'react-toastify'
+import { contactSchema } from '@/zod'
+import { ContactProps } from '@/@types'
+import { sendMessageContact } from '@/services'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { FaGithub, FaLinkedin, FaSpinner } from 'react-icons/fa'
+import { FormProvider, useForm } from 'react-hook-form'
 
 const ContactForm = () => {
     const [loading, setLoading] = useState(false)

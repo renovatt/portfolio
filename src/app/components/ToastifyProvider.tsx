@@ -7,7 +7,7 @@ export type ToastifyProviderProps = {
     children: React.ReactNode;
 }
 
-export const ToastifyProvider = ({ children }: ToastifyProviderProps) => {
+const ToastifyProvider = ({ children }: ToastifyProviderProps) => {
     return (
         <>
             <ToastContainer />
@@ -15,3 +15,5 @@ export const ToastifyProvider = ({ children }: ToastifyProviderProps) => {
         </>
     )
 }
+
+export default ToastifyProvider;

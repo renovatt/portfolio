@@ -4,10 +4,10 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Button from './Button'
+import Loader from './helpers/Loader'
 import { RiCloseFill } from 'react-icons/ri'
-import SkeletonModal from './Helper/SkeletonModal'
-import { NotFoundPage } from './Helper/NotFoundPage'
-import { Loader } from './Helper/Loader'
+import NotFoundPage from './helpers/NotFoundPage'
+import SkeletonModal from './helpers/SkeletonModal'
 import { getProjectsById } from '@/services'
 import { ModalTypeProps, ProjectsTypeProps } from '@/@types'
 
@@ -33,7 +33,7 @@ export const initialValue: ProjectsTypeProps = {
     }
 }
 
-export const Modal = ({ id, closeModal, toggleModal }: ModalTypeProps) => {
+const Modal = ({ id, closeModal, toggleModal }: ModalTypeProps) => {
     const [error, setError] = React.useState(false)
     const [loading, setLoading] = React.useState(false)
     const [project, setProject] = React.useState<ProjectsTypeProps>(initialValue)
@@ -168,3 +168,5 @@ export const Modal = ({ id, closeModal, toggleModal }: ModalTypeProps) => {
         </section>
     )
 }
+
+export default Modal;

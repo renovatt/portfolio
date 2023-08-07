@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { ProjectsMap } from "@/components/ProjectsMap";
+import ProjectsMap from "@/app/components/ProjectsMap";
 
 export const metadata: Metadata = {
     title: 'WillCode | Projetos',
@@ -7,7 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function Projects() {
-    return (
-        <ProjectsMap />
-    )
+    return <ProjectsMap />
 }

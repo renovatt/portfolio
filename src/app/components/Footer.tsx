@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
-export const Footer = () => {
+const Footer = () => {
     const date = new Date();
     const currentYear = date.getFullYear();
 
@@ -32,3 +32,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+export default Footer

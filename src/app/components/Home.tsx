@@ -1,10 +1,10 @@
 'use client'
 
 import React from 'react'
-import logo from '../assets/logo.png'
-import { SkeletonImageProfile } from './Helper/SkeletonImageProfile';
+import logo from '@/assets/logo.png'
+import SkeletonImageProfile from './helpers/SkeletonImageProfile';
 
-export const Home = () => {
+const Home = () => {
   const [index, setIndex] = React.useState(0);
   const [textEffect, setText] = React.useState('');
 
@@ -35,3 +35,5 @@ export const Home = () => {
     </section>
   )
 }
+
+export default Home;

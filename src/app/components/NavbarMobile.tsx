@@ -1,11 +1,11 @@
 'use client'
 
 import React from 'react'
+import RouteLinks from './RouteLinks'
 import { RiCloseFill } from 'react-icons/ri'
 import { MenuMobileTypeProps } from '@/@types'
-import { RouteLinks } from './RouteLinks'
 
-export const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
+const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
     React.useEffect(() => {
         document.body.style.overflowY = modal ? 'hidden' : 'auto'
     }, [modal])
@@ -65,3 +65,5 @@ export const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
         </>
     )
 }
+
+export default NavbarMobile;

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { About } from "@/components/About";
+import About from "@/app/components/About";
 
 export const metadata: Metadata = {
     title: 'WillCode | Sobre mim',
@@ -7,7 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function Profile() {
-    return (
-        <About />
-    )
+    return <About />
 }

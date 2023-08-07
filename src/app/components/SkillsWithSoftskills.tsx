@@ -1,8 +1,8 @@
-import SkillsIcons from '@/components/SkillsIcons';
-import Softskills from '@/components/Softskills';
-import SkillsDescriptions from '@/components/SkillsDescriptions';
+import Softskills from "./Softskills";
+import SkillsIcons from "./SkillsIcons";
+import SkillsDescriptions from "./SkillsDescriptions";
 
-export const SkillsWithSoftskills = () => {
+const SkillsWithSoftskills = () => {
   return (
     <section className='flex justify-around flex-col h-auto md:w-full mb-16 mb:mb-8 max-w-[1400px] animate-fade transition-all'>
       <section className='flex items-center justify-between m-8 md:my-8 h-full flex-col md:flex-row'>
@@ -23,3 +23,5 @@ export const SkillsWithSoftskills = () => {
     </section>
   );
 };
+
+export default SkillsWithSoftskills;

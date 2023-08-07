@@ -1,12 +1,12 @@
 'use client'
 
 import useStatusStore from '@/store'
+import SmallError from './helpers/SmallError'
+import SmallLoader from './helpers/SmallLoader'
+import SkillDescription from './SkillDescription'
+import SkillDefaultDescription from './SkillDefaultDescription'
 import { SkillsResponse } from '@/@types'
-import SmallError from './Helper/SmallError'
-import SmallLoader from './Helper/SmallLoader'
 import { useSkillQuery } from '@/hooks/useSkillQuery'
-import { SkillDescription } from './SkillDescription'
-import { SkillDefaultDescription } from './SkillDefaultDescription'
 
 const SkillsDescriptions = () => {
 

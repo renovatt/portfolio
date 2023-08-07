@@ -2,11 +2,11 @@
 
 import React from 'react'
 import Link from 'next/link';
-import { Navbar } from './Navbar';
-import { NavbarMobile } from './NavbarMobile';
+import Navbar from './Navbar';
+import NavbarMobile from './NavbarMobile';
 import { useToggle } from '@/hooks/useToggle';
 
-export const Header = () => {
+const Header = () => {
     const {
         modal,
         openModal,
@@ -32,3 +32,5 @@ export const Header = () => {
         </header>
     )
 }
+
+export default Header;

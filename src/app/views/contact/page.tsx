@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import ContactForm from "@/components/ContactForm"
+import ContactForm from "@/app/components/ContactForm"
 
 export const metadata: Metadata = {
     title: 'WillCode | Contato',
@@ -7,7 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function Contact() {
-    return (
-        <ContactForm />
-    )
+    return <ContactForm />
 }

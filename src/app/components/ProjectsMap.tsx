@@ -1,12 +1,12 @@
 'use client'
 
-import { Loader } from './Helper/Loader'
-import { CardProject } from './CardProject'
+import Loader from './helpers/Loader'
+import CardProject from './CardProject'
+import NotFoundPage from './helpers/NotFoundPage'
 import { ProjectsResponse } from '@/@types'
-import { NotFoundPage } from './Helper/NotFoundPage'
 import { useProjectsQuery } from '@/hooks/useProjectsQuery'
 
-export const ProjectsMap = () => {
+const ProjectsMap = () => {
 
   const {
     data,
@@ -29,3 +29,5 @@ export const ProjectsMap = () => {
     </section>
   )
 }
+
+export default ProjectsMap;

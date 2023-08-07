@@ -2,8 +2,8 @@
 
 import useStatusStore from '@/store';
 import { SkillsResponse } from '@/@types';
-import IconsError from './Helper/IconsError';
-import SpinerLoader from './Helper/SpinerLoader';
+import IconsError from './helpers/IconsError';
+import SpinerLoader from './helpers/SpinerLoader';
 import { useSkillQuery } from '@/hooks/useSkillQuery';
 
 const SkillsIcons = () => {

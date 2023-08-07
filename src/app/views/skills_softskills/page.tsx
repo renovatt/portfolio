@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { SkillsWithSoftskills } from "@/components/SkillsWithSoftskills";
+import SkillsWithSoftskills from "@/app/components/SkillsWithSoftskills";
 
 export const metadata: Metadata = {
     title: 'WillCode | Skills & Softskills',
@@ -7,7 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function SkillsAndSoftskills() {
-    return (
-        <SkillsWithSoftskills />
-    )
+    return <SkillsWithSoftskills />
 }

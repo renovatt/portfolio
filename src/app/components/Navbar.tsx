@@ -1,8 +1,8 @@
+import RouteLinks from './RouteLinks'
 import { RiMenu3Line } from 'react-icons/ri'
 import { MenuMobileTypeProps } from '@/@types'
-import { RouteLinks } from './RouteLinks'
 
-export const Navbar = ({ openModal }: MenuMobileTypeProps) => {
+const Navbar = ({ openModal }: MenuMobileTypeProps) => {
     return (
         <nav className='flex items-center justify-between'>
             <ul className='md:flex md:items-center md:justify-between hidden'>
@@ -49,3 +49,5 @@ export const Navbar = ({ openModal }: MenuMobileTypeProps) => {
         </nav>
     )
 }
+
+export default Navbar;

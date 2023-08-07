@@ -1,4 +1,4 @@
-import { Loader } from "@/components/Helper/Loader";
+import Loader from "./components/helpers/Loader";
 
 export default function Loading() {
     return < Loader />
