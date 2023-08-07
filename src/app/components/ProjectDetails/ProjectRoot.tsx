@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode } from 'react'
+import { ReactNode, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { ProjectsTypeProps } from '@/@types'
 
@@ -11,12 +11,20 @@ type ProjectRootProps = {
 const ProjectRoot = ({ children, ...props }: ProjectRootProps) => {
     const router = useRouter();
 
+    const backPage = useCallback(() => {
+        if (window.history.length > 1) {
+            router.back()
+        } else {
+            router.replace('/views/projects')
+        }
+    }, [router])
+
     function handleCloseModal(
         event: React.MouseEvent<HTMLElement> |
             React.TouchEvent<HTMLElement>
     ) {
         if (event.target === event.currentTarget) {
-            router.back()
+            backPage()
         }
     }
 

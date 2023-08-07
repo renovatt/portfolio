@@ -8,7 +8,11 @@ const ProjectCloseIcon = () => {
     const router = useRouter()
 
     const backPage = useCallback(() => {
-        router.back()
+        if (window.history.length > 1) {
+            router.back()
+        } else {
+            router.replace('/views/projects')
+        }
     }, [router])
 
     return (
