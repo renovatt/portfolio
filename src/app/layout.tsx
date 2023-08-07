@@ -5,13 +5,7 @@ import Footer from './components/Footer'
 import Container from './components/Container'
 import ToastifyProvider from './components/ToastifyProvider'
 import ReactQueryProvider from './components/ReactQueryProvider'
-import { Saira_Condensed, Chakra_Petch } from 'next/font/google'
-
-const saira_Condensed = Saira_Condensed({
-  subsets: ['latin'],
-  weight: ['300', '500', '700'],
-  display: 'swap'
-})
+import { Chakra_Petch } from 'next/font/google'
 
 const chakra_Petch = Chakra_Petch({
   subsets: ['latin'],
@@ -52,8 +46,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  modal: React.ReactNode,
 }) {
   return (
     <html lang="pt-br">
@@ -63,6 +59,7 @@ export default function RootLayout({
             <Header />
             <Container>
               {children}
+              {modal}
             </Container>
             <Footer />
           </ToastifyProvider>
