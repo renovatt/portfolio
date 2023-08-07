@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: APP_DESCRIPTION,
   generator: 'Next.js',
   manifest: "/manifest.json",
-  keywords: ["renovatt", "Wildemberg", "Wildemberg Renovato", "WillCode"],
+  keywords: ["renovatt", "Wildemberg", "wildemberg", "will", "Wildemberg Renovato", "WillCode", "portfolio"],
   themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
   authors: [{ name: 'renovatt' }, { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt/' }],
   viewport: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: APP_DESCRIPTION,
     siteName: APP_NAME,
     images: [{
-      url: "https://portfolio-renovatt.vercel.app/web-1.png",
+      url: "https://portfolio-renovatt.vercel.app/icon-192x192.png",
     }],
   },
 
