@@ -104,7 +104,7 @@ module.exports = {
         fly: 'fly 2s alternate infinite',
         load: 'load .5s ease-in-out infinite',
         fade: 'fade 1s forwards',
-        zoom: 'zoom 1s forwards',
+        zoom: 'zoom .3s forwards',
       }
     },
   },
