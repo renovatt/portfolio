@@ -2,28 +2,30 @@
 
 import { Loader } from './Helper/Loader'
 import { CardProject } from './CardProject'
+import { ProjectsResponse } from '@/@types'
 import { NotFoundPage } from './Helper/NotFoundPage'
-import useFetchData from '@/hooks/useFetchData'
+import { useProjectsQuery } from '@/hooks/useProjectsQuery'
 
 export const ProjectsMap = () => {
+
   const {
-    error,
-    loading,
-    projects
-  } = useFetchData()
+    data,
+    isError,
+    isLoading,
+  } = useProjectsQuery()
+
+  const projects = data as ProjectsResponse;
+
+  if (isLoading) return <Loader />
+  if (isError) return <NotFoundPage />
 
   return (
-    <>
-      {loading && <Loader />}
-      {error && <NotFoundPage />}
-
-      <section className='flex flex-wrap items-center justify-around bg-backgroundSecundary'>
-        {projects && projects
-          .sort((a, b) => a.order - b.order)
-          .map(project => (
-            <CardProject key={project.id} {...project} />
-          ))}
-      </section>
-    </>
+    <section className='flex flex-wrap items-center justify-around bg-backgroundSecundary'>
+      {projects && projects.projects
+        .sort((a, b) => a.order - b.order)
+        .map(project => (
+          <CardProject key={project.id} {...project} />
+        ))}
+    </section>
   )
 }

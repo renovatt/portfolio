@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Container } from '@/components/Container'
 import { ToastifyProvider } from '@/components/ToastifyProvider'
+import ReactQueryProvider from '@/components/ReactQueryProvider'
 
 const saira_Condensed = Saira_Condensed({
   subsets: ['latin'],
@@ -57,13 +58,15 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={chakra_Petch.className}>
-        <ToastifyProvider>
-          <Header />
-          <Container>
-            {children}
-          </Container>
-          <Footer />
-        </ToastifyProvider>
+        <ReactQueryProvider>
+          <ToastifyProvider>
+            <Header />
+            <Container>
+              {children}
+            </Container>
+            <Footer />
+          </ToastifyProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   )

@@ -1,23 +1,33 @@
-import { SoftskillComponentProps } from '@/@types'
-import SmallLoader from './Helper/SmallLoader'
+'use client'
+
 import SmallError from './Helper/SmallError'
+import SmallLoader from './Helper/SmallLoader'
+import { SoftskillsResponse } from '@/@types'
+import { useSoftskillsQuery } from '@/hooks/useSoftskillsQuery'
 
-const Softskills = (props: SoftskillComponentProps) => {
-    if (props.loading) {
-        return <SmallLoader />
-    }
+const Softskills = () => {
+    const {
+        data,
+        isError,
+        isLoading,
+    } = useSoftskillsQuery()
 
-    if (props.error) {
-        return <SmallError />
-    }
+    const softSkills = data as SoftskillsResponse;
+
+    if (isError) return <SmallError />
+    if (isLoading) return <SmallLoader />
 
     return (
-        <h4
-            className='text-center text-textDescription m-1 font-bold transition-all md:p-2 p-1 py-2'
-            key={props.softskill.id}
-        >
-            {props.softskill.softskill_name}
-        </h4>
+        <>
+            {softSkills?.softskills?.map(softSkill => (
+                <h4
+                    key={softSkill.id}
+                    className='text-center text-textDescription m-1 font-bold transition-all md:p-2 p-1 py-2'
+                >
+                    {softSkill.softskill_name}
+                </h4>
+            ))}
+        </>
     )
 }
 

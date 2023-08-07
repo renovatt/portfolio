@@ -1,29 +1,17 @@
-import { z } from "zod";
-import { contactSchema } from "@/zod";
-import { StaticImageData } from "next/image";
+import { z } from 'zod';
+import { ReactNode } from 'react';
+import { contactSchema } from '@/zod';
+import { StaticImageData } from 'next/image';
 
-type SkillsResponse = {
-    skills: SkillsTypeProps[];
-}
-
-type SoftskillsResponse = {
-    softskills: SoftskillsTypeProps[];
-}
-
-type ProjectsResponse = {
-    projects: ProjectsTypeProps[];
-}
-
-type ProjectResponse = {
-    project: ProjectsTypeProps;
-}
-
-type ProfileResponse = {
-    profile: ProfileProps[];
-}
-
-type ErrorResponseProps = {
-    error: string;
+export type ProjectsTypeProps = {
+    id: string;
+    order: number;
+    project_name: string;
+    deploy_url: string;
+    banner_url: string;
+    thumbnail_url: string;
+    description: string;
+    techs: LinksTypeProps;
 }
 
 type TechsTypeProps = {
@@ -35,25 +23,6 @@ type TechsTypeProps = {
 
 type LinksTypeProps = {
     links: TechsTypeProps[]
-}
-
-export type ContactProps = z.infer<typeof contactSchema>
-
-export type APISkillsResponse = SkillsResponse | ErrorResponseProps;
-export type APISoftskillsResponse = SoftskillsResponse | ErrorResponseProps;
-export type APIProjectsResponse = ProjectsResponse | ErrorResponseProps;
-export type APIProjectResponse = ProjectResponse | ErrorResponseProps;
-export type APIProfileResponse = ProfileResponse | ErrorResponseProps;
-
-export type ProjectsTypeProps = {
-    id: string;
-    order: number;
-    project_name: string;
-    deploy_url: string;
-    banner_url: string;
-    thumbnail_url: string;
-    description: string;
-    techs: LinksTypeProps;
 }
 
 export type SoftskillsTypeProps = {
@@ -72,6 +41,40 @@ export type ProfileProps = {
     id: string;
     description_1: string;
     description_2: string;
+}
+
+export type ProfileResponse = {
+    profile: ProfileProps[];
+}
+
+export type SkillsResponse = {
+    skills: SkillsTypeProps[];
+}
+
+export type SoftskillsResponse = {
+    softskills: SoftskillsTypeProps[];
+}
+
+export type ProjectsResponse = {
+    projects: ProjectsTypeProps[];
+}
+
+export type ProjectResponse = ProjectsTypeProps;
+
+export interface ErrorMessageResponse extends Error {
+    message: string;
+}
+
+export type ContactProps = z.infer<typeof contactSchema>
+
+export type APISkillsResponse = SkillsResponse | ErrorMessageResponse;
+export type APISoftskillsResponse = SoftskillsResponse | ErrorMessageResponse;
+export type APIProjectsResponse = ProjectsResponse | ErrorMessageResponse;
+export type APIProjectResponse = ProjectResponse | ErrorMessageResponse;
+export type APIProfileResponse = ProfileResponse | ErrorMessageResponse;
+
+export type ReactQueryProviderProps = {
+    children: ReactNode;
 }
 
 export type ContainerTypeProps = {
@@ -96,31 +99,6 @@ export type MenuMobileTypeProps = {
     closeModal?: () => void;
 }
 
-export type SoftskillComponentProps = {
-    softskill: SoftskillsTypeProps,
-    loading: boolean,
-    error: boolean
-}
-
-export type SkillsIconsComponentProps = {
-    skill: SkillsTypeProps;
-    loading: boolean;
-    error: boolean,
-    onMouseOver: () => void;
-    onMouseOut: () => void;
-};
-
-export type SkillsDescriptonProps = {
-    skill: SkillsTypeProps,
-    loading: boolean,
-    error: boolean
-}
-
-export type DefaultDescriptonProps = {
-    loading: boolean,
-    error: boolean
-}
-
 export type ButtonComponentProps = {
     text: string;
     href?: string;
@@ -132,3 +110,18 @@ export type RouteLinksProps = {
     href: string;
     onClick?: () => void;
 }
+
+type UseStoreState = {
+    status: {
+        isDefault: boolean;
+        isHovered: boolean;
+        skillId: string;
+    }
+}
+
+type UseStoreActions = {
+    setStatus: (skillId: string) => void;
+    clearStatus: () => void;
+}
+
+export type UseStoreProps = UseStoreState & UseStoreActions;

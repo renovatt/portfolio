@@ -9,8 +9,29 @@ import SkeletonModal from './Helper/SkeletonModal'
 import { NotFoundPage } from './Helper/NotFoundPage'
 import { Loader } from './Helper/Loader'
 import { getProjectsById } from '@/services'
-import { initialValue } from '@/hooks/useFetchData'
 import { ModalTypeProps, ProjectsTypeProps } from '@/@types'
+
+const thumbnail = 'https://raw.githubusercontent.com/renovatt/portfolio/main/public/thumbnails/tree.png'
+
+export const initialValue: ProjectsTypeProps = {
+    id: '',
+    order: 0,
+    project_name: '',
+    deploy_url: '',
+    banner_url: '',
+    thumbnail_url: thumbnail,
+    description: '',
+    techs: {
+        links: [
+            {
+                id: '',
+                svg_name: '',
+                link: '',
+                svg_link: ''
+            }
+        ]
+    }
+}
 
 export const Modal = ({ id, closeModal, toggleModal }: ModalTypeProps) => {
     const [error, setError] = React.useState(false)
@@ -20,10 +41,11 @@ export const Modal = ({ id, closeModal, toggleModal }: ModalTypeProps) => {
     const fetchModal = async () => {
         setLoading(true)
         try {
-            const project = await getProjectsById(id)
+            const data = await getProjectsById(id)
+            const project = data as ProjectsTypeProps
 
-            if ('project' in project) {
-                setProject(project.project)
+            if (project) {
+                setProject(project)
             } else if ('error' in project) {
                 setError(true)
             }
