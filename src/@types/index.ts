@@ -87,22 +87,10 @@ export type ImageProps = {
     className?: string;
 }
 
-export type ModalTypeProps = {
-    id: string;
-    closeModal: () => void;
-    toggleModal: () => void;
-}
-
 export type MenuMobileTypeProps = {
     modal?: boolean;
     openModal?: () => void;
     closeModal?: () => void;
-}
-
-export type ButtonComponentProps = {
-    text: string;
-    href?: string;
-    onClick?: (id: string) => void;
 }
 
 export type RouteLinksProps = {
