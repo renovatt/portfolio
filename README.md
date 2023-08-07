@@ -27,6 +27,29 @@
 
 <br>
 
+## ✨ Atualizações recentes
+
+- **Implementação de interceptação de rotas e criação de rotas estáticas**: Implementei a interceptação de rotas e criei [rotas estáticas](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes) para os projetos usando a funcionalidade de [Rotas Paralelas](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes) do [Next.js](https://nextjs.org). Isso garante um carregamento inicial suave, sem carregamentos adicionais ao navegar entre as páginas, pois todas as páginas são pré-carregadas durante a construção `(build)`. O melhor de tudo é que a experiência é semelhante a um modal, mas, na verdade, é uma navegação contínua com URLs compartilháveis.
+
+- **SEO dinâmico implementado nas rotas estáticas**: Cada rota estática agora inclui o nome do projeto no título da página, e ao compartilhar uma página, cada projeto terá sua própria miniatura com seu nome e descrição.
+
+- **Refatoração na rota [HardSkills & SoftSkills](http://localhost:3000/views/skills_softskills)**: Os ícones foram refatorados para melhorar a manutenção e a estruturação do código. Os componentes envolvidos foram separados, e agora o [zustand](https://zustand-demo.pmnd.rs/) é usado para melhor gerenciamento de estado ao interagir com os ícones `(hover/toque)`.
+
+- **Pattern Composition aplicado aos componentes Card e ProjectDetails**: Implementei o Pattern Composition nos componentes Card e ProjectDetails, resultando em componentes reutilizáveis sem a necessidade de extensas tipagens para funções, imagens, etc. Isso resulta em um código mais limpo, organizado e bem estruturado.
+
+- **Melhoria na obtenção de dados com react-query**: Alterei o método de obtenção de dados usando o [react-query](https://tanstack.com/query/latest/docs/react/overview), proporcionando vantagens em otimização e cache, tornando os dados mais acessíveis e resultando em `hooks` mais limpos.
+
+#
+
+[Ver Projeto](https://interception-routes.vercel.app/)
+
+#
+
+## Layout web
+![Web 1](./public/web-1.png)
+#
+![Web 2](./public/web-2.png)
+
 ## 🛠️ Tecnologias
 
 💻 **Front-end**
@@ -34,6 +57,8 @@
 - [Typescript](https://www.typescriptlang.org)
 
 📚 **Bibliotecas**
+- [zustand](https://zustand-demo.pmnd.rs/)
+- [react-query](https://tanstack.com/query/latest/docs/react/overview)
 - [zod](https://zod.dev/)
 - [next-pwa](https://www.npmjs.com/package/next-pwa)
 - [react-hook-form](https://react-hook-form.com/)
