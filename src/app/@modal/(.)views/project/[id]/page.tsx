@@ -5,7 +5,7 @@ import { ProjectDetails } from "@/app/components/ProjectDetails";
 export default async function Project({ params }: { params: { id: string } }) {
     const project = await getProjectsById(params.id);
     const projectDate = project as ProjectResponse
-
+    
     return (
         <ProjectDetails.Root {...projectDate} >
             <ProjectDetails.Content  {...projectDate} >
