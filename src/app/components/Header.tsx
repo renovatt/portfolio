@@ -10,15 +10,21 @@ const Header = () => {
     const {
         modal,
         openModal,
-        closeModal } = useToggle()
+        closeModal
+    } = useToggle()
 
     return (
         <header className='flex justify-between items-center h-20 py-0 px-16 bg-backgroundSecundary border-b border-borderPrimary md:animate-fade transition-all'>
             <Link href='/'
-                className='flex text-3xl font-bold'
+                className='flex text-2xl md:text-3xl font-bold'
             >
-                <span className='block text-white'>Will</span>
-                <span className='block text-textPrimary'>Code</span>
+                <h1 className='inline-block text-white'>
+                    <span>{'{'}</span>
+                    <span className='text-textPrimary'>...</span>
+                    Will
+                    <span className='text-textPrimary'>Code</span>
+                    <span>{'}'}</span>
+                </h1>
             </Link>
 
             <Navbar
