@@ -20,7 +20,7 @@ const ProjectsMap = () => {
   if (isError) return <NotFoundPage />
 
   return (
-    <section className='flex flex-wrap items-center justify-around bg-backgroundSecundary'>
+    <section className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center justify-around bg-backgroundSecundary'>
       {projects && projects.projects
         .sort((a, b) => a.order - b.order)
         .map((project) => (
