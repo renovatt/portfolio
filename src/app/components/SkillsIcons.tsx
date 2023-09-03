@@ -31,14 +31,18 @@ const SkillsIcons = () => {
 
     return skills?.skills?.map((skill) => (
         <section
+
             key={skill.id}
             onMouseOut={clearStatus}
             onMouseOver={() => setStatus(skill.id)}
             className='flex justify-center items-center transition-all ease-in hover:scale-110 '
         >
-            <figure className='w-24 h-24 -z-10'>
+            <figure
+                data-aos="fade-up"
+                data-aos-delay="50"
+                className='w-24 h-24 -z-10'>
                 <object
-                    className='w-full h-full object-cover animate-fade opacity-0'
+                    className='w-full h-full object-cover opacity-0'
                     type='image/svg+xml'
                     data={skill.svg_link}
                     onLoad={handleLoadSvg}

@@ -3,9 +3,10 @@ import { Metadata } from 'next'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Container from './components/Container'
-import ToastifyProvider from './components/ToastifyProvider'
+import ToastifyProvider from './components/Providers/ToastifyProvider'
 import ReactQueryProvider from './components/ReactQueryProvider'
 import { Chakra_Petch } from 'next/font/google'
+import { AosProvider } from './components/Providers/AosProvider'
 
 const chakra_Petch = Chakra_Petch({
   subsets: ['latin'],
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={chakra_Petch.className}>
         <ReactQueryProvider>
+          <AosProvider>
           <ToastifyProvider>
             <Header />
             <Container>
@@ -63,6 +65,7 @@ export default function RootLayout({
             </Container>
             <Footer />
           </ToastifyProvider>
+          </AosProvider>
         </ReactQueryProvider>
       </body>
     </html>

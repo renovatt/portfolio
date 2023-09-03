@@ -45,7 +45,10 @@ const ContactForm = () => {
     return (
         <FormProvider {...methods}>
             <section className='flex flex-col md:flex-row md:justify-around justify-start items-center md:items-start w-[95%] h-[90%] max-w-[1400px] animate-fade transition-all'>
-                <aside className='md:w-full md:max-w-xl max-w-xs h-full md:flex flex-col bg-backgroundThird m-8 rounded-lg p-4'>
+                <aside
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    className='md:w-full md:max-w-xl max-w-xs h-full md:flex flex-col bg-backgroundThird m-8 rounded-lg p-4'>
                     <h1 className='text-textPrimary text-4xl md:text-5xl font-bold mb-8'>Contato</h1>
                     <h2 className='text-textDescription'>Entre em contato comigo ou deixe seu valioso feedback! Estou ansioso para ouvir suas opiniões e responder o mais rápido possível. Sinta-se à vontade para usar qualquer um dos métodos abaixo para se conectar comigo.</h2>
 
@@ -80,6 +83,8 @@ const ContactForm = () => {
                 </aside>
 
                 <form
+                    data-aos="fade-right"
+                    data-aos-delay="100"
                     onSubmit={methods.handleSubmit(handleMessage)}
                     className="flex justify-center  flex-col gap-4 w-full h-full md:h-[30rem] max-w-xs bg-backgroundThird m-8 rounded-lg p-4">
                     <Input

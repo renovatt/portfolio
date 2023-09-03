@@ -22,7 +22,9 @@ const CardRoot = ({ children, ...props }: CardARootProps) => {
 
     return (
         <section
-            className='relative h-80 w-48 rounded-lg bg-backgroundThird bg-cover bg-center m-4 cursor-pointer animate-fade'
+            data-aos="fade-up"
+            data-aos-delay="50"
+            className='relative h-80 w-48 rounded-lg bg-backgroundThird bg-cover bg-center m-4 cursor-pointer'
             style={{ backgroundImage: `url(${props.banner_url})` }}
             onLoad={handleLoad}
             onClick={gotToProjectPage}
