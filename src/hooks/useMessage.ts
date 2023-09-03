@@ -15,7 +15,7 @@ export const useMessage = () => {
         clearInterval(interval)
         setFinal(true)
       }
-    }, 100);
+    }, 80);
 
     return () => clearInterval(interval);
   }, [index]);
