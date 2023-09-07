@@ -8,44 +8,48 @@ import { ProfileResponse } from '@/@types'
 import { useProfileQuery } from '@/hooks/useProfileQuery'
 
 const About = () => {
+  const { data, isError, isLoading } = useProfileQuery()
 
-  const {
-    data,
-    isError,
-    isLoading
-  } = useProfileQuery()
-
-  const profile = data as ProfileResponse;
+  const profile = data as ProfileResponse
 
   return (
-    <section className='flex items-center justify-center flex-col bg-backgroundSecundary px-28 w-full max-w-[1400px] animate-fade transition-all'>
-      <article className='flex items-center justify-center flex-col md:justify-around md:flex-row h-auto md:w-full  max-h-[1400px] mt-8'>
-        <figure className='w-80 h-80'>
-          <SkeletonImageProfile
-            src={profileImage}
-            alt='profileImage'
-          />
+    <section className="flex w-full max-w-[1400px] animate-fade flex-col items-center justify-center bg-backgroundSecundary px-28 transition-all">
+      <article className="mt-8 flex h-auto max-h-[1400px] flex-col items-center justify-center md:w-full  md:flex-row md:justify-around">
+        <figure className="h-80 w-80">
+          <SkeletonImageProfile src={profileImage} alt="profileImage" />
         </figure>
-        <section className='flex items-center min-h-[25rem] w-full my-16 ml-0 md:ml-8 md:w-[40rem] flex-col'>
-          <h1 data-aos="fade-up" className='text-textPrimary text-4xl md:text-5xl font-bold mb-8'>Quem sou eu?</h1>
+        <section className="my-16 ml-0 flex min-h-[25rem] w-full flex-col items-center md:ml-8 md:w-[40rem]">
+          <h1
+            data-aos="fade-up"
+            className="mb-8 text-4xl font-bold text-textPrimary md:text-5xl"
+          >
+            Quem sou eu?
+          </h1>
 
           {isLoading && <SmallLoader />}
           {isError && <SmallError />}
 
-          {profile && profile.profile.map(profile => (
-            <article key={profile.id}>
-              <p data-aos="fade-up" className='text-textDescription text-xl text-justify'>
-                {profile.description_1}
-              </p>
-              <p data-aos="fade-up" className='text-textDescription text-xl text-justify'>
-                {profile.description_2}
-              </p>
-            </article>
-          ))}
+          {profile &&
+            profile.profile.map((profile) => (
+              <article key={profile.id}>
+                <p
+                  data-aos="fade-up"
+                  className="text-justify text-xl text-textDescription"
+                >
+                  {profile.description_1}
+                </p>
+                <p
+                  data-aos="fade-up"
+                  className="text-justify text-xl text-textDescription"
+                >
+                  {profile.description_2}
+                </p>
+              </article>
+            ))}
         </section>
       </article>
     </section>
   )
 }
 
-export default About;
+export default About

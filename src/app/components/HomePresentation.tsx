@@ -3,21 +3,26 @@ import TypingEffect from './TypingEffect'
 
 function HomePresentation() {
   return (
-    <article className='flex flex-col md:items-start items-center w-1/2 mt-4 md:mt-0 relative'>
+    <article className="relative mt-4 flex w-1/2 flex-col items-center md:mt-0 md:items-start">
       <span
         data-aos-delay="300"
         data-aos="fade-right"
-        className='text-white text-5xl'>
+        className="text-5xl text-white"
+      >
         Olá, eu sou
       </span>
       <h1
         data-aos="fade-right"
         data-aos-delay="400"
-        className='text-white text-8xl font-bold md:text-9xl md:ml-16'>Will
+        className="text-8xl font-bold text-white md:ml-16 md:text-9xl"
+      >
+        Will
         <span
           data-aos="fade-up"
           data-aos-delay="1000"
-          className='text-textPrimary'>.
+          className="text-textPrimary"
+        >
+          .
         </span>
       </h1>
       <TypingEffect />

@@ -1,12 +1,12 @@
 import { SkillsTypeProps } from '@/@types'
 
 const SkillDescription = (props: SkillsTypeProps) => {
-    return (
-        <section className='flex items-start flex-col justify-center bg-backgroundThird w-full min-h-[10rem] p-8 animate-fade transition-all'>
-            <h2 className='text-textPrimary font-bold text-xl'>{props.skill_name}</h2>
-            <p className='text-textDescription text-xl'>{props.description}</p>
-        </section>
-    )
+  return (
+    <section className="flex min-h-[10rem] w-full animate-fade flex-col items-start justify-center bg-backgroundThird p-8 transition-all">
+      <h2 className="text-xl font-bold text-textPrimary">{props.skill_name}</h2>
+      <p className="text-xl text-textDescription">{props.description}</p>
+    </section>
+  )
 }
 
-export default SkillDescription;
+export default SkillDescription

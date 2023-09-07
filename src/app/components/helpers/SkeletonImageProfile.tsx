@@ -9,17 +9,18 @@ const SkeletonImageProfile = ({ src, alt, className }: ImageProps) => {
 
   const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {
     setSkeleton(false)
-    event.currentTarget.style.opacity = "1";
+    event.currentTarget.style.opacity = '1'
   }
 
   return (
-    <figure className='grid'>
-      {
-        sketelon && (
-          <span className='col-start-1 row-start-1 h-full rounded-full bg-cover bg-backgroundThird bg-gradient-radial animate-pulse'></span>
-        )}
+    <figure className="grid">
+      {sketelon && (
+        <span className="bg-gradient-radial col-start-1 row-start-1 h-full animate-pulse rounded-full bg-backgroundThird bg-cover"></span>
+      )}
       <Image
-        className={`opacity-0 col-start-1 row-start-1 transition-all ease ${className && 'animate-fly'}`}
+        className={`ease col-start-1 row-start-1 opacity-0 transition-all ${
+          className && 'animate-fly'
+        }`}
         onLoad={handleLoad}
         src={src}
         alt={alt}
@@ -29,4 +30,4 @@ const SkeletonImageProfile = ({ src, alt, className }: ImageProps) => {
   )
 }
 
-export default SkeletonImageProfile;
+export default SkeletonImageProfile

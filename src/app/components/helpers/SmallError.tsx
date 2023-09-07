@@ -1,9 +1,9 @@
 const SmallError = () => {
-    return (
-        <h4 className='text-center text-textDescription font-bold transition-all m-2 p-2 w-28'>
-            Erro!
-        </h4>
-    )
+  return (
+    <h4 className="m-2 w-28 p-2 text-center font-bold text-textDescription transition-all">
+      Erro!
+    </h4>
+  )
 }
 
-export default SmallError;
+export default SmallError

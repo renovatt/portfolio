@@ -27,71 +27,71 @@ module.exports = {
         borderPrimary: 'var(--border-primary)',
       },
       maxWidth: {
-        'custom': 'var(--max-width)',
+        custom: 'var(--max-width)',
       },
       keyframes: {
         fade: {
-          'from': {
+          from: {
             opacity: '0',
-            transform: 'translateX(-20px)'
+            transform: 'translateX(-20px)',
           },
-          'to': {
+          to: {
             opacity: '1',
-            transform: 'translateX(0px)'
-          }
+            transform: 'translateX(0px)',
+          },
         },
         mobileActive: {
-          'from': {
+          from: {
             opacity: '0',
-            transform: 'translateY(50px)'
+            transform: 'translateY(50px)',
           },
-          'to': {
+          to: {
             opacity: '1',
-            transform: 'translateY(0px)'
-          }
+            transform: 'translateY(0px)',
+          },
         },
         mobileInactive: {
-          'from': {
+          from: {
             opacity: '1',
-            transform: 'translateY(0px)'
+            transform: 'translateY(0px)',
           },
-          'to': {
+          to: {
             opacity: '0',
-            transform: 'translateY(50px)'
-          }
+            transform: 'translateY(50px)',
+          },
         },
         blink: {
           '50%': {
             opacity: '0',
-          }
+          },
         },
         fly: {
-          'from': {
+          from: {
             position: 'relative',
-            top: '0px'
+            top: '0px',
           },
-          'to': {
+          to: {
             position: 'relative',
             top: '-20px',
-            bottom: '60px'
-          }
+            bottom: '60px',
+          },
         },
         load: {
           '50%': {
-            width: '100%'
+            width: '100%',
           },
           '100%': {
             width: '0',
             right: '0',
-            left: 'unset'
-          }
+            left: 'unset',
+          },
         },
         zoom: {
-          'from': {
+          from: {
             opacity: '0',
             transform: 'scale(0.9)',
           },
-          'to': {
+          to: {
             opacity: '1',
             transform: 'scale(1)',
           },
@@ -105,7 +105,7 @@ module.exports = {
         load: 'load .5s ease-in-out infinite',
         fade: 'fade 1s forwards',
         zoom: 'zoom .3s forwards',
-      }
+      },
     },
   },
   plugins: [],

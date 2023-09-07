@@ -1,9 +1,9 @@
 'use client'
-import Loading3D from "./Loading3D"
-import { Suspense } from "react"
-import { Canvas } from "@react-three/fiber"
-import { CanvaContainerProps } from "@/@types"
-import { Environment, OrbitControls } from "@react-three/drei"
+import Loading3D from './Loading3D'
+import { Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
+import { CanvaContainerProps } from '@/@types'
+import { Environment, OrbitControls } from '@react-three/drei'
 
 const CanvaContainer = ({ children }: CanvaContainerProps) => {
   return (
@@ -13,9 +13,7 @@ const CanvaContainer = ({ children }: CanvaContainerProps) => {
       <directionalLight position={[-2, 5, 2]} intensity={1} />
       <pointLight position={[0, 10, 10]} />
       <group position={[0, -1, 0]}>
-        <Suspense fallback={<Loading3D />}>
-          {children}
-        </Suspense>
+        <Suspense fallback={<Loading3D />}>{children}</Suspense>
       </group>
     </Canvas>
   )

@@ -1,5 +1,5 @@
 'use client'
-import ReactTypingEffect from "react-typing-effect";
+import ReactTypingEffect from 'react-typing-effect'
 
 function TypingEffect() {
   return (
@@ -9,7 +9,7 @@ function TypingEffect() {
       eraseSpeed={100}
       typingDelay={10}
       cursorClassName="text-white pl-1"
-      className='text-textPrimary text-xl md:text-5xl'
+      className="text-xl text-textPrimary md:text-5xl"
     />
   )
 }

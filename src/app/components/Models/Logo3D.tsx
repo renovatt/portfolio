@@ -1,18 +1,20 @@
 'use client'
 import { Center, Text3D, useTexture } from '@react-three/drei'
-import { useLayoutEffect, useRef } from 'react';
-import { gsap } from "gsap";
-import { useThree } from '@react-three/fiber';
+import { useLayoutEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { useThree } from '@react-three/fiber'
 
 const Logo3D = () => {
-  const tl = gsap.timeline();
-  const { camera } = useThree();
-  const meshRef = useRef(null!);
+  const tl = gsap.timeline()
+  const { camera } = useThree()
+  const meshRef = useRef(null)
   const texture = useTexture('/pink.jpg')
-  const font = 'https://threejs.org/examples/fonts/helvetiker_bold.typeface.json';
+  const font =
+    'https://threejs.org/examples/fonts/helvetiker_bold.typeface.json'
 
   useLayoutEffect(() => {
-    tl.fromTo(camera.position,
+    tl.fromTo(
+      camera.position,
       {
         x: 20,
         y: 10,
@@ -22,10 +24,10 @@ const Logo3D = () => {
         x: 4.5,
         y: 0,
         z: 2,
-      }
-    );
-  }, [camera.position, tl]);
-  
+      },
+    )
+  }, [camera.position, tl])
+
   return (
     <mesh ref={meshRef} castShadow receiveShadow scale={2}>
       <Center top position={[0, 0, 0]}>

@@ -1,15 +1,17 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 type ProjectThumbnailContainerProps = {
-    children: ReactNode;
+  children: ReactNode
 }
 
-const ProjectThumbnailContainer = ({ children }: ProjectThumbnailContainerProps) => {
-    return (
-        <section className='flex items-center md:justify-around justify-center flex-col w-full h-auto md:h-full max-w-[900px] p-8 mt-8 md:mt-0 overflow-hidden'>
-            {children}
-        </section>
-    )
+const ProjectThumbnailContainer = ({
+  children,
+}: ProjectThumbnailContainerProps) => {
+  return (
+    <section className="mt-8 flex h-auto w-full max-w-[900px] flex-col items-center justify-center overflow-hidden p-8 md:mt-0 md:h-full md:justify-around">
+      {children}
+    </section>
+  )
 }
 
-export default ProjectThumbnailContainer;
+export default ProjectThumbnailContainer

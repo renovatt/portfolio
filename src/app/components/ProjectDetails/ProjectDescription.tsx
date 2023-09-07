@@ -1,13 +1,13 @@
 type ProjectDescriptionProps = {
-    text: string;
+  text: string
 }
 
 const ProjectDescription = ({ text }: ProjectDescriptionProps) => {
-    return (
-        <p className='flex justify-center items-center text-justify w-full h-full md:h-40 p-2 my-0 mx-2 text-white'>
-            {text}
-        </p>
-    )
+  return (
+    <p className="mx-2 my-0 flex h-full w-full items-center justify-center p-2 text-justify text-white md:h-40">
+      {text}
+    </p>
+  )
 }
 
-export default ProjectDescription;
+export default ProjectDescription

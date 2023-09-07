@@ -1,10 +1,11 @@
-import { Html, Loader } from "@react-three/drei"
+import { Html, Loader } from '@react-three/drei'
 
 const Loading3D = () => {
   return (
     <Html>
       <Loader />
-    </Html>)
+    </Html>
+  )
 }
 
 export default Loading3D

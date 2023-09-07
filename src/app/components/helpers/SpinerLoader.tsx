@@ -1,12 +1,11 @@
-import { FaSpinner } from "react-icons/fa";
+import { FaSpinner } from 'react-icons/fa'
 
 const SpinerLoader = () => {
-    return (
-        <span className='flex items-center justify-center animate-spin w-[24rem] md:w-[35rem]'>
-            <FaSpinner className='text-textPrimary w-24 h-24' />
-        </span>
-    );
-
+  return (
+    <span className="flex w-[24rem] animate-spin items-center justify-center md:w-[35rem]">
+      <FaSpinner className="h-24 w-24 text-textPrimary" />
+    </span>
+  )
 }
 
-export default SpinerLoader;
+export default SpinerLoader

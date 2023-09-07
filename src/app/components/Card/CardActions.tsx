@@ -1,15 +1,11 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 type CardActionsProps = {
-    children: ReactNode;
+  children: ReactNode
 }
 
 const CardActions = ({ children }: CardActionsProps) => {
-    return (
-        <div className="flex gap-2 self-center">
-            {children}
-        </div>
-    )
+  return <div className="flex gap-2 self-center">{children}</div>
 }
 
-export default CardActions;
+export default CardActions

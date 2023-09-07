@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useFormContext } from 'react-hook-form'
 
 interface ErrorFormMessageProps {
@@ -9,15 +10,20 @@ function get(obj: Record<any, any>, path: string) {
     String.prototype.split
       .call(path, regexp)
       .filter(Boolean)
-      .reduce((res, key) => (res !== null && res !== undefined ? res[key] : res), obj);
+      .reduce(
+        (res, key) => (res !== null && res !== undefined ? res[key] : res),
+        obj,
+      )
 
-  const result = travel(/[,[\]]+?/) || travel(/[,[\].]+?/);
+  const result = travel(/[,[\]]+?/) || travel(/[,[\].]+?/)
 
   return result
-};
+}
 
 const ErrorFormMessage = ({ field }: ErrorFormMessageProps) => {
-  const { formState: { errors } } = useFormContext()
+  const {
+    formState: { errors },
+  } = useFormContext()
 
   const fieldError = get(errors, field)
 
@@ -26,8 +32,10 @@ const ErrorFormMessage = ({ field }: ErrorFormMessageProps) => {
   }
 
   return (
-    <span className="text-xs text-red-500 mt-1 ml-2">{fieldError.message?.toString()}</span>
+    <span className="ml-2 mt-1 text-xs text-red-500">
+      {fieldError.message?.toString()}
+    </span>
   )
 }
 
-export default ErrorFormMessage;
+export default ErrorFormMessage

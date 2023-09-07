@@ -1,9 +1,8 @@
-import { Container3DProps } from "@/@types"
+import { Container3DProps } from '@/@types'
 
 const Container3D = ({ children }: Container3DProps) => {
   return (
-    <section
-      className="flex items-center bg-gradient-model justify-center w-60 h-60 md:w-96 md:h-96 rounded-full overflow-hidden cursor-grabbing shadow-xl shadow-zinc-950">
+    <section className="bg-gradient-model flex h-60 w-60 cursor-grabbing items-center justify-center overflow-hidden rounded-full shadow-xl shadow-zinc-950 md:h-96 md:w-96">
       {children}
     </section>
   )

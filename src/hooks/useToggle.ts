@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 
 export const useToggle = () => {
-    const [modal, setModal] = React.useState<boolean>(false)
+  const [modal, setModal] = React.useState<boolean>(false)
 
-    const toggleModal = () => {
-        setModal((state) => !state)
-    }
+  const toggleModal = () => {
+    setModal((state) => !state)
+  }
 
-    const openModal = () => setModal(true)
-    const closeModal = () => setModal(false)
+  const openModal = () => setModal(true)
+  const closeModal = () => setModal(false)
 
-    return {
-        modal,
-        openModal,
-        closeModal,
-        toggleModal
-    }
+  return {
+    modal,
+    openModal,
+    closeModal,
+    toggleModal,
+  }
 }
