@@ -113,3 +113,11 @@ type UseStoreActions = {
 }
 
 export type UseStoreProps = UseStoreState & UseStoreActions;
+
+export type Container3DProps = {
+    children: ReactNode
+}
+
+export type CanvaContainerProps = {
+    children: ReactNode
+}
