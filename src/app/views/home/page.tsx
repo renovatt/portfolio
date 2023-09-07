@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="container flex animate-fade flex-col-reverse items-center justify-center overflow-hidden py-10 transition-all md:flex-row md:justify-between">
+    <section className="container flex animate-fade flex-col-reverse items-center justify-center overflow-hidden transition-all md:flex-row md:justify-between">
       <HomePresentation />
       <LogoModel />
     </section>

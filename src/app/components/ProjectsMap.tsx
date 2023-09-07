@@ -15,7 +15,7 @@ const ProjectsMap = () => {
   if (isError) return <NotFoundPage />
 
   return (
-    <section className="grid grid-cols-2 items-center justify-around bg-backgroundSecundary md:grid-cols-4 lg:grid-cols-6">
+    <section className="grid grid-cols-2 items-center justify-around bg-backgroundSecundary lg:grid-cols-4 xl:grid-cols-6">
       {projects &&
         projects.projects
           .sort((a, b) => a.order - b.order)
