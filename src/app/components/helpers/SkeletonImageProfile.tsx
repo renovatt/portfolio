@@ -23,6 +23,7 @@ const SkeletonImageProfile = ({ src, alt, className }: ImageProps) => {
         onLoad={handleLoad}
         src={src}
         alt={alt}
+        priority
       />
     </figure>
   )
