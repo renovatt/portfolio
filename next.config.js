@@ -16,6 +16,7 @@ const nextConfig = {
             }
         ]
     },
+    transpilePackages: ['three'],
 }
 
 const withPWA = require("next-pwa")({
