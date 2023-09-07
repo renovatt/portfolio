@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  modal
+  modal,
 }: {
   children: React.ReactNode,
   modal: React.ReactNode,
@@ -57,14 +57,14 @@ export default function RootLayout({
       <body className={chakra_Petch.className}>
         <ReactQueryProvider>
           <AosProvider>
-          <ToastifyProvider>
-            <Header />
-            <Container>
-              {children}
-              {modal}
-            </Container>
-            <Footer />
-          </ToastifyProvider>
+            <ToastifyProvider>
+              <Header />
+              <Container>
+                {modal}
+                {children}
+              </Container>
+              <Footer />
+            </ToastifyProvider>
           </AosProvider>
         </ReactQueryProvider>
       </body>
