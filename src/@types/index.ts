@@ -121,3 +121,7 @@ export type Container3DProps = {
 export type CanvaContainerProps = {
   children: ReactNode
 }
+
+export type ButtonContactFormProps = {
+  loading: boolean
+}
