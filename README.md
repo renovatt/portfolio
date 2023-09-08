@@ -6,8 +6,7 @@
 
 ## Descrição
 
-
-### Refatorei o meu portfolio utilizando Next.js 13. Agora, todos os dados presentes no portfolio são buscados de uma [API](https://github.com/renovatt/portfolio-api.git) externa que desenvolvi exclusivamente para este projeto. Essa abordagem torna o portfolio mais dinâmico, eliminando a necessidade de atualizações manuais dos projetos e habilidades diretamente no portfolio. Além da refatoração, realizei melhorias na estrutura dos componentes e implementei novas features, incluindo uma rota de contatos. Agora, qualquer pessoa pode me enviar uma mensagem ou entrar em contato por meio de diferentes opções disponíveis. Essas mudanças visam proporcionar uma experiência mais interativa e eficiente para os visitantes do portfolio.
+### Refatorei o meu portfolio utilizando ``Next.js 13``. Agora, todos os dados presentes no portfolio são buscados de uma [API](https://github.com/renovatt/portfolio-api.git) externa que ``desenvolvi exclusivamente`` para este projeto. Essa abordagem torna o ``portfolio mais dinâmico``, eliminando a necessidade de atualizações manuais dos projetos e habilidades diretamente no portfolio. Além da refatoração, ``realizei melhorias na estrutura`` dos componentes e ``implementei novas features``, incluindo uma rota de contatos. Agora, qualquer pessoa pode me enviar uma mensagem ou entrar em contato por meio de diferentes opções disponíveis. Essas mudanças visam proporcionar uma experiência mais ``interativa e eficiente`` para os visitantes do portfolio.
 
 [Ver Projeto](https://portfolio-renovatt.vercel.app/)
 
@@ -16,6 +15,8 @@
 ## Layout mobile
 ![Mobile 1](./public/mobile-1.png)
 ![Mobile 2](./public/mobile-2.png)
+![Mobile 3](./public/mobile-3.png)
+![Mobile 4](./public/mobile-4.png)
 
 ## Layout web
 ![Web 1](./public/web-1.png) 
@@ -33,22 +34,11 @@
 
 - **SEO dinâmico implementado nas rotas estáticas**: Cada rota estática agora inclui o nome do projeto no título da página, e ao compartilhar uma página, cada projeto terá sua própria miniatura com seu nome e descrição.
 
-- **Refatoração na rota [HardSkills & SoftSkills](http://localhost:3000/views/skills_softskills)**: Os ícones foram refatorados para melhorar a manutenção e a estruturação do código. Os componentes envolvidos foram separados, e agora o [zustand](https://zustand-demo.pmnd.rs/) é usado para melhor gerenciamento de estado ao interagir com os ícones `(hover/toque)`.
+- **Refatoração na rota [HardSkills & SoftSkills](https://portfolio-renovatt.vercel.app/views/skills_softskills)**: Os ícones foram refatorados para melhorar a manutenção e a estruturação do código. Os componentes envolvidos foram separados, e agora o [zustand](https://zustand-demo.pmnd.rs/) é usado para melhor gerenciamento de estado ao interagir com os ícones `(hover/toque)`.
 
 - **Pattern Composition aplicado aos componentes Card e ProjectDetails**: Implementei o Pattern Composition nos componentes Card e ProjectDetails, resultando em componentes reutilizáveis sem a necessidade de extensas tipagens para funções, imagens, etc. Isso resulta em um código mais limpo, organizado e bem estruturado.
 
 - **Melhoria na obtenção de dados com react-query**: Alterei o método de obtenção de dados usando o [react-query](https://tanstack.com/query/latest/docs/react/overview), proporcionando vantagens em otimização e cache, tornando os dados mais acessíveis e resultando em `hooks` mais limpos.
-
-#
-
-[Ver Projeto](https://interception-routes.vercel.app/)
-
-#
-
-## Layout web
-![Web 1](./public/web-1.png)
-#
-![Web 2](./public/web-2.png)
 
 ## 🛠️ Tecnologias
 
@@ -58,12 +48,14 @@
 
 📚 **Bibliotecas**
 - [zustand](https://zustand-demo.pmnd.rs/)
-- [react-query](https://tanstack.com/query/latest/docs/react/overview)
 - [zod](https://zod.dev/)
+- [react-query](https://tanstack.com/query/latest/docs/react/overview)
 - [next-pwa](https://www.npmjs.com/package/next-pwa)
 - [react-hook-form](https://react-hook-form.com/)
 - [react-toastify](https://www.npmjs.com/package/react-toastify)
 - [react-icons](https://react-icons.github.io/react-icons/)
+- [aos](https://michalsnik.github.io/aos/)
+- [react-three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 
 🎨 **Estilização**
 - [tailwindcss](https://tailwindcss.com/docs/installation)
