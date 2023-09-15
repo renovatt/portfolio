@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Container from './components/Container'
 import ToastifyProvider from './components/Providers/ToastifyProvider'
-import ReactQueryProvider from './components/ReactQueryProvider'
+import ReactQueryProvider from './components/Providers/ReactQueryProvider'
 // eslint-disable-next-line camelcase
 import { Chakra_Petch } from 'next/font/google'
 import { AosProvider } from './components/Providers/AosProvider'
