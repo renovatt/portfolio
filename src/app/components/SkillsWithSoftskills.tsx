@@ -6,7 +6,7 @@ const SkillsWithSoftskills = () => {
   return (
     <section className="mb:mb-8 mb-16 flex h-auto max-w-[1400px] flex-col justify-around overflow-hidden transition-all md:w-full">
       <section className="m-8 flex h-full flex-col items-center justify-between md:my-8 md:flex-row">
-        <aside className="mb-8 grid w-auto grid-cols-3 grid-rows-2 gap-8 md:mb-0 md:w-[30%]">
+        <aside className="mb-8 grid w-auto grid-cols-3 grid-rows-2 gap-4 md:mb-0 md:w-[30%] lg:gap-8">
           <SkillsIcons />
         </aside>
 

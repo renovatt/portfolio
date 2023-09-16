@@ -43,7 +43,7 @@ module.exports = {
         mobileActive: {
           from: {
             opacity: '0',
-            transform: 'translateY(50px)',
+            transform: 'translateY(-20px)',
           },
           to: {
             opacity: '1',
@@ -57,7 +57,7 @@ module.exports = {
           },
           to: {
             opacity: '0',
-            transform: 'translateY(50px)',
+            transform: 'translateY(-20px)',
           },
         },
         blink: {
@@ -98,7 +98,7 @@ module.exports = {
         },
       },
       animation: {
-        mobileActive: 'mobileActive .5s ease-in',
+        mobileActive: 'mobileActive .3s ease-in',
         mobileInactive: 'mobileInactive .5s ease-in',
         blink: 'blink 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         fly: 'fly 2s alternate infinite',

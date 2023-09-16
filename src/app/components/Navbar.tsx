@@ -19,10 +19,7 @@ const Navbar = ({ openModal }: MenuMobileTypeProps) => {
         </li>
 
         <li data-aos="fade-left" data-aos-delay="400" className="m-2 p-2">
-          <RouteLinks
-            href="/views/skills_softskills"
-            text="HardSkills & SoftSkills"
-          />
+          <RouteLinks href="/views/skills_softskills" text="Habilidades" />
         </li>
 
         <li data-aos="fade-left" data-aos-delay="500" className="m-2 p-2">

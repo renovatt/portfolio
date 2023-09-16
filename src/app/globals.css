@@ -96,4 +96,12 @@ body {
       #080808
     );
   }
+
+  .bg-gradient{
+    background: linear-gradient(
+      283deg, 
+      rgba(28,29,26,0.9149159663865546) 0%, 
+      rgba(41,42,39,0.9401260504201681) 100%
+    );
+    }
 }

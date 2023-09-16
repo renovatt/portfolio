@@ -10,7 +10,7 @@ const RouteLinks = (props: RouteLinksProps) => {
     <Link
       className={`${
         props.onClick
-          ? 'text-3xl text-white'
+          ? 'text-2xl text-white'
           : `text-base hover:text-textPrimary ${
               isActive ? 'text-textPrimary' : 'text-white'
             }`
