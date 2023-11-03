@@ -1,6 +1,6 @@
-import { ProjectResponse } from '@/@types'
-import { getProjectsById } from '@/services'
-import { ProjectDetails } from '@/app/components/ProjectDetails'
+import { ProjectResponse } from '@types'
+import { getProjectsById } from 'services'
+import { ProjectDetails } from '@elements/ProjectDetails'
 
 export default async function Project({ params }: { params: { id: string } }) {
   const project = await getProjectsById(params.id)

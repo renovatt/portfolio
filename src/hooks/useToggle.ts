@@ -1,7 +1,7 @@
-import React from 'react'
+import { useState } from 'react'
 
 export const useToggle = () => {
-  const [modal, setModal] = React.useState<boolean>(false)
+  const [modal, setModal] = useState<boolean>(false)
 
   const toggleModal = () => {
     setModal((state) => !state)

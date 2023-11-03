@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import ContactPage from '@/app/components/ContactPage'
+import ContactPage from '@modules/ContactPage'
 
 export const metadata: Metadata = {
   title: 'WillCode | Contato',

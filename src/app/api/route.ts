@@ -1,6 +1,6 @@
+import { ContactProps } from '@types'
+import { contactSchema } from 'schemas'
 import { NextResponse } from 'next/server'
-import { ContactProps } from '@/@types'
-import { contactSchema } from '@/zod'
 
 const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL ?? ''
 

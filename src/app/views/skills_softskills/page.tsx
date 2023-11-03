@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import SkillsWithSoftskills from '@/app/components/SkillsWithSoftskills'
+import SkillsWithSoftskills from '@modules/SkillsWithSoftskills'
 
 export const metadata: Metadata = {
   title: 'WillCode | Skills & Softskills',

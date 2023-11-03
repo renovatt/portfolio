@@ -10,9 +10,9 @@ import {
   SkillsResponse,
   SoftskillsResponse,
   ContactProps,
-} from '@/@types'
+} from '@types'
 
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL!
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? ''
 
 export const getProjects = async (): Promise<APIProjectsResponse> => {
   try {

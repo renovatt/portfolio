@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { UseStoreProps } from '@/@types'
+import { UseStoreProps } from '@types'
 
 const useStatusStore = create<UseStoreProps>()((set) => ({
   status: {

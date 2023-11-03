@@ -1,13 +1,13 @@
 import './globals.css'
 import { Metadata } from 'next'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Container from './components/Container'
-import ToastifyProvider from './components/Providers/ToastifyProvider'
-import ReactQueryProvider from './components/Providers/ReactQueryProvider'
 // eslint-disable-next-line camelcase
 import { Chakra_Petch } from 'next/font/google'
-import { AosProvider } from './components/Providers/AosProvider'
+import Header from '@modules/Header'
+import Footer from '@modules/Footer'
+import Container from '@elements/Container'
+import { AosProvider } from '@providers/AosProvider'
+import ToastifyProvider from '@providers/ToastifyProvider'
+import ReactQueryProvider from '@providers/ReactQueryProvider'
 
 const chakraPetch = Chakra_Petch({
   subsets: ['latin'],

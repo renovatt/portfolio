@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import LogoModel from '@/app/components/Models/LogoModel'
-import HomePresentation from '@/app/components/HomePresentation'
+import LogoModel from '@models/LogoModel'
+import HomePresentation from '@modules/HomePresentation'
 
 export const metadata: Metadata = {
   title: 'WillCode - Página Inicial',

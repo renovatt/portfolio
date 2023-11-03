@@ -1,4 +1,4 @@
-import { getSoftskills } from '@/services'
+import { getSoftskills } from 'services'
 import { useQuery } from '@tanstack/react-query'
 
 export const useSoftskillsQuery = () => {

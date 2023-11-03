@@ -1,4 +1,4 @@
-import { getSkills } from '@/services'
+import { getSkills } from 'services'
 import { useQuery } from '@tanstack/react-query'
 
 export const useSkillQuery = () => {

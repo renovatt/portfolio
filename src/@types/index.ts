@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { ReactNode } from 'react'
-import { contactSchema } from '@/zod'
+import { contactSchema } from 'schemas'
 import { StaticImageData } from 'next/image'
 
 type TechsTypeProps = {

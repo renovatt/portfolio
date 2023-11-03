@@ -1,5 +1,5 @@
+import About from '@modules/About'
 import { Metadata } from 'next'
-import About from '@/app/components/About'
 
 export const metadata: Metadata = {
   title: 'WillCode | Sobre mim',

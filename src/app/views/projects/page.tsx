@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import ProjectsMap from '@/app/components/ProjectsMap'
+import ProjectsMap from '@modules/ProjectsMap'
 
 export const metadata: Metadata = {
   title: 'WillCode | Projetos',
