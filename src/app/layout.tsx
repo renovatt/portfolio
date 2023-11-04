@@ -20,6 +20,7 @@ const APP_DESCRIPTION =
   'Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills.'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: APP_NAME,
   applicationName: APP_NAME,
   description: APP_DESCRIPTION,
