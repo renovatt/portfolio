@@ -3,26 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background-mobile-one: #2b161cef;
-  --background-mobile-two: #111211F2;
-
-  --background-white:#ffffff; 
-  --background-primary:#f9004d; 
-  --background-secundary:#191919; 
-  --background-third:#101010; 
-  --background-shadow:#00000041; 
-  --background-black:#000000; 
-  --background-modal-shadow:#000000CC; 
-
-  --text-white:#ffffff; 
-  --text-description:#929d8d;
-  --text-primary:#f9004d; 
-  --text-secondary:#ef0a5e;
-  --text-third:#f61b12;
-
-  --border-primary:#f9004d; 
-
-  --max-width: 1100px
+  --bg-default:#191919;
 }
 
 *{
@@ -32,20 +13,18 @@
 }
 
 ::-webkit-scrollbar{
-  width: 3px;
+  width: 0;
 }
 
 ::-webkit-scrollbar-track{
-  /* background-color: var(--background-secondary); */
   background: transparent;
 }
 
 ::-webkit-scrollbar-thumb{
-  /* background: var(--background-primary); */
   background: transparent;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, h5, h6, p{
   margin: 0;
   padding: 0;
 }
@@ -74,7 +53,7 @@ html{
 }
 
 body{
-  background: var(--background-secundary);
+  background: var(--bg-default);
 }
 
 #__next,

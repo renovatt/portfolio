@@ -28,6 +28,7 @@ const ProjectRoot = ({ children, ...props }: ProjectRootProps) => {
 
   const backgroundImageUrl = `${props.thumbnail_url}`
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const sectionStyle = {
     backgroundImage: `url(${backgroundImageUrl})`,
   }

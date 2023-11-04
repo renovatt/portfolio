@@ -72,16 +72,16 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={chakraPetch.className}>
         <ReactQueryProvider>
-          <AosProvider>
-            <ToastifyProvider>
-              <Header />
+          <ToastifyProvider>
+            <AosProvider>
               <Container>
+                <Header />
                 {children}
                 {modal}
+                <Footer />
               </Container>
-              <Footer />
-            </ToastifyProvider>
-          </AosProvider>
+            </AosProvider>
+          </ToastifyProvider>
         </ReactQueryProvider>
       </body>
     </html>

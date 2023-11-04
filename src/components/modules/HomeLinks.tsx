@@ -12,31 +12,31 @@ const HomeLinks = () => {
       <Link
         data-aos="fade-up"
         data-aos-delay="200"
-        className="flex items-center text-white"
+        className="flex items-center text-primary-750"
         href="https://www.linkedin.com/in/renovatt"
         target="_blank"
       >
-        <FaLinkedin className="m-1 h-8 w-8 text-white transition-all ease-in hover:-mt-1 hover:text-textPrimary" />
+        <FaLinkedin className="m-1 h-8 w-8 text-primary-750 transition-all ease-in hover:-mt-1 hover:text-primary-950" />
       </Link>
 
       <Link
         data-aos="fade-up"
         data-aos-delay="400"
-        className="flex items-center text-white"
+        className="flex items-center text-primary-750"
         href="https://github.com/renovatt"
         target="_blank"
       >
-        <FaGithub className="m-1 h-8 w-8 text-white transition-all ease-in hover:-mt-1 hover:text-textPrimary" />
+        <FaGithub className="m-1 h-8 w-8 text-primary-750 transition-all ease-in hover:-mt-1 hover:text-primary-950" />
       </Link>
 
       <Link
         data-aos="fade-up"
         data-aos-delay="600"
-        className="flex items-center text-white"
+        className="flex items-center text-primary-750"
         href={cv}
         target="_blank"
       >
-        <BsFileEarmarkTextFill className="m-1 h-8 w-8 text-white transition-all ease-in hover:-mt-1 hover:text-textPrimary" />
+        <BsFileEarmarkTextFill className="m-1 h-8 w-8 text-primary-750 transition-all ease-in hover:-mt-1 hover:text-primary-950" />
       </Link>
     </span>
   )

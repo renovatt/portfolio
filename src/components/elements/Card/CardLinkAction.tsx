@@ -10,7 +10,7 @@ type CardLinkActionProps = {
 const CardLinkAction = ({ text, href }: CardLinkActionProps) => {
   return (
     <Link
-      className="select-none rounded-lg border-none bg-white px-4 py-2 text-base font-bold text-textPrimary transition-all ease-in hover:bg-backgroundPrimary hover:text-white"
+      className="select-none rounded-lg border-none bg-primary-750 px-4 py-2 text-base font-bold text-primary-950 transition-all ease-in hover:bg-primary-950 hover:text-primary-750"
       href={href}
     >
       {text}

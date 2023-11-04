@@ -10,15 +10,15 @@ const About = () => {
   const { data, isError, isLoading } = useProfileQuery()
   const profile = data as ProfileResponse
   return (
-    <section className="flex w-full max-w-[1400px] animate-fade flex-col items-center justify-center bg-backgroundSecundary px-28 transition-all">
-      <article className="mt-8 flex h-auto max-h-[1400px] flex-col items-center justify-center md:w-full  md:flex-row md:justify-around">
+    <section className="container my-4 flex w-full animate-fade flex-col items-center justify-center overflow-hidden bg-primary-900 transition-all">
+      <article className="flex h-auto flex-col items-center justify-center md:w-full md:flex-row md:justify-around">
         <figure className="h-80 w-80">
           <SkeletonImageProfile src={profileImage} alt="profileImage" />
         </figure>
-        <section className="my-16 ml-0 flex min-h-[25rem] w-full flex-col items-center md:ml-8 md:w-[40rem]">
+        <section className="ml-0 mt-16 flex min-h-[25rem] w-full flex-col items-center md:ml-8 md:w-[40rem]">
           <h1
             data-aos="fade-up"
-            className="mb-8 text-4xl font-bold text-textPrimary md:text-5xl"
+            className="mb-8 text-4xl font-bold text-primary-950 md:text-5xl"
           >
             Quem sou eu?
           </h1>
@@ -31,13 +31,13 @@ const About = () => {
               <article key={profile.id}>
                 <p
                   data-aos="fade-up"
-                  className="text-justify text-xl text-textDescription"
+                  className="text-justify text-xl text-secondary-850"
                 >
                   {profile.description_1}
                 </p>
                 <p
                   data-aos="fade-up"
-                  className="text-justify text-xl text-textDescription"
+                  className="text-justify text-xl text-secondary-850"
                 >
                   {profile.description_2}
                 </p>

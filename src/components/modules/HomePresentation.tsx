@@ -3,18 +3,18 @@ import TypingEffect from '@elements/TypingEffect'
 
 function HomePresentation() {
   return (
-    <article className="relative mt-4 flex w-1/2 flex-col items-center md:mt-0 md:items-start">
+    <article className="relative mt-4 flex w-full flex-col items-center md:mt-0 md:w-1/2 md:items-start">
       <span
         data-aos-delay="300"
         data-aos="fade-right"
-        className="text-5xl text-white"
+        className="text-5xl text-primary-750"
       >
         Olá, eu sou
       </span>
       <h1
         data-aos="fade-right"
         data-aos-delay="400"
-        className="text-8xl font-bold text-white md:ml-16 md:text-9xl"
+        className="text-8xl font-bold text-primary-750 md:ml-16 md:text-9xl"
       >
         Will
         <span

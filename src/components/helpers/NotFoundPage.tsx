@@ -14,7 +14,7 @@ const NotFoundPage = () => {
           priority
         />
       </figure>
-      <p className="mt-8 text-center text-5xl text-white">
+      <p className="mt-8 text-center text-5xl text-primary-750">
         Página não encontrada!
       </p>
     </section>

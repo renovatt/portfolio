@@ -17,7 +17,7 @@ const ProjectCloseIcon = () => {
   return (
     <RiCloseFill
       onClick={backPage}
-      className="absolute -right-4 -top-2.5 h-8 w-8 cursor-pointer rounded-full bg-backgroundPrimary text-white transition-all ease-in hover:bg-white hover:text-textPrimary"
+      className="absolute -right-4 -top-2.5 h-8 w-8 cursor-pointer rounded-full bg-primary-950 text-primary-750 transition-all ease-in hover:bg-primary-750 hover:text-primary-950"
     />
   )
 }

@@ -42,7 +42,7 @@ const ContactEmailForm = () => {
         data-aos="fade-right"
         data-aos-delay="100"
         onSubmit={methods.handleSubmit(handleMessage)}
-        className="m-8 flex  h-full w-full max-w-xs flex-col justify-center gap-4 rounded-lg bg-backgroundThird p-4 md:h-[30rem]"
+        className="m-2 flex h-full w-full max-w-xs flex-col justify-center gap-4 rounded-lg bg-primary-850 p-4 md:h-[30rem]"
       >
         <Input label="Nome" placeholder="Seu nome" name="name" type="text" />
         <ErrorFormMessage field="name" />

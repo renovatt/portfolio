@@ -26,7 +26,7 @@ const SkillsIcons = () => {
       key={skill.id}
       onMouseOut={clearStatus}
       onMouseOver={() => setStatus(skill.id)}
-      className="flex items-center justify-center transition-all ease-in hover:scale-110 "
+      className="flex items-center justify-center transition-all ease-in hover:scale-110"
     >
       <figure
         data-aos="fade-up"

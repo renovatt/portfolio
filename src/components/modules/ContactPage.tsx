@@ -3,7 +3,7 @@ import ContactPresentation from './ContactPresentation'
 
 const ContactPage = () => {
   return (
-    <section className="flex h-[90%] w-[95%] max-w-[1400px] animate-fade flex-col items-center justify-start transition-all md:flex-row md:items-start md:justify-around">
+    <section className="container flex animate-fade flex-col items-center justify-start bg-primary-900 transition-all md:flex-row md:items-start md:justify-around">
       <ContactPresentation />
       <ContactEmailForm />
     </section>

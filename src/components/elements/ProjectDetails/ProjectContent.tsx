@@ -9,7 +9,7 @@ const ProjectContent = ({ children, ...props }: ProjectRootProps) => {
   return (
     <section
       data-aos="zoom-in-up"
-      className="relative z-50 flex h-auto w-full flex-col items-center justify-between rounded-lg bg-zinc-800 px-2 py-3 md:flex-row"
+      className="relative z-50 flex h-auto w-full flex-col items-center justify-between rounded-lg bg-secondary-750 px-2 py-3 md:flex-row"
       key={props.id}
     >
       {children}

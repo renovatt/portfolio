@@ -14,7 +14,7 @@ const SkeletonImageProfile = ({ src, alt, className }: ImageProps) => {
   return (
     <figure className="grid">
       {sketelon && (
-        <span className="bg-gradient-radial col-start-1 row-start-1 h-full animate-pulse rounded-full bg-backgroundThird bg-cover"></span>
+        <span className="bg-gradient-radial col-start-1 row-start-1 h-full animate-pulse rounded-full bg-primary-850 bg-cover"></span>
       )}
       <Image
         className={`ease col-start-1 row-start-1 opacity-0 transition-all ${

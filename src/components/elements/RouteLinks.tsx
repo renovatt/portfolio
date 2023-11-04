@@ -8,13 +8,10 @@ const RouteLinks = (props: RouteLinksProps) => {
   return (
     <Link
       className={`${
-        props.onClick
-          ? 'text-2xl text-white'
-          : `text-base hover:text-textPrimary ${
-              isActive ? 'text-textPrimary' : 'text-white'
-            }`
-      } font-bold transition-all ease-in
-            `}
+        props.onClick ? 'text-2xl' : 'text-base'
+      } font-bold transition-all ease-in hover:text-primary-950 ${
+        isActive ? 'text-primary-950' : 'text-primary-750'
+      }`}
       href={props.href}
       onClick={props.onClick}
     >

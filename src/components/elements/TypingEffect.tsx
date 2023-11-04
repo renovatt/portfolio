@@ -8,8 +8,8 @@ function TypingEffect() {
       speed={100}
       eraseSpeed={100}
       typingDelay={10}
-      cursorClassName="text-white pl-1"
-      className="text-xl text-textPrimary md:text-5xl"
+      cursorClassName="text-primary-750 pl-1"
+      className="text-xl text-primary-950 md:text-5xl"
     />
   )
 }

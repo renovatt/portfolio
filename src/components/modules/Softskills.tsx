@@ -17,7 +17,7 @@ const Softskills = () => {
       {softSkills?.softskills?.map((softSkill) => (
         <h4
           key={softSkill.id}
-          className="m-1 p-1 py-2 text-center font-bold text-textDescription transition-all md:p-2"
+          className="m-1 p-1 py-2 text-center font-bold text-secondary-850 transition-all md:p-2"
         >
           {softSkill.softskill_name}
         </h4>

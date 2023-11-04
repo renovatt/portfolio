@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   const projects = await getProjectsById(params.id)
   const projectsData = projects as ProjectResponse
 
-  const APP_NAME = `WillCode | ${projectsData.project_name}`
+  const APP_NAME = `{ ...Will } : ${projectsData.project_name}`
   const APP_DESCRIPTION = projectsData.description
   const DEPLOY_URL = projectsData.deploy_url
   const BANNER_IMAGE = projectsData.banner_url

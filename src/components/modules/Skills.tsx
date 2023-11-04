@@ -1,11 +1,11 @@
-import Softskills from './Softskills'
+// import Softskills from './Softskills'
 import SkillsIcons from '@elements/SkillsIcons'
 import SkillsDescriptions from '@elements/SkillsDescriptions'
 
-const SkillsWithSoftskills = () => {
+const Skills = () => {
   return (
-    <section className="mb:mb-8 mb-16 flex h-auto max-w-[1400px] flex-col justify-around overflow-hidden transition-all md:w-full">
-      <section className="m-8 flex h-full flex-col items-center justify-between md:my-8 md:flex-row">
+    <section className="container flex h-auto w-full flex-col justify-around overflow-hidden transition-all">
+      <section className="m-4 flex h-full flex-col items-center justify-between md:my-2 md:flex-row">
         <aside className="mb-8 grid w-auto grid-cols-3 grid-rows-2 gap-4 md:mb-0 md:w-[30%] lg:gap-8">
           <SkillsIcons />
         </aside>
@@ -13,7 +13,7 @@ const SkillsWithSoftskills = () => {
         <aside
           data-aos="fade-left"
           data-aos-delay="50"
-          className="flex h-auto w-auto items-center justify-center overflow-hidden bg-backgroundThird md:h-80 md:w-[50%] md:p-8"
+          className="flex h-auto w-auto items-center justify-center overflow-hidden bg-primary-850 md:h-80 md:w-[50%] md:p-8"
         >
           <SkillsDescriptions />
         </aside>
@@ -28,4 +28,4 @@ const SkillsWithSoftskills = () => {
   )
 }
 
-export default SkillsWithSoftskills
+export default Skills
