@@ -20,7 +20,7 @@ const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
           <ul className="w-full transform flex-col items-center justify-center gap-2 overflow-hidden transition-all">
             <li className="my-4 w-full py-2 text-center transition-all hover:bg-third-950">
               <RouteLinks
-                href="/"
+                href="/home"
                 text="<Página inicial />"
                 onClick={closeModal}
               />

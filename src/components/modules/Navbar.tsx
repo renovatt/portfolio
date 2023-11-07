@@ -7,7 +7,7 @@ const Navbar = ({ openModal }: MenuMobileTypeProps) => {
     <nav className="flex items-center justify-between overflow-x-hidden">
       <ul className="hidden md:items-center md:justify-between lg:flex">
         <li data-aos="fade-left" data-aos-delay="100" className="m-2 p-2">
-          <RouteLinks href="/" text="<Página inicial />" />
+          <RouteLinks href="/home" text="<Página inicial />" />
         </li>
 
         <li data-aos="fade-left" data-aos-delay="200" className="m-2 p-2">
