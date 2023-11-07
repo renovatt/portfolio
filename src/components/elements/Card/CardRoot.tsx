@@ -10,7 +10,7 @@ const CardRoot = ({ children, ...props }: CardARootProps) => {
   const router = useRouter()
 
   const gotToProjectPage = () => {
-    router.push(`/views/project/${props.id}`)
+    router.push(`/project/${props.id}`)
   }
 
   const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {

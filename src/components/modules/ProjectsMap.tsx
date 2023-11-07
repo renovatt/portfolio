@@ -25,7 +25,7 @@ const ProjectsMap = () => {
                 <Card.Actions>
                   <Card.Link
                     text="Ver Detalhes"
-                    href={`/views/project/${project.id}`}
+                    href={`/project/${project.id}`}
                   />
                 </Card.Actions>
               </Card.Container>
