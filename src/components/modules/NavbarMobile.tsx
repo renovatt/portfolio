@@ -28,7 +28,7 @@ const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
 
             <li className="my-2 w-full p-2 text-center transition-all hover:bg-third-950">
               <RouteLinks
-                href="/views/profile"
+                href="/profile"
                 text="<Quem sou eu />"
                 onClick={closeModal}
               />
@@ -36,7 +36,7 @@ const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
 
             <li className="my-2 w-full p-2 text-center transition-all hover:bg-third-950">
               <RouteLinks
-                href="/views/projects"
+                href="/projects"
                 text="<Projetos />"
                 onClick={closeModal}
               />
@@ -44,7 +44,7 @@ const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
 
             <li className="my-2 w-full p-2 text-center transition-all hover:bg-third-950">
               <RouteLinks
-                href="/views/skills"
+                href="/skills"
                 text="<Habilidades />"
                 onClick={closeModal}
               />
@@ -52,7 +52,7 @@ const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
 
             <li className="my-2 w-full p-2 text-center transition-all hover:bg-third-950">
               <RouteLinks
-                href="/views/contact"
+                href="/contact"
                 text="<Contato />"
                 onClick={closeModal}
               />

@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import Home from './views/home/page'
+import Home from './(views)/home/page'
 
 export const metadata: Metadata = {
   title: '{ ...Will } : Página Inicial',

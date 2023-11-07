@@ -11,19 +11,19 @@ const Navbar = ({ openModal }: MenuMobileTypeProps) => {
         </li>
 
         <li data-aos="fade-left" data-aos-delay="200" className="m-2 p-2">
-          <RouteLinks href="/views/profile" text="<Quem sou eu />" />
+          <RouteLinks href="/profile" text="<Quem sou eu />" />
         </li>
 
         <li data-aos="fade-left" data-aos-delay="300" className="m-2 p-2">
-          <RouteLinks href="/views/projects" text="<Projetos />" />
+          <RouteLinks href="/projects" text="<Projetos />" />
         </li>
 
         <li data-aos="fade-left" data-aos-delay="400" className="m-2 p-2">
-          <RouteLinks href="/views/skills" text="<Habilidades />" />
+          <RouteLinks href="/skills" text="<Habilidades />" />
         </li>
 
         <li data-aos="fade-left" data-aos-delay="500" className="m-2 p-2">
-          <RouteLinks href="/views/contact" text="<Contato />" />
+          <RouteLinks href="/contact" text="<Contato />" />
         </li>
       </ul>
 
