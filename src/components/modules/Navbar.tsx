@@ -28,7 +28,7 @@ const Navbar = ({ openModal }: MenuMobileTypeProps) => {
       </ul>
 
       <RiMenu3Line
-        className="h-6 w-6 cursor-pointer text-primary-750 transition-all ease-in hover:text-primary-950 md:hidden"
+        className="h-10 w-10 cursor-pointer rounded-md border border-primary-950 p-1 text-primary-750 transition-all ease-in hover:text-primary-950 md:hidden"
         onClick={openModal}
       />
     </nav>
