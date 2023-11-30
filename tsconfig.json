@@ -28,6 +28,7 @@
       "@providers/*": ["components/providers/*"],
       "@hooks/*": ["hooks/*"],
       "@assets/*": ["assets/*"],
+      "@constants/*": ["constants/*"],
       // "@schemas/*": ["schemas/*"],
       // "@store/*": ["store/*"],
       // "@services/*": ["services/*"],
