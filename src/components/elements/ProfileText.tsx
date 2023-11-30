@@ -15,6 +15,7 @@ export default function ProfileText({
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }}
+      className="space-y-2"
     >
       <p className="text-justify text-xl text-secondary-850">
         {descriptionOne}

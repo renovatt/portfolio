@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import './globals.css'
+import 'animate.css'
 import { Metadata, Viewport } from 'next'
 import { Chakra_Petch } from 'next/font/google'
 import Header from '@modules/Header'
