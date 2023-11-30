@@ -7,7 +7,7 @@ import { useToggle } from '@hooks/useToggle'
 const Header = () => {
   const { modal, openModal, closeModal } = useToggle()
   return (
-    <header className="container flex h-20 w-full items-center justify-between border-b border-primary-950 bg-primary-900 transition-all md:animate-fade">
+    <header className="container flex h-20 w-full items-center justify-between border-b border-primary-950 bg-primary-900 transition-all">
       <Link href="/" className="flex text-2xl font-bold md:text-3xl">
         <h1 className="inline-block text-primary-750">
           <span>{'{ '}</span>

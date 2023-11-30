@@ -1,7 +1,7 @@
 'use client'
 import ReactTypingEffect from 'react-typing-effect'
 
-function TypingEffect() {
+const TypingEffect = () => {
   return (
     <ReactTypingEffect
       text={'Front-End Developer'}

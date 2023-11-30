@@ -5,7 +5,6 @@ import { Chakra_Petch } from 'next/font/google'
 import Header from '@modules/Header'
 import Footer from '@modules/Footer'
 import Container from '@elements/Container'
-import { AosProvider } from '@providers/AosProvider'
 import ToastifyProvider from '@providers/ToastifyProvider'
 import ReactQueryProvider from '@providers/ReactQueryProvider'
 
@@ -77,14 +76,12 @@ export default function RootLayout({
       <body className={chakraPetch.className}>
         <ReactQueryProvider>
           <ToastifyProvider>
-            <AosProvider>
-              <Container>
-                <Header />
-                {children}
-                {modal}
-                <Footer />
-              </Container>
-            </AosProvider>
+            <Container>
+              <Header />
+              {children}
+              {modal}
+              <Footer />
+            </Container>
           </ToastifyProvider>
         </ReactQueryProvider>
       </body>

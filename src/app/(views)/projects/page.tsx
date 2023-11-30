@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default async function Projects() {
   const { projects } = await getProjects()
   return (
-    <section className="grid grid-cols-2 overflow-hidden bg-primary-900 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-      <Suspense fallback={<Loader />}>
+    <Suspense fallback={<Loader />}>
+      <section className="grid grid-cols-2 overflow-hidden bg-primary-900 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         {projects
           ?.sort((a, b) => a.order - b.order)
           ?.map((project) => (
@@ -30,7 +30,7 @@ export default async function Projects() {
               </Card.Container>
             </Card.Root>
           ))}
-      </Suspense>
-    </section>
+      </section>
+    </Suspense>
   )
 }
