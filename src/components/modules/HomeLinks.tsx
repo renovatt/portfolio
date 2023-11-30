@@ -10,9 +10,7 @@ const HomeLinks = () => {
      md:left-0"
     >
       <Link
-        data-aos="fade-up"
-        data-aos-delay="200"
-        className="flex items-center text-primary-750"
+        className="animate__animated animate__fadeInUp flex items-center text-primary-750"
         href="https://www.linkedin.com/in/renovatt"
         target="_blank"
       >
@@ -20,9 +18,7 @@ const HomeLinks = () => {
       </Link>
 
       <Link
-        data-aos="fade-up"
-        data-aos-delay="400"
-        className="flex items-center text-primary-750"
+        className="animate__animated animate__fadeInUp flex items-center text-primary-750"
         href="https://github.com/renovatt"
         target="_blank"
       >
@@ -30,9 +26,7 @@ const HomeLinks = () => {
       </Link>
 
       <Link
-        data-aos="fade-up"
-        data-aos-delay="600"
-        className="flex items-center text-primary-750"
+        className="animate__animated animate__fadeInUp flex items-center text-primary-750"
         href={cv}
         target="_blank"
       >

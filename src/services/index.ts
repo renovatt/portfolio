@@ -1,26 +1,25 @@
 import {
-  APIProfileResponse,
-  APIProjectResponse,
-  APIProjectsResponse,
-  APISkillsResponse,
-  APISoftskillsResponse,
   ErrorMessageResponse,
-  ProjectResponse,
   ProjectsResponse,
   SkillsResponse,
-  SoftskillsResponse,
   ContactProps,
+  ProfileResponse,
+  ProjectResponse,
 } from '@types'
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? ''
 
-export const getProjects = async (): Promise<APIProjectsResponse> => {
+export const getProfile = async (): Promise<ProfileResponse> => {
   try {
-    const response = await fetch(`${BASE_URL}/projects`)
-    const data: ProjectsResponse = await response.json()
+    const response = await fetch(`${BASE_URL}/profile`, {
+      next: {
+        revalidate: 30,
+      },
+    })
+    const data: ProfileResponse = await response.json()
 
     if (response.ok) {
-      return { projects: data.projects }
+      return data
     } else {
       const error: ErrorMessageResponse = new Error(
         'Falha na solicitação com status: ' + response.status,
@@ -33,11 +32,36 @@ export const getProjects = async (): Promise<APIProjectsResponse> => {
   }
 }
 
-export const getProjectsById = async (
-  id: string,
-): Promise<APIProjectResponse> => {
+export const getProjects = async (): Promise<ProjectsResponse> => {
   try {
-    const response = await fetch(`${BASE_URL}/projects/${id}`)
+    const response = await fetch(`${BASE_URL}/projects`, {
+      next: {
+        revalidate: 30,
+      },
+    })
+    const data: ProjectsResponse = await response.json()
+
+    if (response.ok) {
+      return data
+    } else {
+      const error: ErrorMessageResponse = new Error(
+        'Falha na solicitação com status: ' + response.status,
+      )
+      throw error
+    }
+  } catch (error) {
+    const errorWithMessage: ErrorMessageResponse = new Error('Erro interno.')
+    throw errorWithMessage
+  }
+}
+
+export const getProjectsById = async (id: string): Promise<ProjectResponse> => {
+  try {
+    const response = await fetch(`${BASE_URL}/projects/${id}`, {
+      next: {
+        revalidate: 30,
+      },
+    })
     const data: ProjectResponse = await response.json()
 
     if (response.ok) {
@@ -54,51 +78,17 @@ export const getProjectsById = async (
   }
 }
 
-export const getSkills = async (): Promise<APISkillsResponse> => {
+export const getSkills = async (): Promise<SkillsResponse> => {
   try {
-    const response = await fetch(`${BASE_URL}/skills`)
+    const response = await fetch(`${BASE_URL}/skills`, {
+      next: {
+        revalidate: 30,
+      },
+    })
     const data: SkillsResponse = await response.json()
 
     if (response.ok) {
-      return { skills: data.skills }
-    } else {
-      const error: ErrorMessageResponse = new Error(
-        'Falha na solicitação com status: ' + response.status,
-      )
-      throw error
-    }
-  } catch (error) {
-    const errorWithMessage: ErrorMessageResponse = new Error('Erro interno.')
-    throw errorWithMessage
-  }
-}
-
-export const getSoftskills = async (): Promise<APISoftskillsResponse> => {
-  try {
-    const response = await fetch(`${BASE_URL}/softskills`)
-    const data: SoftskillsResponse = await response.json()
-
-    if (response.ok) {
-      return { softskills: data.softskills }
-    } else {
-      const error: ErrorMessageResponse = new Error(
-        'Falha na solicitação com status: ' + response.status,
-      )
-      throw error
-    }
-  } catch (error) {
-    const errorWithMessage: ErrorMessageResponse = new Error('Erro interno.')
-    throw errorWithMessage
-  }
-}
-
-export const getProfile = async (): Promise<APIProfileResponse> => {
-  try {
-    const response = await fetch(`${BASE_URL}/profile`)
-    const data = await response.json()
-
-    if (response.ok) {
-      return { profile: data.profile }
+      return data
     } else {
       const error: ErrorMessageResponse = new Error(
         'Falha na solicitação com status: ' + response.status,

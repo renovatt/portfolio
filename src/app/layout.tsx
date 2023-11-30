@@ -1,11 +1,11 @@
+/* eslint-disable camelcase */
 import './globals.css'
-import { Metadata } from 'next'
-// eslint-disable-next-line camelcase
+import 'animate.css'
+import { Metadata, Viewport } from 'next'
 import { Chakra_Petch } from 'next/font/google'
 import Header from '@modules/Header'
 import Footer from '@modules/Footer'
 import Container from '@elements/Container'
-import { AosProvider } from '@providers/AosProvider'
 import ToastifyProvider from '@providers/ToastifyProvider'
 import ReactQueryProvider from '@providers/ReactQueryProvider'
 
@@ -18,6 +18,13 @@ const chakraPetch = Chakra_Petch({
 const APP_NAME = 'WillCode'
 const APP_DESCRIPTION =
   'Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills.'
+
+export const viewport: Viewport = {
+  colorScheme: 'dark',
+  themeColor: '#ffffff',
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
@@ -35,14 +42,10 @@ export const metadata: Metadata = {
     'WillCode',
     'portfolio',
   ],
-  themeColor: [{ media: '(prefers-color-scheme: dark)', color: '#fff' }],
   authors: [
     { name: 'renovatt' },
     { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt/' },
   ],
-  viewport:
-    'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover',
-
   openGraph: {
     type: 'website',
     url: 'https://portfolio-renovatt.vercel.app/',
@@ -74,14 +77,12 @@ export default function RootLayout({
       <body className={chakraPetch.className}>
         <ReactQueryProvider>
           <ToastifyProvider>
-            <AosProvider>
-              <Container>
-                <Header />
-                {children}
-                {modal}
-                <Footer />
-              </Container>
-            </AosProvider>
+            <Container>
+              <Header />
+              {children}
+              {modal}
+              <Footer />
+            </Container>
           </ToastifyProvider>
         </ReactQueryProvider>
       </body>

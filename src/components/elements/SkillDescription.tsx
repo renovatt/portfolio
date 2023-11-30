@@ -1,11 +1,40 @@
-import { SkillsTypeProps } from '@types'
+'use client'
+import useStatusStore from 'store'
+import SmallError from '@helpers/SmallError'
+import Description from './Description'
+import { useSkillQuery } from '@hooks/useSkillQuery'
+import DefaultDescription from './DefaultDescription'
+import { motion } from 'framer-motion'
 
-const SkillDescription = (props: SkillsTypeProps) => {
+const SkillDescription = () => {
+  const { status } = useStatusStore()
+  const { data: skills, isError } = useSkillQuery()
+
+  const hoveredSkill = skills?.skills?.find(
+    (skill) => skill.id === status.skillId,
+  )
+
+  if (isError) return <SmallError />
+  if (hoveredSkill && status.isHovered)
+    return (
+      <motion.aside className="flex h-auto w-auto items-center justify-center overflow-hidden bg-primary-850 md:h-80 md:w-[50%] md:p-8">
+        <Description {...hoveredSkill} />
+      </motion.aside>
+    )
+
   return (
-    <section className="flex min-h-[25rem] w-full animate-fade flex-col items-start justify-center bg-primary-850 p-8 transition-all lg:min-h-[15rem]">
-      <h2 className="text-xl font-bold text-primary-950">{props.skill_name}</h2>
-      <p className="text-xl text-secondary-850">{props.description}</p>
-    </section>
+    <motion.aside
+      className="flex h-auto w-auto items-center justify-center overflow-hidden bg-primary-850 md:h-80 md:w-[50%] md:p-8"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+    >
+      <DefaultDescription />
+    </motion.aside>
   )
 }
 

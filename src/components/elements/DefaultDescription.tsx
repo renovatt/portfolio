@@ -1,6 +1,7 @@
+'use client'
 import { useMobileWidth } from '@hooks/useMobileWidth'
 
-const SkillDefaultDescription = () => {
+const DefaultDescription = () => {
   const { isMobile } = useMobileWidth()
   return (
     <section className="flex min-h-[25rem] w-full items-center justify-center bg-primary-850 p-4 lg:min-h-[15rem]">
@@ -17,4 +18,4 @@ const SkillDefaultDescription = () => {
   )
 }
 
-export default SkillDefaultDescription
+export default DefaultDescription

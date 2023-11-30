@@ -1,12 +1,19 @@
+'use client'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BiLogoGmail } from 'react-icons/bi'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const ContactPresentation = () => {
   return (
-    <aside
-      data-aos="fade-up"
-      data-aos-delay="50"
+    <motion.aside
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
       className="m-2 h-full max-w-xs flex-col rounded-lg bg-primary-850 p-4 md:flex md:w-full md:max-w-xl"
     >
       <h1 className="mb-8 text-4xl font-bold text-primary-950 md:text-5xl">
@@ -53,7 +60,7 @@ const ContactPresentation = () => {
           </Link>
         </span>
       </section>
-    </aside>
+    </motion.aside>
   )
 }
 

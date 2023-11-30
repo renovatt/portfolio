@@ -10,6 +10,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { FormProvider, useForm } from 'react-hook-form'
 import ErrorFormMessage from '@elements/ErrorFormMessage'
 import ContactButtonForm from '@elements/ContactButtonForm'
+import { motion } from 'framer-motion'
 
 const ContactEmailForm = () => {
   const [loading, setLoading] = useState(false)
@@ -38,9 +39,14 @@ const ContactEmailForm = () => {
 
   return (
     <FormProvider {...methods}>
-      <form
-        data-aos="fade-right"
-        data-aos-delay="100"
+      <motion.form
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
         onSubmit={methods.handleSubmit(handleMessage)}
         className="m-2 flex h-full w-full max-w-xs flex-col justify-center gap-4 rounded-lg bg-primary-850 p-4 md:h-[30rem]"
       >
@@ -54,7 +60,7 @@ const ContactEmailForm = () => {
         <ErrorFormMessage field="message" />
 
         <ContactButtonForm loading={loading} />
-      </form>
+      </motion.form>
     </FormProvider>
   )
 }
