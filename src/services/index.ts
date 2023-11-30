@@ -11,7 +11,11 @@ export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? ''
 
 export const getProfile = async (): Promise<ProfileResponse> => {
   try {
-    const response = await fetch(`${BASE_URL}/profile`)
+    const response = await fetch(`${BASE_URL}/profile`, {
+      next: {
+        revalidate: 30,
+      },
+    })
     const data: ProfileResponse = await response.json()
 
     if (response.ok) {
@@ -30,7 +34,11 @@ export const getProfile = async (): Promise<ProfileResponse> => {
 
 export const getProjects = async (): Promise<ProjectsResponse> => {
   try {
-    const response = await fetch(`${BASE_URL}/projects`)
+    const response = await fetch(`${BASE_URL}/projects`, {
+      next: {
+        revalidate: 30,
+      },
+    })
     const data: ProjectsResponse = await response.json()
 
     if (response.ok) {
@@ -49,7 +57,11 @@ export const getProjects = async (): Promise<ProjectsResponse> => {
 
 export const getProjectsById = async (id: string): Promise<ProjectResponse> => {
   try {
-    const response = await fetch(`${BASE_URL}/projects/${id}`)
+    const response = await fetch(`${BASE_URL}/projects/${id}`, {
+      next: {
+        revalidate: 30,
+      },
+    })
     const data: ProjectResponse = await response.json()
 
     if (response.ok) {
@@ -68,7 +80,11 @@ export const getProjectsById = async (id: string): Promise<ProjectResponse> => {
 
 export const getSkills = async (): Promise<SkillsResponse> => {
   try {
-    const response = await fetch(`${BASE_URL}/skills`)
+    const response = await fetch(`${BASE_URL}/skills`, {
+      next: {
+        revalidate: 30,
+      },
+    })
     const data: SkillsResponse = await response.json()
 
     if (response.ok) {
