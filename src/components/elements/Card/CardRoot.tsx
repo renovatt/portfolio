@@ -1,3 +1,4 @@
+'use client'
 import { ReactNode } from 'react'
 import { ProjectsTypeProps } from '@types'
 import { useRouter } from 'next/navigation'

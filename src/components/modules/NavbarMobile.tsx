@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { Fragment } from 'react'
 import RouteLinks from '@elements/RouteLinks'
 import { RiCloseFill } from 'react-icons/ri'
 import { MenuMobileTypeProps } from '@types'
@@ -10,7 +10,7 @@ const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
   }, [modal])
 
   return (
-    <>
+    <Fragment>
       {modal && (
         <nav
           className={`absolute left-0 top-0 z-50 flex h-[50%] w-full items-center justify-center rounded-b-3xl bg-primary-900 shadow-2xl shadow-black transition-all ease-in md:hidden ${
@@ -65,7 +65,7 @@ const NavbarMobile = ({ modal, closeModal }: MenuMobileTypeProps) => {
           />
         </nav>
       )}
-    </>
+    </Fragment>
   )
 }
 

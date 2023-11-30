@@ -1,6 +1,6 @@
+/* eslint-disable camelcase */
 import './globals.css'
-import { Metadata } from 'next'
-// eslint-disable-next-line camelcase
+import { Metadata, Viewport } from 'next'
 import { Chakra_Petch } from 'next/font/google'
 import Header from '@modules/Header'
 import Footer from '@modules/Footer'
@@ -19,6 +19,13 @@ const APP_NAME = 'WillCode'
 const APP_DESCRIPTION =
   'Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills.'
 
+export const viewport: Viewport = {
+  colorScheme: 'dark',
+  themeColor: '#ffffff',
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
   title: APP_NAME,
@@ -35,14 +42,10 @@ export const metadata: Metadata = {
     'WillCode',
     'portfolio',
   ],
-  themeColor: [{ media: '(prefers-color-scheme: dark)', color: '#fff' }],
   authors: [
     { name: 'renovatt' },
     { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt/' },
   ],
-  viewport:
-    'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover',
-
   openGraph: {
     type: 'website',
     url: 'https://portfolio-renovatt.vercel.app/',

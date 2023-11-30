@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
-import ContactPage from '@modules/ContactPage'
+import ContactEmailForm from '@modules/ContactEmailForm'
+import ContactPresentation from '@modules/ContactPresentation'
 
 export const metadata: Metadata = {
   title: '{ ...Will } : Contato',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default function Contact() {
-  return <ContactPage />
+  return (
+    <section className="container flex animate-fade flex-col items-center justify-start bg-primary-900 transition-all md:flex-row md:items-start md:justify-around">
+      <ContactPresentation />
+      <ContactEmailForm />
+    </section>
+  )
 }

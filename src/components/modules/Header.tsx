@@ -13,7 +13,6 @@ const Header = () => {
           <span>{'{ '}</span>
           <span className="text-primary-950">...</span>
           Will
-          {/* <span className="text-primary-950">Code</span> */}
           <span>{' }'}</span>
         </h1>
       </Link>

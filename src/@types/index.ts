@@ -67,12 +67,6 @@ export interface ErrorMessageResponse extends Error {
 
 export type ContactProps = z.infer<typeof contactSchema>
 
-export type APISkillsResponse = SkillsResponse | ErrorMessageResponse
-export type APISoftskillsResponse = SoftskillsResponse | ErrorMessageResponse
-export type APIProjectsResponse = ProjectsResponse | ErrorMessageResponse
-export type APIProjectResponse = ProjectResponse | ErrorMessageResponse
-export type APIProfileResponse = ProfileResponse | ErrorMessageResponse
-
 export type ReactQueryProviderProps = {
   children: ReactNode
 }
