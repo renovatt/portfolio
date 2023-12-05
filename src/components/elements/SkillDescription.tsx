@@ -15,25 +15,24 @@ const SkillDescription = () => {
   )
 
   if (isError) return <SmallError />
-  if (hoveredSkill && status.isHovered)
-    return (
-      <motion.aside className="flex h-auto w-auto items-center justify-center overflow-hidden bg-primary-850 md:h-80 md:w-[50%] md:p-8">
-        <Description {...hoveredSkill} />
-      </motion.aside>
-    )
 
   return (
     <motion.aside
-      className="flex h-auto w-auto items-center justify-center overflow-hidden bg-primary-850 md:h-80 md:w-[50%] md:p-8"
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.5,
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
+        damping: 0,
       }}
+      className="flex min-h-[15rem] w-full items-center justify-center overflow-hidden md:w-[50%]"
     >
-      <DefaultDescription />
+      {hoveredSkill && status.isHovered ? (
+        <Description {...hoveredSkill} />
+      ) : (
+        <DefaultDescription />
+      )}
     </motion.aside>
   )
 }

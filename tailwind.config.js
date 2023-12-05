@@ -34,6 +34,7 @@ module.exports = {
         about: 'url("/bg-about.jpg")',
         profile: 'url("/profile.jpeg")',
         contact: 'url("/bg-contact.jpg")',
+        skills: 'url("/bg-skills.jpg")',
       },
       keyframes: {
         fade: {
