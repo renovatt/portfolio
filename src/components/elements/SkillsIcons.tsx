@@ -5,7 +5,7 @@ const SkillsIcons = async () => {
   const { skills } = await getSkills()
 
   return (
-    <aside className="mb-8 grid w-auto grid-cols-3 gap-4 sm:grid-cols-4 md:mb-0">
+    <aside className="grid grid-cols-4 gap-4">
       {skills?.map((skill, index) => <Icons key={index} {...skill} />)}
     </aside>
   )

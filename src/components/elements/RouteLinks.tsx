@@ -14,7 +14,7 @@ const RouteLinks = ({ href, icon: Icon, text }: RouteLinksProps) => {
       href={href}
       aria-label={text}
     >
-      <Icon className="h-6 w-6" />
+      <Icon className="h-8 w-8 md:h-6 md:w-6" />
     </Link>
   )
 }
