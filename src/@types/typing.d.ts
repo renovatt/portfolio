@@ -8,5 +8,5 @@ type GLTFResult = GLTF & {
 }
 
 export default function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF<GLTFResult>('/model.gltf')
+  const { nodes, materials } = useGLTF<GLTFResult>('/models/mech_bust.glb')
 }
