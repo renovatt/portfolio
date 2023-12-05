@@ -1,21 +1,19 @@
+'use client'
 import Link from 'next/link'
 import { RouteLinksProps } from '@types'
 import { usePathname } from 'next/navigation'
 
-const RouteLinks = (props: RouteLinksProps) => {
+const RouteLinks = ({ href, icon: Icon }: RouteLinksProps) => {
   const pathname = usePathname()
-  const isActive = pathname === props.href
+  const isActive = pathname === href
   return (
     <Link
-      className={`${
-        props.onClick ? 'text-2xl' : 'text-base'
-      } font-bold transition-all ease-in hover:text-primary-950 ${
+      className={`relative transition-all ease-in hover:text-primary-950 ${
         isActive ? 'text-primary-950' : 'text-primary-750'
       }`}
-      href={props.href}
-      onClick={props.onClick}
+      href={href}
     >
-      {props.text}
+      <Icon className="h-6 w-6" />
     </Link>
   )
 }

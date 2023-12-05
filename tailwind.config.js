@@ -9,11 +9,11 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          950: '#f9004d',
+          950: '#ff8269',
           900: '#191919',
           850: '#101010',
           800: '#000000',
-          750: '#ffffff',
+          750: '#e7e5e0',
         },
         secondary: {
           950: '#ef0a5e',
@@ -28,6 +28,9 @@ module.exports = {
           850: '#2b161cef',
           800: '#111211F2',
         },
+      },
+      backgroundImage: {
+        world: 'url("/world.jpg")',
       },
       keyframes: {
         fade: {

@@ -2,6 +2,7 @@ import { z } from 'zod'
 import { ReactNode } from 'react'
 import { contactSchema } from 'schemas'
 import { StaticImageData } from 'next/image'
+import { IconType } from 'react-icons/lib'
 
 type TechsTypeProps = {
   id: string
@@ -90,7 +91,7 @@ export type MenuMobileTypeProps = {
 export type RouteLinksProps = {
   text: string
   href: string
-  onClick?: () => void
+  icon: IconType
 }
 
 type UseStoreState = {
