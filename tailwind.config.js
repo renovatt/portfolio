@@ -31,6 +31,8 @@ module.exports = {
       },
       backgroundImage: {
         world: 'url("/world.jpg")',
+        about: 'url("/bg-about.jpg")',
+        profile: 'url("/profile.jpeg")',
       },
       keyframes: {
         fade: {

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Mecha from '@modules/Mecha'
 import SideHome from '@modules/SideHome'
-import BackgrundImage from '@elements/BackgrundImage'
+import BackgroundImage from '@elements/BackgroundImage'
 
 export const metadata: Metadata = {
   title: '{ ...Will } : Página Inicial',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <section className="relative flex h-screen w-full flex-col-reverse items-center justify-center gap-5 overflow-hidden bg-none transition-all md:flex-row md:justify-between">
-      <BackgrundImage image="bg-world" />
+      <BackgroundImage image="bg-world" />
       <SideHome />
       <Mecha />
     </section>

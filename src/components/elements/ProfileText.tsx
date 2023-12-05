@@ -12,10 +12,10 @@ export default function ProfileText({
       animate={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.5,
-        delay: 0.3,
+        delay: 0.4,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="space-y-2"
+      className="space-y-4"
     >
       <p className="text-justify text-xl text-secondary-850">
         {descriptionOne}
