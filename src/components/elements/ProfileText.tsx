@@ -17,6 +17,9 @@ export default function ProfileText({
       }}
       className="space-y-4"
     >
+      <h1 className="mb-8 text-4xl font-bold text-primary-950 md:text-5xl">
+        Quem sou eu?
+      </h1>
       <p className="text-justify text-xl text-secondary-850">
         {descriptionOne}
       </p>

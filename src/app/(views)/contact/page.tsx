@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <section className="relative flex h-screen w-screen animate-fade items-center justify-center overflow-x-hidden bg-primary-900 py-20 transition-all">
-      <BackgroundImage image="bg-contact" />
-      <article className="z-10 flex h-full w-full flex-col items-center justify-start space-y-6 overflow-y-scroll md:flex-row md:justify-around md:space-y-0">
+    <section className="relative flex h-screen w-screen items-center justify-center overflow-x-hidden py-20 transition-all">
+      <BackgroundImage image="bg-contact animate-fade" />
+      <article className="z-10 flex h-full w-full flex-col items-center justify-start space-y-6 overflow-y-auto md:flex-row md:justify-around md:space-y-0">
         <ContactPresentation />
         <ContactEmailForm />
       </article>
