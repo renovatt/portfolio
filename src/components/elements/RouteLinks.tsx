@@ -3,15 +3,16 @@ import Link from 'next/link'
 import { RouteLinksProps } from '@types'
 import { usePathname } from 'next/navigation'
 
-const RouteLinks = ({ href, icon: Icon }: RouteLinksProps) => {
+const RouteLinks = ({ href, icon: Icon, text }: RouteLinksProps) => {
   const pathname = usePathname()
   const isActive = pathname === href
   return (
     <Link
-      className={`relative transition-all ease-in hover:text-primary-950 ${
+      className={`relative text-xs transition-all ease-in hover:text-primary-950 ${
         isActive ? 'text-primary-950' : 'text-primary-750'
       }`}
       href={href}
+      aria-label={text}
     >
       <Icon className="h-6 w-6" />
     </Link>

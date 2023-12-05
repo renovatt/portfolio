@@ -1,6 +1,9 @@
+import BackgrundImage from '@elements/BackgrundImage'
+
 const Loader = () => {
   return (
-    <section className="flex h-[90vh] w-full flex-col items-center justify-center bg-transparent px-24 py-0">
+    <section className="z-50 flex h-screen w-full flex-col items-center justify-center bg-primary-900 px-24 py-0">
+      <BackgrundImage image="bg-world" />
       <h2 className="mb-4 text-center text-xl font-bold text-primary-750">
         Carregando..
       </h2>
