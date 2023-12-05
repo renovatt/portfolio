@@ -14,7 +14,7 @@ const ContactPresentation = () => {
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="m-2 h-full max-w-xs flex-col rounded-lg bg-primary-850 p-4 md:flex md:w-full md:max-w-xl"
+      className="w-full flex-col justify-center rounded-lg p-4 md:flex md:h-full md:w-full md:max-w-xl"
     >
       <h1 className="mb-8 text-4xl font-bold text-primary-950 md:text-5xl">
         Contato
@@ -26,7 +26,7 @@ const ContactPresentation = () => {
         comigo.
       </h2>
 
-      <section className="mt-20 flex flex-col items-start justify-around gap-4">
+      <section className="mt-10 flex flex-col items-start justify-around gap-4">
         <span className="flex items-center justify-center">
           <FaLinkedin className="mr-2 h-6 w-6 text-primary-750" />
           <Link

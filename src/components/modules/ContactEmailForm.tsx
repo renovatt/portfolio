@@ -48,7 +48,7 @@ const ContactEmailForm = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
         onSubmit={methods.handleSubmit(handleMessage)}
-        className="m-2 flex h-full w-full max-w-xs flex-col justify-center gap-4 rounded-lg bg-primary-850 p-4 md:h-[30rem]"
+        className="flex w-full flex-col justify-center gap-4 rounded-lg p-4 md:h-full md:max-w-xl"
       >
         <Input label="Nome" placeholder="Seu nome" name="name" type="text" />
         <ErrorFormMessage field="name" />
