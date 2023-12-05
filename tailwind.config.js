@@ -30,6 +30,7 @@ module.exports = {
         },
       },
       backgroundImage: {
+        load: 'url("/bg-load.jpg")',
         world: 'url("/bg-home.jpg")',
         about: 'url("/bg-about.jpg")',
         profile: 'url("/profile.jpeg")',
