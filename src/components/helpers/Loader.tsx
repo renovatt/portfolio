@@ -2,7 +2,7 @@ import BackgroundImage from '@elements/BackgroundImage'
 
 const Loader = () => {
   return (
-    <section className="z-50 flex h-screen w-full flex-col items-center justify-center bg-primary-900 px-24 py-0">
+    <section className="absolute inset-0 z-50 flex h-screen w-full flex-col items-center justify-center bg-primary-900 px-24 py-0">
       <BackgroundImage image="bg-load" />
       <h2 className="mb-4 text-center text-xl font-bold text-primary-750">
         Carregando..

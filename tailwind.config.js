@@ -31,11 +31,12 @@ module.exports = {
       },
       backgroundImage: {
         load: 'url("/bg-load.jpg")',
-        world: 'url("/bg-home.jpg")',
+        home: 'url("/bg-home.jpg")',
         about: 'url("/bg-about.jpg")',
         profile: 'url("/profile.jpeg")',
-        contact: 'url("/bg-contact.jpg")',
+        projects: 'url("/bg-projects.jpg")',
         skills: 'url("/bg-skills.jpg")',
+        contact: 'url("/bg-contact.jpg")',
         notFound: 'url("/bg-not-found.jpg")',
       },
       keyframes: {
@@ -85,10 +86,21 @@ module.exports = {
           },
         },
         ray: {
-          '0%, 2%, 20%, 50%, 85%': {
-            opacity: 0.05,
+          '0%, 2%, 70%': {
+            opacity: 0.1,
           },
-          '5%, 15%, 25%, 75%, 95%, 100%': {
+          '5%, 90%, 100%': {
+            opacity: 0,
+          },
+        },
+        storm: {
+          '0%, 2%, 20%, 50%, 52%, 85%': {
+            opacity: 1,
+          },
+          '5%, 15%, 25%': {
+            opacity: 0,
+          },
+          '30%, 40%, 53%, 60%, 70%, 75%, 90%, 100%': {
             opacity: 0,
           },
         },
@@ -128,7 +140,8 @@ module.exports = {
         mobileActive: 'mobileActive .3s ease-in',
         mobileInactive: 'mobileInactive .5s ease-in',
         blink: 'blink 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        ray: 'ray 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        ray: 'ray 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        storm: 'storm 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         fly: 'fly 2s alternate infinite',
         load: 'load .5s ease-in-out infinite',
         fade: 'fade 1s forwards',
