@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 export default function Cloud() {
   return (
@@ -9,7 +8,7 @@ export default function Cloud() {
         width={260}
         height={200}
         className="h-full w-full"
-        alt=""
+        alt="cloud-image"
       />
     </div>
   )

@@ -4,6 +4,7 @@ import SkillDescription from '@elements/SkillDescription'
 import { Suspense } from 'react'
 import Loader from '@helpers/Loader'
 import BackgroundImage from '@elements/BackgroundImage'
+import Ray from '@elements/Ray'
 
 export const metadata: Metadata = {
   title: '{ ...Will } : Habilidades',
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 export default function SkillsAndSoftskills() {
   return (
     <Suspense fallback={<Loader />}>
-      <section className="relative flex h-screen w-screen flex-col justify-start overflow-x-hidden py-20 transition-all">
+      <section className="relative flex h-screen w-screen flex-col justify-start overflow-hidden py-20 transition-all">
+        <Ray />
         <BackgroundImage image="bg-skills animate-fade" />
         <section className="z-10 my-2 flex h-full w-full flex-col items-center justify-start gap-10 space-y-10 overflow-y-auto px-2 md:justify-around md:space-y-0 lg:flex-row">
           <SkillDescription />
