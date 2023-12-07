@@ -8,6 +8,7 @@ import Header from '@modules/Header'
 import Container from '@modules/Container'
 import ToastifyProvider from '@providers/ToastifyProvider'
 import ReactQueryProvider from '@providers/ReactQueryProvider'
+import Footer from '@modules/Footer'
 
 const chakraPetch = Chakra_Petch({
   subsets: ['latin'],
@@ -82,6 +83,7 @@ export default function RootLayout({
               <Navbar />
               {children}
               {modal}
+              <Footer />
             </Container>
           </ToastifyProvider>
         </ReactQueryProvider>
