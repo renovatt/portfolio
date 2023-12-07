@@ -46,7 +46,7 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-black/25" />
+          <div className="fixed inset-0 bg-black/80" />
         </Transition.Child>
 
         <div className="fixed inset-0 overflow-y-auto" onClick={handleBackPage}>
@@ -72,11 +72,11 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
                 <BackgroundImage image="bg-projects animate-fade -z-10" />
                 <RiCloseFill
                   onClick={handleBackPage}
-                  className="absolute right-4 top-0 h-8 w-8 cursor-pointer rounded-lg bg-750 font-bold text-950 transition-all ease-in hover:bg-950 hover:text-750"
+                  className="absolute right-4 top-0 h-8 w-8 cursor-pointer rounded-lg bg-950 font-bold text-750 transition-all ease-in hover:bg-750 hover:text-950"
                 />
                 <Dialog.Title
                   as="h1"
-                  className="text-center text-lg font-medium leading-6 text-750"
+                  className="text-start text-lg font-bold leading-6 text-950"
                 >
                   {props.project_name}
                 </Dialog.Title>
@@ -122,7 +122,7 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
                   </span>
                   <div className="flex items-center justify-center gap-2">
                     <Link
-                      className="rounded-lg bg-750 p-2 text-base font-bold text-950 transition-all ease-in hover:bg-950 hover:text-750"
+                      className="rounded-lg border border-750 border-opacity-20 bg-none p-2 text-base font-bold text-750 transition-all ease-in hover:bg-750 hover:text-950"
                       href="https://github.com/renovatt"
                       target="_blank"
                     >
