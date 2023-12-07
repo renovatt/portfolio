@@ -1,5 +1,5 @@
 'use client'
-
+import Title from './Title'
 import { motion } from 'framer-motion'
 
 export default function SideProject() {
@@ -14,9 +14,7 @@ export default function SideProject() {
       }}
       className="h-full w-full space-y-2 md:w-2/5"
     >
-      <h1 className="mb-8 text-4xl font-bold text-primary-950 md:text-5xl">
-        Projetos
-      </h1>
+      <Title title="Projetos" />
       <p className="text-secondary-850">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officia
         praesentium dolore quos nihil? Nemo consequuntur modi, eius ad non culpa

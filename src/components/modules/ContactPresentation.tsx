@@ -1,4 +1,5 @@
 'use client'
+import Title from '@elements/Title'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BiLogoGmail } from 'react-icons/bi'
@@ -16,9 +17,7 @@ const ContactPresentation = () => {
       }}
       className="w-full flex-col justify-center rounded-lg p-4 md:flex md:h-full md:w-full md:max-w-xl"
     >
-      <h1 className="mb-8 text-4xl font-bold text-primary-950 md:text-5xl">
-        Contato
-      </h1>
+      <Title title="Contato" />
       <h2 className="text-secondary-850">
         Entre em contato comigo ou deixe seu valioso feedback! Estou ansioso
         para ouvir suas opiniões e responder o mais rápido possível. Sinta-se à
