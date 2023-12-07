@@ -18,6 +18,9 @@ const nextConfig = {
     ],
   },
   transpilePackages: ['three'],
+  experimental: {
+    webpackBuildWorker: true,
+  },
 }
 
 const withPWA = require('next-pwa')({
