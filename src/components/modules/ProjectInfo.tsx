@@ -11,6 +11,7 @@ import { FiExternalLink } from 'react-icons/fi'
 import { FaGithub } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import BackgroundImage from '@elements/BackgroundImage'
+import { fadeScale } from '@constants/variants'
 
 const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
   const router = useRouter()
@@ -51,12 +52,10 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
 
         <div className="fixed inset-0 overflow-y-auto" onClick={handleBackPage}>
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
+            variants={fadeScale()}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
             className="flex min-h-full items-center justify-center p-6 text-center"
           >
             <Transition.Child

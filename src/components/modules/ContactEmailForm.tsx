@@ -11,6 +11,7 @@ import { FormProvider, useForm } from 'react-hook-form'
 import ErrorFormMessage from '@elements/ErrorFormMessage'
 import ContactButtonForm from '@elements/ContactButtonForm'
 import { motion } from 'framer-motion'
+import { fadeIn } from '@constants/variants'
 
 const ContactEmailForm = () => {
   const [loading, setLoading] = useState(false)
@@ -40,15 +41,12 @@ const ContactEmailForm = () => {
   return (
     <FormProvider {...methods}>
       <motion.form
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{
-          duration: 0.5,
-          delay: 0.3,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
+        variants={fadeIn({ direction: 'left', delay: 0.3 })}
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
         onSubmit={methods.handleSubmit(handleMessage)}
-        className="flex w-full max-w-xl flex-col justify-center gap-4 p-4 md:h-full"
+        className="flex w-full max-w-xl flex-col justify-center gap-4 p-4 pb-28 md:h-full md:pb-0"
       >
         <Input label="Nome" placeholder="Seu nome" name="name" type="text" />
         <ErrorFormMessage field="name" />

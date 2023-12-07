@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { fadeIn } from '@constants/variants'
 
 const ImageProfile = () => {
   const [sketelon, setSkeleton] = React.useState(true)
@@ -13,13 +14,10 @@ const ImageProfile = () => {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.4,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
+      variants={fadeIn({ direction: 'down', delay: 0.3 })}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
       className="relative my-2 min-h-[20rem] w-80 overflow-hidden rounded-full"
     >
       <figure className="grid">

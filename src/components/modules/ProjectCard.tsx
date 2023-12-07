@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { ProjectsTypeProps } from '@types'
 import { useRouter } from 'next/navigation'
 import { BsArrowRight } from 'react-icons/bs'
+import { fadeIn } from '@constants/variants'
 
 const ProjectCard = ({ banner_url: bannerUrl, id }: ProjectsTypeProps) => {
   const router = useRouter()
@@ -18,14 +19,11 @@ const ProjectCard = ({ banner_url: bannerUrl, id }: ProjectsTypeProps) => {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.3,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
-      className="relative m-2 h-72 w-44 cursor-pointer rounded-lg bg-700 bg-cover bg-center md:h-80 md:w-48"
+      variants={fadeIn({ direction: 'down', delay: 0.3 })}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      className="relative m-2 h-72 w-40 cursor-pointer rounded-lg bg-700 bg-cover bg-center md:h-80 md:w-48"
       style={{ backgroundImage: `url(${bannerUrl})` }}
       onLoad={handleLoad}
       onClick={handleRedirectToPageProject}

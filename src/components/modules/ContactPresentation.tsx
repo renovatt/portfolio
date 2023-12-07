@@ -1,4 +1,5 @@
 'use client'
+import { fadeIn } from '@constants/variants'
 import Title from '@elements/Title'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -8,14 +9,11 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa'
 const ContactPresentation = () => {
   return (
     <motion.aside
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.3,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
-      className="h-full w-full space-y-2 md:w-2/5"
+      variants={fadeIn({ direction: 'right', delay: 0.3 })}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      className="w-full space-y-2 md:h-full md:w-2/5"
     >
       <Title title="Contato" />
       <p className="text-justify text-base text-850">

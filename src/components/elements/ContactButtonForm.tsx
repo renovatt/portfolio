@@ -6,7 +6,7 @@ const ContactButtonForm = ({ loading }: { loading: boolean }) => {
       {loading ? (
         <button
           type="button"
-          className="mt-4 flex max-h-16 cursor-progress items-center justify-center rounded bg-950 px-3 py-4 text-750 shadow-sm outline-none transition-all ease-in"
+          className="mt-4 flex max-h-16 cursor-progress items-center justify-center rounded bg-950 px-3 py-4 text-750 opacity-70 shadow-sm outline-none transition-all ease-in"
           disabled
         >
           <FaSpinner className="mr-3 h-5 w-5 animate-spin" />

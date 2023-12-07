@@ -1,17 +1,15 @@
 'use client'
+import { fadeIn } from '@constants/variants'
 import Title from '@elements/Title'
 import { motion } from 'framer-motion'
 
 export default function SideProfile() {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.4,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}
+      variants={fadeIn({ direction: 'up', delay: 0.3 })}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
       className="space-y-4"
     >
       <Title title="Quem sou eu" />
