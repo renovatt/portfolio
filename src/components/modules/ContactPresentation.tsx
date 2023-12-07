@@ -18,7 +18,7 @@ const ContactPresentation = () => {
       className="h-full w-full space-y-2 md:w-2/5"
     >
       <Title title="Contato" />
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Se você tem um projeto interessante, uma{' '}
         <span className="text-950">ideia</span> inovadora ou apenas quer trocar
         experiências sobre o fascinante mundo do desenvolvimento, ficarei feliz
@@ -27,21 +27,21 @@ const ContactPresentation = () => {
         estou pronto para contribuir para o sucesso do seu projeto.
       </p>
 
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Sinta-se à vontade para preencher o formulário abaixo ou me{' '}
         <span className="text-950">contatar</span> através dos meios
         disponíveis. Estou ansioso para iniciar uma conversa e explorar as
         possibilidades de <span className="text-950">trabalharmos</span> juntos.
       </p>
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Vamos construir algo incrível!
       </p>
 
       <section className="mt-10 flex flex-col items-start justify-around gap-4">
         <span className="flex items-center justify-center">
-          <FaLinkedin className="text-750 mr-2 h-6 w-6" />
+          <FaLinkedin className="mr-2 h-6 w-6 text-750" />
           <Link
-            className="hover:text-950 text-750 flex items-center transition-all ease-in"
+            className="flex items-center text-750 transition-all ease-in hover:text-950"
             href="https://www.linkedin.com/in/renovatt"
             target="_blank"
           >
@@ -50,9 +50,9 @@ const ContactPresentation = () => {
         </span>
 
         <span className="flex items-center justify-center">
-          <FaGithub className="text-750 mr-2 h-6 w-6" />
+          <FaGithub className="mr-2 h-6 w-6 text-750" />
           <Link
-            className="hover:text-950 text-750 flex items-center transition-all ease-in"
+            className="flex items-center text-750 transition-all ease-in hover:text-950"
             href="https://github.com/renovatt"
             target="_blank"
           >
@@ -61,9 +61,9 @@ const ContactPresentation = () => {
         </span>
 
         <span className="flex items-center justify-center">
-          <BiLogoGmail className="text-750 mr-2 h-6 w-6" />
+          <BiLogoGmail className="mr-2 h-6 w-6 text-750" />
           <Link
-            className="hover:text-950 text-750 flex items-center transition-all ease-in"
+            className="flex items-center text-750 transition-all ease-in hover:text-950"
             href="mailto:wlymes@gmail.com"
             target="_blank"
           >

@@ -13,7 +13,7 @@ export default function Logo() {
       }}
     >
       <Link href="/" className="flex text-2xl font-bold md:text-3xl">
-        <h1 className="text-750 inline-block">
+        <h1 className="inline-block text-750">
           <motion.span
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}

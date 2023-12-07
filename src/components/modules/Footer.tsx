@@ -5,13 +5,13 @@ const Footer = () => {
   const date = new Date()
   const currentYear = date.getFullYear()
   return (
-    <footer className="border-950 bg-950 container flex h-20 w-full items-center justify-around  border-t">
+    <footer className="container flex h-20 w-full items-center justify-around border-t border-950  bg-950">
       <section className="flex">
-        <span className="text-750 m-1 text-xs font-bold md:text-base">
+        <span className="m-1 text-xs font-bold text-750 md:text-base">
           &copy; {currentYear} willcode | Powered by
         </span>
         <Link
-          className="hover:text-950 text-750 flex items-center text-xs font-bold md:text-base"
+          className="flex items-center text-xs font-bold text-750 hover:text-950 md:text-base"
           href="https://www.linkedin.com/in/renovatt"
           target="_blank"
         >
@@ -21,19 +21,19 @@ const Footer = () => {
 
       <section className="flex items-center justify-around gap-4">
         <Link
-          className="text-750 flex items-center"
+          className="flex items-center text-750"
           href="https://www.linkedin.com/in/renovatt"
           target="_blank"
         >
-          <FaLinkedin className="hover:text-950 text-750 h-6 w-6 transition-all ease-in" />
+          <FaLinkedin className="h-6 w-6 text-750 transition-all ease-in hover:text-950" />
         </Link>
 
         <Link
-          className="text-750 flex items-center"
+          className="flex items-center text-750"
           href="https://github.com/renovatt"
           target="_blank"
         >
-          <FaGithub className="hover:text-950 text-750 h-6 w-6 transition-all ease-in" />
+          <FaGithub className="h-6 w-6 text-750 transition-all ease-in hover:text-950" />
         </Link>
       </section>
     </footer>

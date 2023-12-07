@@ -15,7 +15,7 @@ export default function SideProfile() {
       className="space-y-4"
     >
       <Title title="Quem sou eu" />
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Sou um desenvolvedor <span className="text-950">Front-End</span>{' '}
         especializado na criação de aplicações web modernas e responsivas.
         Mantenho uma mentalidade de aprendizado constante, sempre buscando
@@ -24,7 +24,7 @@ export default function SideProfile() {
         tecnológicas. Além disso, prezo pela colaboração e estou sempre pronto
         para trabalhar em equipe, visando alcançar metas compartilhadas.
       </p>
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Meu compromisso é aprimorar continuamente minhas habilidades e
         conhecimentos, garantindo que esteja sempre{' '}
         <span className="text-950">atualizado</span> no dinâmico campo da

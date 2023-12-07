@@ -15,23 +15,23 @@ export default function SideProject() {
       className="h-full w-full space-y-2 md:w-2/5"
     >
       <Title title="Projetos" />
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Sempre me envolvo em novas criações, pois a prática constante é a{' '}
         <span className="text-950">chave</span> para o crescimento contínuo e a
         manutenção do conhecimento.
       </p>
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Aqui, compartilho alguns projetos destacados, softwares que não apenas
         representam meu trabalho, mas <span className="text-950">soluções</span>{' '}
         reais para desafios.
       </p>
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Refatorei projetos para incorporar novos aprendizados, participei
         ativamente em projetos <span className="text-950">voluntários</span> e
         também tenho aqueles com um toque mais{' '}
         <span className="text-950">nostálgico</span>.
       </p>
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Cada projeto conta uma parte única da minha jornada, refletindo não
         apenas habilidades técnicas, mas também{' '}
         <span className="text-950">paixão</span> e{' '}

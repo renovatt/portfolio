@@ -7,11 +7,11 @@ const SocialLinks = () => {
       {Links.map(({ path, icon: Icon }, index) => (
         <Link
           key={index}
-          className="animate__animated animate__fadeInDown text-750 flex items-center"
+          className="animate__animated animate__fadeInDown flex items-center text-750"
           href={path}
           target="_blank"
         >
-          <Icon className="hover:text-950 text-750 m-1 h-5 w-5 transition-all ease-in hover:-mt-1" />
+          <Icon className="m-1 h-5 w-5 text-750 transition-all ease-in hover:-mt-1 hover:text-950" />
         </Link>
       ))}
     </span>

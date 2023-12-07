@@ -28,14 +28,14 @@ const SkillDescription = () => {
     >
       {hoveredSkill && status.isHovered ? (
         <section className="flex h-full w-full animate-fade flex-col items-start justify-center p-8 transition-all">
-          <h2 className="text-950 text-xl font-bold">
+          <h2 className="text-xl font-bold text-950">
             {hoveredSkill.skill_name}
           </h2>
-          <p className="text-850 text-xl">{hoveredSkill.description}</p>
+          <p className="text-xl text-850">{hoveredSkill.description}</p>
         </section>
       ) : (
         <section className="flex w-full items-center justify-center p-4">
-          <h2 className="text-850 text-center text-xl">
+          <h2 className="text-center text-xl text-850">
             Interaga com os ícones para mais informações.
           </h2>
         </section>

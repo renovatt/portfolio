@@ -8,7 +8,7 @@ const RouteLinks = ({ path, icon: Icon, text }: RouteLinksProps) => {
   const isActive = pathname === path
   return (
     <Link
-      className={`hover:text-950 relative text-xs transition-all ease-in ${
+      className={`relative text-xs transition-all ease-in hover:text-950 ${
         isActive ? 'text-950' : 'text-750'
       }`}
       href={path}

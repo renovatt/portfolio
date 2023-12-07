@@ -15,7 +15,7 @@ export default function SideSkills() {
       className="w-full space-y-2 md:h-full md:w-2/5"
     >
       <Title title="Habilidades" />
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Em minha trajetória profissional, concentro minha paixão e habilidades
         no desenvolvimento <span className="text-950">Front-End</span>, com um
         enfoque especial em <span className="text-950">Next.js</span>. Essa
@@ -24,7 +24,7 @@ export default function SideSkills() {
         atraentes, mas também na criação de experiências de usuário fluidas e
         inovadoras.
       </p>
-      <p className="text-850 text-justify text-base">
+      <p className="text-justify text-base text-850">
         Em um cenário onde a tecnologia avança a passos largos, mantenho-me em
         constante busca pelo <span className="text-950">conhecimento</span> e
         atualização. Estar à frente das últimas tendências e tecnologias é uma
