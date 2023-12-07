@@ -1,7 +1,5 @@
 import { z } from 'zod'
-import { ReactNode } from 'react'
 import { contactSchema } from 'schemas'
-import { StaticImageData } from 'next/image'
 import { IconType } from 'react-icons/lib'
 
 type TechsTypeProps = {
@@ -68,29 +66,9 @@ export interface ErrorMessageResponse extends Error {
 
 export type ContactProps = z.infer<typeof contactSchema>
 
-export type ReactQueryProviderProps = {
-  children: ReactNode
-}
-
-export type ContainerTypeProps = {
-  children: React.ReactNode
-}
-
-export type ImageProps = {
-  src: StaticImageData
-  alt: string
-  className?: string
-}
-
-export type MenuMobileTypeProps = {
-  modal?: boolean
-  openModal?: () => void
-  closeModal?: () => void
-}
-
 export type RouteLinksProps = {
   text: string
-  href: string
+  path: string
   icon: IconType
 }
 
@@ -108,15 +86,3 @@ type UseStoreActions = {
 }
 
 export type UseStoreProps = UseStoreState & UseStoreActions
-
-export type Container3DProps = {
-  children: ReactNode
-}
-
-export type CanvaContainerProps = {
-  children: ReactNode
-}
-
-export type ButtonContactFormProps = {
-  loading: boolean
-}

@@ -1,6 +1,6 @@
 import { getProjects, getProjectsById } from 'services'
 import { ProjectsResponse, ProjectResponse } from '@types'
-import ProjectInfo from '@elements/ProjectInfo'
+import ProjectInfo from '@modules/ProjectInfo'
 
 export async function generateStaticParams() {
   const projects = await getProjects()

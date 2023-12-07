@@ -13,7 +13,7 @@ export default function Logo() {
       }}
     >
       <Link href="/" className="flex text-2xl font-bold md:text-3xl">
-        <h1 className="inline-block text-primary-750">
+        <h1 className="text-750 inline-block">
           <motion.span
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -25,7 +25,7 @@ export default function Logo() {
           >
             {'{ '}
           </motion.span>
-          <span className="text-primary-950">...</span>
+          <span className="text-950">...</span>
           Will
           <motion.span
             initial={{ opacity: 0, x: 100 }}

@@ -25,12 +25,12 @@ const ProjectCard = ({ banner_url: bannerUrl, id }: ProjectsTypeProps) => {
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="relative m-2 h-72 w-44 cursor-pointer rounded-lg bg-third-950 bg-cover bg-center md:h-80 md:w-48"
+      className="bg-700 relative m-2 h-72 w-44 cursor-pointer rounded-lg bg-cover bg-center md:h-80 md:w-48"
       style={{ backgroundImage: `url(${bannerUrl})` }}
       onLoad={handleLoad}
       onClick={handleRedirectToPageProject}
     >
-      <article className="group relative flex h-full flex-col items-center justify-between overflow-hidden rounded-lg border border-zinc-800 py-6 transition-all ease-in-out hover:bg-third-950">
+      <article className="hover:bg-700 group relative flex h-full flex-col items-center justify-between overflow-hidden rounded-lg border border-zinc-800 py-6 transition-all ease-in-out">
         <div className="bg-gradient-card absolute inset-0 opacity-0 transition-all duration-700 group-hover:opacity-80"></div>
         <section className="absolute bottom-0 translate-y-full transition-all duration-300 group-hover:-translate-y-5 group-hover:xl:-translate-y-5">
           <section className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">

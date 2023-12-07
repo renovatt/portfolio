@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import profile from '@assets/profile.jpeg'
 import { motion } from 'framer-motion'
 
 const ImageProfile = () => {
@@ -29,9 +28,11 @@ const ImageProfile = () => {
             sketelon ? 'blur-sm' : 'blur-none'
           }`}
           onLoad={handleLoad}
-          src={profile}
+          src="/assets/profile.jpeg"
           alt="profile-image"
           priority
+          width={500}
+          height={500}
         />
       </figure>
     </motion.section>

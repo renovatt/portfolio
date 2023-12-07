@@ -8,36 +8,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          950: '#ff8269',
-          900: '#191919',
-          850: '#101010',
-          800: '#000000',
-          750: '#e7e5e0',
-        },
-        secondary: {
-          950: '#ef0a5e',
-          900: '#f61b12',
-          850: '#929d8d',
-          800: '#fafafa',
-          750: '#27272a',
-        },
-        third: {
-          950: '#00000041',
-          900: '#000000CC',
-          850: '#2b161cef',
-          800: '#111211F2',
-        },
+        950: '#ff8269',
+        900: '#191919',
+        890: '#101010',
+        850: '#929d8d',
+        750: '#e7e5e0',
+        700: '#00000041',
       },
       backgroundImage: {
-        load: 'url("/bg-load.jpg")',
-        home: 'url("/bg-home.jpg")',
-        about: 'url("/bg-about.jpg")',
-        profile: 'url("/profile.jpeg")',
-        projects: 'url("/bg-projects.jpg")',
-        skills: 'url("/bg-skills.jpg")',
-        contact: 'url("/bg-contact.jpg")',
-        notFound: 'url("/bg-not-found.jpg")',
+        load: 'url("/assets/bg-load.jpg")',
+        home: 'url("/assets/bg-home.jpg")',
+        about: 'url("/assets/bg-about.jpg")',
+        projects: 'url("/assets/bg-projects.jpg")',
+        skills: 'url("/assets/bg-skills.jpg")',
+        contact: 'url("/assets/bg-contact.jpg")',
+        notFound: 'url("/assets/bg-not-found.jpg")',
       },
       keyframes: {
         fade: {

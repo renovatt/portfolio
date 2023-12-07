@@ -1,13 +1,9 @@
 'use client'
-import { Environment, OrbitControls, Center } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { ReactNode, Suspense } from 'react'
+import { Environment, OrbitControls, Center } from '@react-three/drei'
 
-type ContainerProps = {
-  children: ReactNode
-}
-
-const CanvaContainer = ({ children }: ContainerProps) => {
+const CanvaContainer = ({ children }: { children: ReactNode }) => {
   return (
     <Canvas camera={{ position: [1.8, 0, 4], fov: 1 }}>
       <OrbitControls enableZoom={false} rotateSpeed={5} />

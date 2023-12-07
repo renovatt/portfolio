@@ -91,8 +91,12 @@ body {
   }
 
   .bg-gradient-card {
-    background: linear-gradient(180deg, rgba(25,25,25,0) 42%, rgba(255,62,72,0.5339635854341737) 100%);
-     }
+    background: linear-gradient(
+      180deg, 
+      rgba(25,25,25,0) 42%, 
+      rgba(255,62,72,0.5339635854341737) 100%
+    );
+  }
 }
 
 

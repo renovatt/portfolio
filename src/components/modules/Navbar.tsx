@@ -1,6 +1,6 @@
 'use client'
 import RouteLinks from '@elements/RouteLinks'
-import { PathLinks } from '@constants/Links'
+import { PathLinks } from 'mocks/Links'
 
 const Navbar = () => {
   return (

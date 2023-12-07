@@ -10,7 +10,7 @@ import Link from 'next/link'
 import { FiExternalLink } from 'react-icons/fi'
 import { FaGithub } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
-import BackgroundImage from './BackgroundImage'
+import BackgroundImage from '@elements/BackgroundImage'
 
 const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
   const router = useRouter()
@@ -68,15 +68,15 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="relative w-full max-w-2xl transform space-y-4 overflow-hidden rounded-2xl bg-primary-850 p-4 align-middle shadow-xl transition-all">
+              <Dialog.Panel className="bg-890 relative w-full max-w-2xl transform space-y-4 overflow-hidden rounded-2xl p-4 align-middle shadow-xl transition-all">
                 <BackgroundImage image="bg-projects animate-fade -z-10" />
                 <RiCloseFill
                   onClick={handleBackPage}
-                  className="absolute right-4 top-0 h-8 w-8 cursor-pointer rounded-lg bg-primary-750 font-bold text-primary-950 transition-all ease-in hover:bg-primary-950 hover:text-primary-750"
+                  className="text-950 hover:bg-950 bg-750 hover:text-750 absolute right-4 top-0 h-8 w-8 cursor-pointer rounded-lg font-bold transition-all ease-in"
                 />
                 <Dialog.Title
                   as="h1"
-                  className="text-center text-lg font-medium leading-6 text-primary-750"
+                  className="text-750 text-center text-lg font-medium leading-6"
                 >
                   {props.project_name}
                 </Dialog.Title>
@@ -100,7 +100,7 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
                     />
                   </figure>
                 </section>
-                <Dialog.Description className="text-justify text-secondary-850">
+                <Dialog.Description className="text-850 text-justify">
                   {props.description}
                 </Dialog.Description>
                 <section className="flex w-full items-center justify-between">
@@ -122,14 +122,14 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
                   </span>
                   <div className="flex items-center justify-center gap-2">
                     <Link
-                      className="rounded-lg bg-primary-750 p-2 text-base font-bold text-primary-950 transition-all ease-in hover:bg-primary-950 hover:text-primary-750"
+                      className="text-950 hover:bg-950 bg-750 hover:text-750 rounded-lg p-2 text-base font-bold transition-all ease-in"
                       href="https://github.com/renovatt"
                       target="_blank"
                     >
                       <FaGithub />
                     </Link>
                     <Link
-                      className="rounded-lg bg-primary-750 p-2 text-base font-bold text-primary-950 transition-all ease-in hover:bg-primary-950 hover:text-primary-750"
+                      className="text-950 hover:bg-950 bg-750 hover:text-750 rounded-lg p-2 text-base font-bold transition-all ease-in"
                       href={props.deploy_url}
                       target="_blank"
                     >

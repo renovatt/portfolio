@@ -6,27 +6,27 @@ import { FaGithub, FaLinkedin, FaProjectDiagram } from 'react-icons/fa'
 
 export const PathLinks = [
   {
-    href: '/home',
+    path: '/home',
     text: 'Início',
     icon: HiHome,
   },
   {
-    href: '/profile',
+    path: '/profile',
     text: 'Perfil',
     icon: HiMiniUser,
   },
   {
-    href: '/projects',
+    path: '/projects',
     text: 'Projetos',
     icon: FaProjectDiagram,
   },
   {
-    href: '/skills',
+    path: '/skills',
     text: 'Habilidades',
     icon: FaLaptopCode,
   },
   {
-    href: '/contact',
+    path: '/contact',
     text: 'Contato',
     icon: MdOutlineEmail,
   },
@@ -34,15 +34,15 @@ export const PathLinks = [
 
 export const SocialLinks = [
   {
-    href: 'https://www.linkedin.com/in/renovatt',
+    path: 'https://www.linkedin.com/in/renovatt',
     icon: FaLinkedin,
   },
   {
-    href: 'https://github.com/renovatt',
+    path: 'https://github.com/renovatt',
     icon: FaGithub,
   },
   {
-    href: '/willcode-cv.pdf',
+    path: '/willcode-cv.pdf',
     icon: BsFileEarmarkTextFill,
   },
 ]

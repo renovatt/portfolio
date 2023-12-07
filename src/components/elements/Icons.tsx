@@ -1,10 +1,10 @@
 'use client'
 import { SkillsTypeProps } from '@types'
 import { motion } from 'framer-motion'
-// import useStatusStore from 'store'
+import useStatusStore from 'store'
 
 export default function Icons({ id, svg_link: svgLink }: SkillsTypeProps) {
-  // const { setStatus, clearStatus } = useStatusStore()
+  const { setStatus, clearStatus } = useStatusStore()
   return (
     <motion.section
       initial={{ opacity: 0, y: 100 }}
@@ -14,10 +14,6 @@ export default function Icons({ id, svg_link: svgLink }: SkillsTypeProps) {
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      // whileHover={{ scale: 1.1 }}
-      // whileTap={{ scale: 0.8 }}
-      // initial="hidden"
-      // animate="visible"
       className="item flex h-24 w-24 items-center justify-center"
     >
       <figure className="-z-10 h-24 w-24">
@@ -25,8 +21,8 @@ export default function Icons({ id, svg_link: svgLink }: SkillsTypeProps) {
           className="h-full w-full cursor-pointer object-cover"
           src={svgLink}
           alt="svg-icon"
-          // onMouseOut={clearStatus}
-          // onMouseOver={() => setStatus(id)}
+          onMouseOut={clearStatus}
+          onMouseOver={() => setStatus(id)}
         />
       </figure>
     </motion.section>

@@ -15,21 +15,33 @@ const ContactPresentation = () => {
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="w-full flex-col justify-center rounded-lg p-4 md:flex md:h-full md:w-full md:max-w-xl"
+      className="h-full w-full space-y-2 md:w-2/5"
     >
       <Title title="Contato" />
-      <h2 className="text-secondary-850">
-        Entre em contato comigo ou deixe seu valioso feedback! Estou ansioso
-        para ouvir suas opiniões e responder o mais rápido possível. Sinta-se à
-        vontade para usar qualquer um dos métodos abaixo para se conectar
-        comigo.
-      </h2>
+      <p className="text-850 text-justify text-base">
+        Se você tem um projeto interessante, uma{' '}
+        <span className="text-950">ideia</span> inovadora ou apenas quer trocar
+        experiências sobre o fascinante mundo do desenvolvimento, ficarei feliz
+        em ouvir de você. Minha missão é criar{' '}
+        <span className="text-950">soluções</span> eficientes e impactantes, e
+        estou pronto para contribuir para o sucesso do seu projeto.
+      </p>
+
+      <p className="text-850 text-justify text-base">
+        Sinta-se à vontade para preencher o formulário abaixo ou me{' '}
+        <span className="text-950">contatar</span> através dos meios
+        disponíveis. Estou ansioso para iniciar uma conversa e explorar as
+        possibilidades de <span className="text-950">trabalharmos</span> juntos.
+      </p>
+      <p className="text-850 text-justify text-base">
+        Vamos construir algo incrível!
+      </p>
 
       <section className="mt-10 flex flex-col items-start justify-around gap-4">
         <span className="flex items-center justify-center">
-          <FaLinkedin className="mr-2 h-6 w-6 text-primary-750" />
+          <FaLinkedin className="text-750 mr-2 h-6 w-6" />
           <Link
-            className="flex items-center text-primary-750 transition-all ease-in hover:text-primary-950"
+            className="hover:text-950 text-750 flex items-center transition-all ease-in"
             href="https://www.linkedin.com/in/renovatt"
             target="_blank"
           >
@@ -38,9 +50,9 @@ const ContactPresentation = () => {
         </span>
 
         <span className="flex items-center justify-center">
-          <FaGithub className="mr-2 h-6 w-6 text-primary-750" />
+          <FaGithub className="text-750 mr-2 h-6 w-6" />
           <Link
-            className="flex items-center text-primary-750 transition-all ease-in hover:text-primary-950"
+            className="hover:text-950 text-750 flex items-center transition-all ease-in"
             href="https://github.com/renovatt"
             target="_blank"
           >
@@ -49,9 +61,9 @@ const ContactPresentation = () => {
         </span>
 
         <span className="flex items-center justify-center">
-          <BiLogoGmail className="mr-2 h-6 w-6 text-primary-750" />
+          <BiLogoGmail className="text-750 mr-2 h-6 w-6" />
           <Link
-            className="flex items-center text-primary-750 transition-all ease-in hover:text-primary-950"
+            className="hover:text-950 text-750 flex items-center transition-all ease-in"
             href="mailto:wlymes@gmail.com"
             target="_blank"
           >

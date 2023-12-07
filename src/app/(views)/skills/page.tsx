@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 import Ray from '@elements/Ray'
-import SkillsIcons from '@elements/SkillsIcons'
+import SkillsIcons from '@modules/SkillsIcons'
 import BackgroundImage from '@elements/BackgroundImage'
-import SideSkills from '@elements/SideSkills'
+import SideSkills from '@modules/SideSkills'
 
 export const metadata: Metadata = {
   title: '{ ...Will } : Habilidades',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Skills() {
   return (
-    <section className="relative flex h-screen w-screen flex-col justify-start overflow-hidden py-20 transition-all">
+    <section className="relative flex h-screen w-screen flex-col justify-center overflow-hidden py-20 transition-all">
       <Ray />
       <BackgroundImage image="bg-skills animate-fade" />
       <section className="z-10 my-2 mb-20 flex h-full w-full flex-col items-center justify-start gap-10 space-y-10 overflow-y-auto px-4 md:m-0 md:space-y-0 lg:flex-row lg:justify-around">

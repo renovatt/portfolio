@@ -5,7 +5,7 @@ import { Metadata, Viewport } from 'next'
 import { Chakra_Petch } from 'next/font/google'
 import Navbar from '@modules/Navbar'
 import Header from '@modules/Header'
-import Container from '@elements/Container'
+import Container from '@modules/Container'
 import ToastifyProvider from '@providers/ToastifyProvider'
 import ReactQueryProvider from '@providers/ReactQueryProvider'
 

@@ -1,4 +1,4 @@
-import Icons from './Icons'
+import Icons from '@elements/Icons'
 import { Suspense } from 'react'
 import { getSkills } from 'services'
 import Loader from '@helpers/Loader'

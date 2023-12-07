@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { GLTFResult } from '../../@types/typing'
 
-export function MechaModel(props: any) {
+export function MechBust(props: any) {
   const group = useRef()
   const { nodes, materials, animations }: GLTFResult = useGLTF(
     '/models/mech_bust.glb',

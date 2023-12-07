@@ -4,12 +4,12 @@ export const contactSchema = z.object({
   name: z
     .string()
     .max(44, 'O nome é muito grande.')
-    .nonempty('Nome é obrigatório.'),
+    .min(5, 'Nome é obrigatório.'),
 
   email: z
     .string()
     .email('Precisa ser um email válido.')
-    .nonempty('Email obrigatório.'),
+    .min(1, 'Email obrigatório.'),
 
-  message: z.string().nonempty('Menssagem é obrigatória.'),
+  message: z.string().min(1, 'Menssagem é obrigatória.'),
 })

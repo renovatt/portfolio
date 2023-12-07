@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import { Suspense } from 'react'
 import { getProjects } from 'services'
 import Loader from '@helpers/Loader'
-import SideProject from '@elements/SideProject'
-import ProjectCard from '@elements/ProjectCard'
+import SideProject from '@modules/SideProject'
+import ProjectCard from '@modules/ProjectCard'
 import BackgroundImage from '@elements/BackgroundImage'
 
 export const metadata: Metadata = {

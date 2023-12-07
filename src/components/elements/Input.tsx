@@ -13,14 +13,14 @@ const Input = ({ ...props }: InputProps) => {
   return (
     <>
       <label
-        className="flex items-center justify-between text-sm font-bold text-secondary-850"
+        className="text-850 flex items-center justify-between text-sm font-bold"
         htmlFor={props.label}
       >
         {props.label}
       </label>
       <input
         id={props.label}
-        className="h-16 max-h-16 flex-1 rounded border bg-primary-750 px-3 py-4 text-zinc-800 shadow-sm transition-all ease-in focus:outline-none focus:ring-2 focus:ring-secondary-950"
+        className="focus:ring-950 bg-750 h-16 max-h-16 flex-1 rounded border px-3 py-4 text-zinc-800 shadow-sm transition-all ease-in focus:outline-none focus:ring-2"
         {...register(props.name)}
         {...props}
       />
