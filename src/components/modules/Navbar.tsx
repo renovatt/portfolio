@@ -6,7 +6,16 @@ import { PathLinks } from 'mocks/Links'
 
 const Navbar = () => {
   return (
-    <nav className="animate__animated animate__fadeInUp fixed bottom-0 left-0 z-50 mt-4 flex w-full items-center justify-between p-2 backdrop-blur-md md:absolute md:bottom-10 md:left-10 md:w-auto md:rounded-full md:border">
+    <motion.nav
+      initial={{ opacity: 0, y: 80 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.3,
+        delay: 0.2,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className=" fixed bottom-0 left-0 z-50 mt-4 flex w-full items-center justify-between p-2 backdrop-blur-md md:absolute md:bottom-10 md:left-10 md:w-auto md:rounded-full md:border"
+    >
       <motion.ul
         variants={BoingContainer()}
         initial="hidden"
@@ -23,7 +32,7 @@ const Navbar = () => {
           </motion.li>
         ))}
       </motion.ul>
-    </nav>
+    </motion.nav>
   )
 }
 
