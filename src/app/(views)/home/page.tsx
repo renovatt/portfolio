@@ -14,7 +14,7 @@ export default function Home() {
     <section className="relative flex h-screen w-full flex-col-reverse items-center justify-center gap-5 overflow-hidden transition-all md:flex-row md:justify-between">
       <BackgroundImage image="bg-home animate-fadeUp" />
       <SideHome />
-      <Mecha />
+      {/* <Mecha /> */}
     </section>
   )
 }
