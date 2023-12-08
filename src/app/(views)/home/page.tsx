@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
-import LogoModel from '@models/LogoModel'
-import HomePresentation from '@modules/HomePresentation'
+import Mecha from '@modules/Mecha'
+import SideHome from '@modules/SideHome'
+import BackgroundImage from '@elements/BackgroundImage'
 
 export const metadata: Metadata = {
   title: '{ ...Will } : Página Inicial',
@@ -10,9 +11,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="container my-36 flex flex-col-reverse items-center justify-center overflow-hidden bg-primary-900 transition-all md:my-14 md:flex-row md:justify-between">
-      <HomePresentation />
-      <LogoModel />
+    <section className="relative flex h-screen w-full flex-col-reverse items-center justify-center gap-5 overflow-hidden transition-all md:flex-row md:justify-between">
+      <BackgroundImage image="bg-home animate-fadeUp" />
+      <SideHome />
+      <Mecha />
     </section>
   )
 }

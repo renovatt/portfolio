@@ -61,9 +61,15 @@ body {
   @apply h-full;
 }
 
+@layer base {
+  body {
+    @apply overflow-hidden leading-relaxed;
+  }
+}
+
 @layer components {
   .container {
-    @apply sm:max-w-[768px] md:max-w-[1440px] px-4 py-10 md:px-20;
+    @apply sm:max-w-[768px] md:max-w-[1440px] px-4;
   }
 }
 
@@ -82,5 +88,15 @@ body {
       rgba(28,29,26,0.9149159663865546) 0%, 
       rgba(41,42,39,0.9401260504201681) 100%
     );
-    }
+  }
+
+  .bg-gradient-card {
+    background: linear-gradient(
+      180deg, 
+      rgba(25,25,25,0) 42%, 
+      rgba(255,62,72,0.5339635854341737) 100%
+    );
+  }
 }
+
+

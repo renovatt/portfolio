@@ -3,11 +3,12 @@ import './globals.css'
 import 'animate.css'
 import { Metadata, Viewport } from 'next'
 import { Chakra_Petch } from 'next/font/google'
+import Navbar from '@modules/Navbar'
 import Header from '@modules/Header'
-import Footer from '@modules/Footer'
-import Container from '@elements/Container'
+import Container from '@modules/Container'
 import ToastifyProvider from '@providers/ToastifyProvider'
 import ReactQueryProvider from '@providers/ReactQueryProvider'
+import Footer from '@modules/Footer'
 
 const chakraPetch = Chakra_Petch({
   subsets: ['latin'],
@@ -79,6 +80,7 @@ export default function RootLayout({
           <ToastifyProvider>
             <Container>
               <Header />
+              <Navbar />
               {children}
               {modal}
               <Footer />

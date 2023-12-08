@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
-import ContactEmailForm from '@modules/ContactEmailForm'
-import ContactPresentation from '@modules/ContactPresentation'
+import ContactlForm from '@modules/ContactlForm'
+import SideContact from '@modules/SideContact'
+import BackgroundImage from '@elements/BackgroundImage'
 
 export const metadata: Metadata = {
   title: '{ ...Will } : Contato',
@@ -10,9 +11,12 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <section className="container flex animate-fade flex-col items-center justify-start bg-primary-900 transition-all md:flex-row md:items-start md:justify-around">
-      <ContactPresentation />
-      <ContactEmailForm />
+    <section className="relative flex h-screen w-screen items-center justify-center overflow-x-hidden py-20 transition-all">
+      <BackgroundImage image="bg-contact animate-fade" />
+      <article className="z-10 flex h-full w-full flex-col items-center justify-start space-y-6 overflow-y-auto overflow-x-hidden px-4 md:flex-row md:justify-around md:space-y-0">
+        <SideContact />
+        <ContactlForm />
+      </article>
     </section>
   )
 }

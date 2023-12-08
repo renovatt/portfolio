@@ -1,16 +1,11 @@
-'use client'
-import Navbar from './Navbar'
-import NavbarMobile from './NavbarMobile'
-import { useToggle } from '@hooks/useToggle'
 import Logo from '@elements/Logo'
+import SocialLinks from './SocialLinks'
 
 const Header = () => {
-  const { modal, openModal, closeModal } = useToggle()
   return (
-    <header className="container flex h-20 w-full items-center justify-between overflow-hidden border-b border-primary-950 bg-primary-900 transition-all">
+    <header className="fixed top-0 z-50 flex w-full items-center justify-between overflow-hidden p-4 backdrop-blur-md transition-all lg:backdrop-blur-none">
+      <SocialLinks />
       <Logo />
-      <Navbar openModal={openModal} />
-      <NavbarMobile modal={modal} closeModal={closeModal} />
     </header>
   )
 }
