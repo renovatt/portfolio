@@ -6,7 +6,7 @@ import BackgroundImage from '@elements/BackgroundImage'
 export const metadata: Metadata = {
   title: '{ ...Will } : Página Inicial',
   description:
-    'Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills.',
+    'Bem-vindo ao meu portfólio! Aqui, você terá uma visão aprofundada das minhas habilidades e projetos.',
 }
 
 export default function Home() {

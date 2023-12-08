@@ -7,7 +7,7 @@ import Cloud from '@elements/Cloud'
 export const metadata: Metadata = {
   title: '{ ...Will } : Sobre mim',
   description:
-    'Saiba mais sobre Wildemberg Renovato de Lima. Como um desenvolvedor apaixonado por tecnologia, compartilho minha trajetória, experiência e objetivos profissionais. Explore minhas habilidades técnicas e competências interpessoais.',
+    'Meu compromisso é aprimorar continuamente minhas habilidades e conhecimentos, garantindo que esteja sempre atualizado no dinâmico campo da tecnologia. ',
 }
 
 export default function Profile() {

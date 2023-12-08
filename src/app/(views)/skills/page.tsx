@@ -7,7 +7,7 @@ import SideSkills from '@modules/SideSkills'
 export const metadata: Metadata = {
   title: '{ ...Will } : Habilidades',
   description:
-    'Conheça as habilidades técnicas e competências interpessoais de Wildemberg Renovato de Lima no WillCode. De programação e desenvolvimento web a comunicação e trabalho em equipe, prepare-se para descobrir como essas habilidades podem agregar valor aos projetos.',
+    'Em um cenário onde a tecnologia avança a passos largos, mantenho-me em constante busca pelo conhecimento e atualização.',
 }
 
 export default function Skills() {

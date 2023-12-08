@@ -9,7 +9,7 @@ import BackgroundImage from '@elements/BackgroundImage'
 export const metadata: Metadata = {
   title: '{ ...Will } : Projetos',
   description:
-    'Explore os projetos do WillCode, desde trabalhos recentes a conquistas passadas. Descubra soluções inovadoras, tecnologias utilizadas e resultados alcançados. Veja como minhas habilidades técnicas são aplicadas para criar produtos de qualidade.',
+    'Cada projeto conta uma parte única da minha jornada, refletindo não apenas habilidades técnicas, mas também paixão e dedicação.',
 }
 
 export default async function Projects() {

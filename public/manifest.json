@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "WillCode Portfolio",
-    "short_name": "WillCode",
-    "description": "WillCode Portfolio",
+    "name": "{ ...Will } : Portfolio",
+    "short_name": "Portfolio",
+    "description": "{ ...Will } : Portfolio",
     "icons": [
         {
             "src": "/icon-192x192.png",

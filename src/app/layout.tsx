@@ -16,9 +16,9 @@ const chakraPetch = Chakra_Petch({
   display: 'swap',
 })
 
-const APP_NAME = 'WillCode'
+const APP_NAME = '{ ...Will } : Portfolio'
 const APP_DESCRIPTION =
-  'Bem-vindo ao WillCode - seu destino para descobrir mais sobre Wildemberg Renovato de Lima, seus projetos, habilidades e softskills.'
+  'Bem-vindo ao meu portfólio! Aqui, você terá uma visão aprofundada das minhas habilidades e projetos.'
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
