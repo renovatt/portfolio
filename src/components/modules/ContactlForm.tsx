@@ -13,7 +13,7 @@ import ContactButtonForm from '@elements/ContactButtonForm'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@constants/variants'
 
-const ContactEmailForm = () => {
+const ContactlForm = () => {
   const [loading, setLoading] = useState(false)
 
   const methods = useForm<ContactProps>({
@@ -63,4 +63,4 @@ const ContactEmailForm = () => {
   )
 }
 
-export default ContactEmailForm
+export default ContactlForm

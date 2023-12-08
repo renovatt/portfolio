@@ -9,8 +9,6 @@ export default function Icons({ id, svg_link: svgLink }: SkillsTypeProps) {
   return (
     <motion.section
       drag
-      dragElastic={1}
-      // dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
       variants={fadeIn({ direction: 'up', delay: 0.3 })}
       initial="hidden"
       animate="visible"

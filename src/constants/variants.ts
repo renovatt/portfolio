@@ -22,7 +22,7 @@ export const fadeIn = ({ direction, delay }: FadeVariantProps) => {
       opacity: 1,
       transition: {
         type: 'tween',
-        duration: 0.4,
+        duration: 1.4,
         delay,
         ease: [0.25, 0.25, 0.25, 0.75],
       },

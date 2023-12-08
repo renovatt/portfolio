@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { BiLogoGmail } from 'react-icons/bi'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
-const ContactPresentation = () => {
+const SideContact = () => {
   return (
     <motion.aside
       variants={fadeIn({ direction: 'right', delay: 0.3 })}
@@ -73,4 +73,4 @@ const ContactPresentation = () => {
   )
 }
 
-export default ContactPresentation
+export default SideContact
