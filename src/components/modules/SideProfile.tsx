@@ -10,7 +10,7 @@ export default function SideProfile() {
       initial="hidden"
       animate="visible"
       exit="hidden"
-      className="space-y-4"
+      className="w-full space-y-4 pb-20 md:w-2/5 md:pb-0"
     >
       <Title title="Quem sou eu" />
       <p className="text-justify text-base text-850">

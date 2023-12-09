@@ -10,7 +10,7 @@ export default function SideProject() {
       initial="hidden"
       animate="visible"
       exit="hidden"
-      className="w-full space-y-2 md:h-full md:w-2/5"
+      className="w-full space-y-2 md:w-2/5"
     >
       <Title title="Projetos" />
       <p className="text-justify text-base text-850">

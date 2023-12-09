@@ -12,6 +12,7 @@ import ErrorFormMessage from '@elements/ErrorFormMessage'
 import ContactButtonForm from '@elements/ContactButtonForm'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@constants/variants'
+import Field from '@elements/Field'
 
 const ContactlForm = () => {
   const [loading, setLoading] = useState(false)
@@ -46,16 +47,33 @@ const ContactlForm = () => {
         animate="visible"
         exit="hidden"
         onSubmit={methods.handleSubmit(handleMessage)}
-        className="flex w-full max-w-xl flex-col justify-center gap-4 p-4 pb-28 md:h-full md:pb-0"
+        className="flex w-full max-w-xl flex-col justify-center gap-2 p-4 pb-20 md:pb-0"
       >
-        <Input label="Nome" placeholder="Seu nome" name="name" type="text" />
-        <ErrorFormMessage field="name" />
+        <Field>
+          <Input label="Nome" placeholder="Seu nome" name="name" type="text" />
+          <span className="flex h-5 w-full items-start justify-start">
+            <ErrorFormMessage field="name" />
+          </span>
+        </Field>
 
-        <Input label="E-mail" placeholder="E-mail" name="email" type="email" />
-        <ErrorFormMessage field="email" />
+        <Field>
+          <Input
+            label="E-mail"
+            placeholder="E-mail"
+            name="email"
+            type="email"
+          />
+          <span className="flex h-5 w-full items-start justify-start">
+            <ErrorFormMessage field="email" />
+          </span>
+        </Field>
 
-        <TextArea />
-        <ErrorFormMessage field="message" />
+        <Field>
+          <TextArea />
+          <span className="flex h-5 w-full items-start justify-start">
+            <ErrorFormMessage field="message" />
+          </span>
+        </Field>
 
         <ContactButtonForm loading={loading} />
       </motion.form>

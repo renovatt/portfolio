@@ -63,7 +63,7 @@ body {
 
 @layer base {
   body {
-    @apply overflow-hidden leading-relaxed;
+    @apply overflow-hidden leading-relaxed tracking-wider;
   }
 }
 

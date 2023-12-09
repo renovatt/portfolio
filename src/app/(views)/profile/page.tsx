@@ -17,9 +17,7 @@ export default function Profile() {
       <BackgroundImage image="bg-about animate-fade" />
       <article className="z-10 flex h-full w-full flex-col items-center justify-start gap-10 overflow-y-auto px-4 md:flex-row md:justify-around">
         <ImageProfile />
-        <section className="flex flex-col items-center md:w-1/2">
-          <SideProfile />
-        </section>
+        <SideProfile />
       </article>
     </section>
   )
