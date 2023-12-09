@@ -1,11 +1,10 @@
-import React from 'react'
-import { MechBust } from './MechBust'
+import { Mecha } from './Mecha'
 import CanvaContainer from './CanvaContainer'
 
 export default function Model() {
   return (
     <CanvaContainer>
-      <MechBust />
+      <Mecha />
     </CanvaContainer>
   )
 }
