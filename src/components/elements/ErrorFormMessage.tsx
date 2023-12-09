@@ -32,7 +32,7 @@ const ErrorFormMessage = ({ field }: ErrorFormMessageProps) => {
   }
 
   return (
-    <span className="ml-2 mt-1 text-xs text-red-500">
+    <span className="ml-2 text-xs text-red-500">
       {fieldError.message?.toString()}
     </span>
   )

@@ -60,7 +60,7 @@
 - [react-toastify](https://www.npmjs.com/package/react-toastify)
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [framer-motion](https://www.framer.com/motion/)
-- [animate.style](https://animate.style/)
+- [gsap](https://gsap.com/)
 - [react-three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 
 🎨 **Estilização**

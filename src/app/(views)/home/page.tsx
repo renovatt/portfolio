@@ -11,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="relative flex h-screen w-full flex-col-reverse items-center justify-center gap-5 overflow-hidden transition-all md:flex-row md:justify-between">
+    <section className="relative flex h-screen w-full flex-col-reverse items-center justify-center gap-5 overflow-x-hidden py-20 transition-all md:flex-row md:justify-between">
       <BackgroundImage image="bg-home animate-fadeUp" />
-      <SideHome />
-      {/* <Mecha /> */}
+      <article className="z-10 flex h-full w-full flex-col-reverse items-center justify-start gap-10 overflow-y-auto px-4 md:flex-row md:justify-around">
+        <SideHome />
+        <Mecha />
+      </article>
     </section>
   )
 }

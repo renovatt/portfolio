@@ -13,29 +13,32 @@ const SideContact = () => {
       initial="hidden"
       animate="visible"
       exit="hidden"
-      className="w-full space-y-2 md:h-full md:w-2/5"
+      className="w-full space-y-6 md:w-2/5"
     >
       <Title title="Contato" />
-      <p className="text-justify text-base text-850">
-        Se você tem um projeto interessante, uma{' '}
-        <span className="text-950">ideia</span> inovadora ou apenas quer trocar
-        experiências sobre o fascinante mundo do desenvolvimento, ficarei feliz
-        em ouvir de você. Minha missão é criar{' '}
-        <span className="text-950">soluções</span> eficientes e impactantes, e
-        estou pronto para contribuir para o sucesso do seu projeto.
-      </p>
+      <article className="flex flex-col items-start justify-start space-y-2">
+        <p className="text-justify text-base text-850">
+          Se você tem um projeto interessante, uma{' '}
+          <span className="text-950">ideia</span> inovadora ou apenas quer
+          trocar experiências sobre o fascinante mundo do desenvolvimento,
+          ficarei feliz em ouvir de você. Minha missão é criar{' '}
+          <span className="text-950">soluções</span> eficientes e impactantes, e
+          estou pronto para contribuir para o sucesso do seu projeto.
+        </p>
 
-      <p className="text-justify text-base text-850">
-        Sinta-se à vontade para preencher o formulário abaixo ou me{' '}
-        <span className="text-950">contatar</span> através dos meios
-        disponíveis. Estou ansioso para iniciar uma conversa e explorar as
-        possibilidades de <span className="text-950">trabalharmos</span> juntos.
-      </p>
-      <p className="text-justify text-base text-850">
-        Vamos construir algo incrível!
-      </p>
+        <p className="text-justify text-base text-850">
+          Sinta-se à vontade para preencher o formulário abaixo ou me{' '}
+          <span className="text-950">contatar</span> através dos meios
+          disponíveis. Estou ansioso para iniciar uma conversa e explorar as
+          possibilidades de <span className="text-950">trabalharmos</span>{' '}
+          juntos.
+        </p>
+        <p className="text-justify text-base text-850">
+          Vamos construir algo incrível!
+        </p>
+      </article>
 
-      <section className="mt-10 flex flex-col items-start justify-around gap-4">
+      <section className="flex flex-col items-start justify-around gap-2">
         <span className="flex items-center justify-center">
           <FaLinkedin className="mr-2 h-6 w-6 text-750" />
           <Link

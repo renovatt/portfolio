@@ -24,6 +24,8 @@ const Navbar = () => {
       >
         {PathLinks.map((link, index) => (
           <motion.li
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.2 }}
             variants={BoingItem({ value: 20 })}
             key={index}
             className="m-2 p-2"
