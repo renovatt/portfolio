@@ -82,7 +82,7 @@ const ProjectInfo = ({ ...props }: ProjectsTypeProps) => {
                 <section className="flex h-full w-full items-center justify-center">
                   <figure
                     className={`h-full w-full rounded-lg transition-all ease-in ${
-                      loadingImage ? 'animate-pulse' : ''
+                      loadingImage ? 'max-h-60 animate-pulse md:max-h-96' : ''
                     } bg-zinc-900`}
                   >
                     <Image
