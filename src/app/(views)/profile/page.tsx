@@ -5,7 +5,7 @@ import ImageProfile from '@elements/ImageProfile'
 import Cloud from '@elements/Cloud'
 
 export const metadata: Metadata = {
-  title: '{ ...Will } : Sobre mim',
+  title: 'Sobre mim',
   description:
     'Meu compromisso é aprimorar continuamente minhas habilidades e conhecimentos, garantindo que esteja sempre atualizado no dinâmico campo da tecnologia. ',
 }

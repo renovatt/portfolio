@@ -7,7 +7,7 @@ import ProjectCard from '@modules/ProjectCard'
 import BackgroundImage from '@elements/BackgroundImage'
 
 export const metadata: Metadata = {
-  title: '{ ...Will } : Projetos',
+  title: 'Projetos',
   description:
     'Cada projeto conta uma parte única da minha jornada, refletindo não apenas habilidades técnicas, mas também paixão e dedicação.',
 }

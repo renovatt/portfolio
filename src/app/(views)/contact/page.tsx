@@ -4,7 +4,7 @@ import SideContact from '@modules/SideContact'
 import BackgroundImage from '@elements/BackgroundImage'
 
 export const metadata: Metadata = {
-  title: '{ ...Will } : Contato',
+  title: 'Contato',
   description:
     'Entre em contato com WillCode para colaborações, oportunidades ou para trocar ideias. Estou aberto a novos desafios e parcerias. Vamos trabalhar juntos para alcançar resultados incríveis e impulsionar o sucesso dos seus projetos.',
 }

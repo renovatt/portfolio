@@ -4,7 +4,7 @@ import SideHome from '@modules/SideHome'
 import BackgroundImage from '@elements/BackgroundImage'
 
 export const metadata: Metadata = {
-  title: '{ ...Will } : Página Inicial',
+  title: 'Página Inicial',
   description:
     'Bem-vindo ao meu portfólio! Aqui, você terá uma visão aprofundada das minhas habilidades e projetos.',
 }

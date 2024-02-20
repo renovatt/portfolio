@@ -5,7 +5,7 @@ import BackgroundImage from '@elements/BackgroundImage'
 import SideSkills from '@modules/SideSkills'
 
 export const metadata: Metadata = {
-  title: '{ ...Will } : Habilidades',
+  title: 'Habilidades',
   description:
     'Em um cenário onde a tecnologia avança a passos largos, mantenho-me em constante busca pelo conhecimento e atualização.',
 }

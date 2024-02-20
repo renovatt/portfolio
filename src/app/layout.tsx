@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import './globals.css'
 import 'animate.css'
-import { Metadata, Viewport } from 'next'
+import { Metadata } from 'next'
 import { Chakra_Petch } from 'next/font/google'
 import Navbar from '@modules/Navbar'
 import Header from '@modules/Header'
@@ -16,46 +16,52 @@ const chakraPetch = Chakra_Petch({
   display: 'swap',
 })
 
-const APP_NAME = '{ ...Will } : Portfolio'
+const APP_NAME = '{ ...Will }'
 const APP_DESCRIPTION =
   'Bem-vindo ao meu portfólio! Aqui, você terá uma visão aprofundada das minhas habilidades e projetos.'
-
-export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#ffffff',
-  width: 'device-width',
-  initialScale: 1,
-}
+const APP_URL = 'https://renovatt.dev.br'
+// const APP_URL = 'https://portfolio-renovatt.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
-  title: APP_NAME,
+  title: {
+    default: APP_NAME,
+    template: `%s : ${APP_NAME}`,
+  },
   applicationName: APP_NAME,
   description: APP_DESCRIPTION,
   generator: 'Next.js',
   manifest: '/manifest.json',
   keywords: [
     'renovatt',
+    'renovatt.dev',
     'Wildemberg',
     'wildemberg',
     'will',
     'Wildemberg Renovato',
     'WillCode',
     'portfolio',
+    'desenvolvedor web',
+    'desenvolvedor web em joão pessoa',
+    'desenvolvedor front-end',
   ],
   authors: [
     { name: 'renovatt' },
     { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt/' },
   ],
+  creator: '@renovatt',
   openGraph: {
     type: 'website',
-    url: 'https://portfolio-renovatt.vercel.app/',
-    title: APP_NAME,
+    url: APP_URL,
+    title: {
+      default: APP_NAME,
+      template: `%s : ${APP_NAME}`,
+    },
     description: APP_DESCRIPTION,
     siteName: APP_NAME,
     images: [
       {
-        url: 'https://portfolio-renovatt.vercel.app/icon-192x192.png',
+        url: `${APP_URL}/icon-192x192.png`,
       },
     ],
   },
