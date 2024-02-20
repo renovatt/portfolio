@@ -34,9 +34,9 @@ const ProjectCard = ({ banner_url: bannerUrl, id }: ProjectsTypeProps) => {
           <section className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
             <Link
               href={`/project/${id}`}
-              className="flex h-10 w-10 translate-y-[500%] items-center justify-center rounded-full border text-xl transition-all delay-75 duration-300 group-hover:translate-y-0"
+              className="size-10 flex translate-y-[500%] items-center justify-center rounded-full border text-xl transition-all delay-75 duration-300 group-hover:translate-y-0"
             >
-              <BsArrowRight />
+              <BsArrowRight className="-rotate-90 text-750" />
             </Link>
           </section>
         </section>
