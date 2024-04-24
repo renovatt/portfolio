@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
-import ContactlForm from '@modules/ContactlForm'
-import SideContact from '@modules/SideContact'
-import BackgroundImage from '@elements/BackgroundImage'
+import Form from '@organisms/form'
+import SideContact from '@templates/side-contact'
+import BackgroundImage from '@atoms/background-image'
 
 export const metadata: Metadata = {
   title: 'Contato',
@@ -15,7 +15,7 @@ export default function Contact() {
       <BackgroundImage image="bg-contact animate-fade" />
       <article className="z-10 flex h-full w-full flex-col items-center justify-start space-y-6 overflow-y-auto overflow-x-hidden px-4 md:flex-row md:justify-around md:space-y-0">
         <SideContact />
-        <ContactlForm />
+        <Form />
       </article>
     </section>
   )

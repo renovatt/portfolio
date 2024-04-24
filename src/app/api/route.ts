@@ -1,12 +1,11 @@
-import { ContactProps } from '@types'
-import { contactSchema } from 'schemas'
 import { NextResponse } from 'next/server'
+import { ContactDto, contactSchema } from 'schemas/contact-schema'
 
 const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL ?? ''
 
 export async function POST(request: Request) {
   try {
-    const body: ContactProps = await request.json()
+    const body: ContactDto = await request.json()
 
     const { name, email, message } = contactSchema.parse(body)
 

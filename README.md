@@ -13,21 +13,21 @@
 #
 
 ## Layout web
-![Web 1](./public/web-1.png) 
-![Web 2](./public/web-2.png)
-![Web 3](./public/web-3.png)
-![Web 4](./public/web-4.png)
-![Web 5](./public/web-5.png)
-![Web 6](./public/web-6.png)
-![Web 7](./public/web-7.png)
+![Web 1](.github/web-1.png) 
+![Web 2](.github/web-2.png)
+![Web 3](.github/web-3.png)
+![Web 4](.github/web-4.png)
+![Web 5](.github/web-5.png)
+![Web 6](.github/web-6.png)
+![Web 7](.github/web-7.png)
 
 ## Layout mobile
-![Mobile 1](./public/mobile-1.png)
-![Mobile 2](./public/mobile-2.png)
-![Mobile 3](./public/mobile-3.png)
-![Mobile 4](./public/mobile-4.png)
-![Mobile 5](./public/mobile-5.png)
-![Mobile 6](./public/mobile-6.png)
+![Mobile 1](.github/mobile-1.png)
+![Mobile 2](.github/mobile-2.png)
+![Mobile 3](.github/mobile-3.png)
+![Mobile 4](.github/mobile-4.png)
+![Mobile 5](.github/mobile-5.png)
+![Mobile 6](.github/mobile-6.png)
 
 <br>
 

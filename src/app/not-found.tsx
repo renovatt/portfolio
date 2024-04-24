@@ -1,4 +1,4 @@
-import BackgroundImage from '@elements/BackgroundImage'
+import BackgroundImage from '@atoms/background-image'
 
 export default function NotFound() {
   return (

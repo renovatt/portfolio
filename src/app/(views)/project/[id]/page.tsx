@@ -1,23 +1,21 @@
-import { getProjects, getProjectsById } from 'services'
-import { ProjectsResponse, ProjectResponse } from '@types'
-import ProjectInfo from '@modules/ProjectInfo'
+import ProjectInfo from '@organisms/project-info'
+import { getProjects } from '@services/get-project.service'
+import { getProjectsById } from '@services/get-project-by-id.service'
 
 export async function generateStaticParams() {
   const projects = await getProjects()
-  const projectsData = projects as ProjectsResponse
 
-  return projectsData.projects.map((project) => ({
+  return projects.map((project) => ({
     id: project.id.toString(),
   }))
 }
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const projects = await getProjectsById(params.id)
-  const projectsData = projects as ProjectResponse
 
-  const APP_NAME = `${projectsData.project_name}`
-  const APP_DESCRIPTION = projectsData.description
-  const BANNER_IMAGE = projectsData.banner_url
+  const APP_NAME = `${projects.name}`
+  const APP_DESCRIPTION = projects.description
+  const BANNER_IMAGE = projects.bannerUrl
 
   return {
     title: APP_NAME,
@@ -36,6 +34,5 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
 
 export default async function Project({ params }: { params: { id: string } }) {
   const project = await getProjectsById(params.id)
-  const projectDate = project as ProjectResponse
-  return <ProjectInfo {...projectDate} />
+  return <ProjectInfo {...project} />
 }
