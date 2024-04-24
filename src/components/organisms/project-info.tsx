@@ -122,7 +122,7 @@ const ProjectInfo = ({ ...props }: ProjectDto) => {
                   <div className="flex items-center justify-center gap-2">
                     <Link
                       className="rounded-lg border border-750 border-opacity-20 bg-none p-2 text-base font-bold text-750 transition-all ease-in hover:bg-750 hover:text-950"
-                      href="https://github.com/renovatt"
+                      href={props.githubUrl}
                       target="_blank"
                     >
                       <FaGithub />
