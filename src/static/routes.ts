@@ -42,7 +42,7 @@ export const socialLinks = [
     icon: FaGithub,
   },
   {
-    path: '/CV-PT.pdf',
+    path: '/cv.pdf',
     icon: BsFileEarmarkTextFill,
   },
 ]
