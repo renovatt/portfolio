@@ -1,10 +1,10 @@
 'use client'
 import { useEffect, useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
 import { GLTFResult } from '~types/typing'
+import { useGLTF, useAnimations } from '@react-three/drei'
 
 const Mecha = (props: JSX.IntrinsicElements['group']) => {
-  const group = useRef()
+  const group = useRef<THREE.Group>(null!)
   const { nodes, materials, animations }: GLTFResult = useGLTF(
     '/models/utility_robot.glb',
   )

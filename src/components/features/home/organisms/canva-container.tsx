@@ -7,7 +7,17 @@ import { OrbitControls, Center } from '@react-three/drei'
 const CanvaContainer = ({ children }: { children: ReactNode }) => {
   return (
     <Canvas camera={{ position: [40, 20, 90], fov: 50 }}>
-      <OrbitControls enableZoom={false} rotateSpeed={5} />
+      <OrbitControls
+        enableZoom={false}
+        rotateSpeed={5}
+        enableRotate={true}
+        enablePan={false}
+        onUpdate={(ctrl) => {
+          ctrl.target.set(0, 0, 0)
+          ctrl.maxPolarAngle = Math.PI / 2
+          ctrl.minPolarAngle = Math.PI / 2
+        }}
+      />
       <directionalLight
         position={[-45, 50, 22]}
         castShadow
