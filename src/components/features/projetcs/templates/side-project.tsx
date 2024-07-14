@@ -26,8 +26,7 @@ const SideProject = () => {
       <p className="text-justify text-base text-850">
         Refatorei projetos para incorporar novos aprendizados, participei
         ativamente em projetos <span className="text-950">voluntários</span> e
-        também tenho aqueles com um toque mais{' '}
-        <span className="text-950">nostálgico</span>.
+        realizei trabalhos <span className="text-950">freelancers</span>.
       </p>
       <p className="text-justify text-base text-850">
         Cada projeto conta uma parte única da minha jornada, refletindo não

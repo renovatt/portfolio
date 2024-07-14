@@ -14,21 +14,21 @@ const SideProfile = () => {
     >
       <Title title="Quem sou eu" />
       <p className="text-justify text-base text-850">
-        Sou um desenvolvedor <span className="text-950">Front-End</span>{' '}
-        especializado na criação de aplicações web modernas e responsivas.
-        Mantenho uma mentalidade de aprendizado constante, sempre buscando
-        atualizar minhas <span className="text-950">habilidades</span> para
-        acompanhar as últimas <span className="text-950">tendências</span>{' '}
-        tecnológicas. Além disso, prezo pela colaboração e estou sempre pronto
-        para trabalhar em equipe, visando alcançar metas compartilhadas.
+        Sou desenvolvedor <span className="text-950">Front-End</span>{' '}
+        especializado na criação de aplicações web modernas e responsivas. Com
+        uma mentalidade de aprendizado constante, mantenho minhas{' '}
+        <span className="text-950">habilidades</span> atualizadas com as últimas{' '}
+        <span className="text-950">tendências</span> tecnológicas. Meu foco é
+        garantir a usabilidade, performance e a manutenção de código limpo e{' '}
+        <span className="text-950">eficiente</span>.
       </p>
       <p className="text-justify text-base text-850">
-        Meu compromisso é aprimorar continuamente minhas habilidades e
-        conhecimentos, garantindo que esteja sempre{' '}
-        <span className="text-950">atualizado</span> no dinâmico campo da
-        tecnologia. Estou confiante de que posso fazer uma contribuição
-        significativa para o <span className="text-950">sucesso</span> de
-        projetos e equipes.
+        Com uma base sólida de conhecimentos e experiência, estou confiante na
+        minha <span className="text-950">capacidade</span> de contribuir
+        significativamente para o <span className="text-950">sucesso</span> de
+        projetos e equipes. Estou preparado para enfrentar desafios complexos e
+        entregar <span className="text-950">soluções</span> de alta{' '}
+        <span className="text-950">qualidade</span>.
       </p>
     </motion.article>
   )
