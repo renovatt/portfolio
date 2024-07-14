@@ -67,7 +67,9 @@ const Presentation = () => {
         </motion.span>
       </motion.h1>
 
-      <TypingEffect />
+      <div className="flex w-full max-w-60 items-center justify-start md:max-w-full">
+        <TypingEffect />
+      </div>
     </article>
   )
 }
