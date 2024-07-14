@@ -1,6 +1,6 @@
-import ProjectInfo from '@organisms/project-info'
 import { getProjects } from '@services/get-project.service'
 import { getProjectsById } from '@services/get-project-by-id.service'
+import ProjectModalInfo from '@features/projetcs/organisms/project-modal-info'
 
 export async function generateStaticParams() {
   const projects = await getProjects()
@@ -34,5 +34,5 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
 
 export default async function Project({ params }: { params: { id: string } }) {
   const project = await getProjectsById(params.id)
-  return <ProjectInfo {...project} />
+  return <ProjectModalInfo {...project} />
 }

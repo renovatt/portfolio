@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
-import SideProfile from '@templates/side-profile'
 import BackgroundImage from '@atoms/background-image'
-import ProfileImage from '@molecules/profile-image'
-import CloudImage from '@atoms/cloud-image'
+import SideProfile from '@features/profile/templates/side-profile'
+import ProfileImage from '@features/profile/molecules/profile-image'
+import CloudImage from '@features/profile/atoms/cloud-image'
 
 export const metadata: Metadata = {
   title: 'Sobre mim',

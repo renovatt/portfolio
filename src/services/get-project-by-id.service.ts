@@ -1,5 +1,5 @@
 import { ProjectDto } from '@entities/project.dto'
-import { BASE_URL, API_KEY } from '@static/env'
+import { BASE_URL, API_KEY } from '~static/env'
 import { CustomError } from '@utils/custom-error'
 import { isErrorMessageDto } from '@utils/type-guard-error'
 

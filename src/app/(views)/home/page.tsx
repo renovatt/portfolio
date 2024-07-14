@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import SideMecha from '@templates/side-mecha'
-import SideHome from '@templates/side-home'
+import SideMecha from '@features/home/templates/side-mecha'
+import SideHome from '@features/home/templates/side-home'
 import BackgroundImage from '@atoms/background-image'
 
 export const metadata: Metadata = {
