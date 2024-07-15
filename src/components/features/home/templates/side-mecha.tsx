@@ -3,7 +3,7 @@ import CanvaContainer from '../organisms/canva-container'
 
 const SideMecha = () => {
   return (
-    <section className="h-2/5 w-full md:h-[80%] md:w-3/6">
+    <section className="h-2/5 w-full md:h-full md:w-1/2">
       <CanvaContainer>
         <Mecha />
       </CanvaContainer>
