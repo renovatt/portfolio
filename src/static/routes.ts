@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaProjectDiagram } from 'react-icons/fa'
 
 export const routes = [
   {
-    path: '/home',
+    path: '/',
     text: 'Início',
     icon: HiHome,
   },
