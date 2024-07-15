@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
-import Form from '@organisms/form'
-import SideContact from '@templates/side-contact'
 import BackgroundImage from '@atoms/background-image'
+import Form from '@features/contact/organisms/form'
+import SideContact from '@features/contact/templates/side-contact'
 
 export const metadata: Metadata = {
   title: 'Contato',

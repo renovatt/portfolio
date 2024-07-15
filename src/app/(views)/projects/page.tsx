@@ -1,13 +1,13 @@
 import { Metadata } from 'next'
 import { Suspense } from 'react'
 import Loader from '@molecules/loader'
-import SideProject from '@templates/side-project'
-import ProjectCard from '@organisms/project-card'
+import { CustomError } from '@utils/custom-error'
+import ErrorMessage from '@molecules/error-message'
 import BackgroundImage from '@atoms/background-image'
 import { getProjects } from '@services/get-project.service'
 import { ProjectResponseDto } from '@entities/project.dto'
-import { CustomError } from '@utils/custom-error'
-import ErrorMessage from '@molecules/error-message'
+import SideProject from '@features/projetcs/templates/side-project'
+import ProjectCard from '@features/projetcs/organisms/project-card'
 
 export const metadata: Metadata = {
   title: 'Projetos',

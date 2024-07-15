@@ -1,14 +1,14 @@
 import { Metadata } from 'next'
-import RayImage from '@atoms/ray-image'
 import BackgroundImage from '@atoms/background-image'
-import SideSkills from '@templates/side-skills'
 import { Suspense } from 'react'
 import { getStacks } from '@services/get-stacks.service'
 import Loader from '@molecules/loader'
-import Icons from '@molecules/icons'
 import { StacksResponseDto } from '@entities/stack.dto'
 import { CustomError } from '@utils/custom-error'
 import ErrorMessage from '@molecules/error-message'
+import SideSkills from '@features/skills/templates/side-skills'
+import RayImage from '@features/skills/atoms/ray-image'
+import Icons from '@features/skills/molecules/icons'
 
 export const metadata: Metadata = {
   title: 'Habilidades',
