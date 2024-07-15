@@ -17,7 +17,7 @@ const GSAPContainer = ({ children }: { children: ReactNode }) => {
 
     entryTl.fromTo(
       camera.position,
-      { x: 150, y: 800, z: 200 },
+      { x: 150, y: 900, z: 200 },
       {
         x: gsapRef.current.position.x,
         y: gsapRef.current.position.y,
@@ -44,7 +44,7 @@ const GSAPContainer = ({ children }: { children: ReactNode }) => {
       // Look to the left
       tl.to(gsapRef.current.rotation, {
         y: -Math.PI / 4,
-        duration: 2,
+        duration: 0.5,
         ease: 'power1.inOut',
       })
 
@@ -52,7 +52,7 @@ const GSAPContainer = ({ children }: { children: ReactNode }) => {
       tl.to(gsapRef.current.rotation, {
         x: -Math.PI / 8,
         y: Math.PI / 8,
-        duration: 1.8,
+        duration: 1.5,
         ease: 'power1.inOut',
       })
 
@@ -60,7 +60,7 @@ const GSAPContainer = ({ children }: { children: ReactNode }) => {
       tl.to(gsapRef.current.rotation, {
         x: Math.PI / 8,
         y: -Math.PI / 8,
-        duration: 1.3,
+        duration: 0.5,
         ease: 'power1.inOut',
       })
 
@@ -68,7 +68,7 @@ const GSAPContainer = ({ children }: { children: ReactNode }) => {
       tl.to(gsapRef.current.rotation, {
         x: -Math.PI / 8,
         y: -Math.PI / 8,
-        duration: 1.2,
+        duration: 0.5,
         ease: 'power1.inOut',
       })
 
@@ -76,6 +76,13 @@ const GSAPContainer = ({ children }: { children: ReactNode }) => {
       tl.to(gsapRef.current.rotation, {
         x: Math.PI / 8,
         y: Math.PI / 8,
+        duration: 0.5,
+        ease: 'power1.inOut',
+      })
+
+      // zoom in
+      tl.to(gsapRef.current.position, {
+        z: 50,
         duration: 0.5,
         ease: 'power1.inOut',
       })
