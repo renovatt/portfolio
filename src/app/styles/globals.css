@@ -4,6 +4,7 @@
 
 :root {
   --bg-default:#191919;
+  --custom-950: #d9124d;
 }
 
 @layer base {

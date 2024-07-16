@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        950: '#ff8269',
+        // 950: '#ff8269',
+        950: 'var(--custom-950)',
         900: '#191919',
         890: '#101010',
         850: '#929d8d',
@@ -43,6 +44,16 @@ module.exports = {
           to: {
             opacity: '1',
             transform: 'translateY(0px)',
+          },
+        },
+        fadeLeft: {
+          from: {
+            opacity: '0',
+            transform: 'translateX(0px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateX(-40px)',
           },
         },
         mobileActive: {
@@ -131,6 +142,7 @@ module.exports = {
         load: 'load .5s ease-in-out infinite',
         fade: 'fade 1s forwards',
         fadeUp: 'fadeUp 1s forwards',
+        fadeLeft: 'fadeLeft 0.5s forwards',
         zoom: 'zoom .3s forwards',
       },
     },
