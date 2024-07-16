@@ -2,12 +2,13 @@ import 'animate.css'
 import './styles/globals.css'
 import './styles/reset.css'
 import { Metadata } from 'next'
+import { chakraPetch } from '@assets/fonts/chakra-petch-font'
 import Container from '@organisms/container'
 import Header from '@components/header/templates/header'
 import Navbar from '@components/navbar/organisms/navbar'
 import Footer from '@components/footer/templates/footer'
 import ToastifyProvider from '@providers/toastify-provider'
-import { chakraPetch } from '@assets/fonts/chakra-petch-font'
+import CustomColorSidebar from '@components/navbar/molecules/custom-color-sidebar'
 
 const APP_NAME = '{ ...Will }'
 const APP_DESCRIPTION =
@@ -74,6 +75,7 @@ export default function RootLayout({
           <Container>
             <Header />
             <Navbar />
+            <CustomColorSidebar />
             {children}
             {modal}
             <Footer />
