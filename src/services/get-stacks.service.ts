@@ -5,7 +5,7 @@ import { isErrorMessageDto } from '@utils/type-guard-error'
 
 export const getStacks = async (): Promise<StacksResponseDto> => {
   try {
-    const response = await fetch(`${BASE_URL}/stacks-public`, {
+    const response = await fetch(`${BASE_URL}/renovatt/stacks-public`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY,

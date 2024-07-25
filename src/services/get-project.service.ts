@@ -5,7 +5,7 @@ import { isErrorMessageDto } from '@utils/type-guard-error'
 
 export const getProjects = async (): Promise<ProjectResponseDto> => {
   try {
-    const response = await fetch(`${BASE_URL}/projects-public`, {
+    const response = await fetch(`${BASE_URL}/renovatt/projects-public`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY,
