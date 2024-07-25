@@ -7,15 +7,18 @@ export const getProjectsById = async (
   projectId: string,
 ): Promise<ProjectDto> => {
   try {
-    const response = await fetch(`${BASE_URL}/projects-public/${projectId}`, {
-      method: 'GET',
-      headers: {
-        'x-api-key': API_KEY,
+    const response = await fetch(
+      `${BASE_URL}/renovatt/projects-public/${projectId}`,
+      {
+        method: 'GET',
+        headers: {
+          'x-api-key': API_KEY,
+        },
+        next: {
+          revalidate: 5,
+        },
       },
-      next: {
-        revalidate: 5,
-      },
-    })
+    )
 
     const data: ProjectDto = await response.json()
 
