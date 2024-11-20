@@ -17,7 +17,7 @@ const APP_URL = 'https://renovatt.dev.br'
 // const APP_URL = 'https://portfolio-renovatt.vercel.app'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://renovatt.dev.br'),
   title: {
     default: APP_NAME,
     template: `%s : ${APP_NAME}`,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   ],
   authors: [
     { name: 'renovatt' },
-    { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt/' },
+    { name: 'renovatt', url: 'https://www.linkedin.com/in/renovatt' },
   ],
   creator: '@renovatt',
   openGraph: {
@@ -59,6 +59,16 @@ export const metadata: Metadata = {
     { rel: 'apple-touch-icon', url: '/icon-192x192.png' },
     { rel: 'icon', url: '/favicon.ico' },
   ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
 }
 
 export default function RootLayout({
